@@ -1,6 +1,7 @@
 import os
 import csv
 from pathlib import Path
+import pandas as pd
 
 from modules.document_input import DocumentInputService
 from modules.chunk_imrd_labeling import IMRDChunkClassifier
@@ -25,11 +26,21 @@ if not CHROMA_DIR.exists():
 # Paths
 # -------------------------
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-REGISTRY_PATH = PROJECT_ROOT / "data_registry" / "papers.csv"
+REGISTRY_PATH = PROJECT_ROOT / "data_registry" / "search_log.xlsx"
 LOG_PATH = PROJECT_ROOT / "data_registry" / "phase1_ingest_log.csv"
 
 if not REGISTRY_PATH.exists():
 	raise RuntimeError(f"Missing registry: {REGISTRY_PATH}")
+
+completed_ids = set()
+if LOG_PATH.exists():
+    prev = pd.read_csv(LOG_PATH)
+    if "status" in prev.columns and "paper_id" in prev.columns:
+        completed_ids = set(
+            prev.loc[prev["status"] == "ok", "paper_id"]
+            .astype(str)
+            .tolist()
+        )
 
 
 # -------------------------
@@ -52,32 +63,42 @@ doc_eligibility = DocumentEligibilityService(
 
 
 # -------------------------
-# Helpers
+# Helper for incremental logging
 # -------------------------
-def parse_bool(x):
-	return str(x).lower() in {"1", "true", "yes", "y"}
+def append_log(row):
+    write_header = not LOG_PATH.exists()
+    with LOG_PATH.open("a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=row.keys())
+        if write_header:
+            writer.writeheader()
+        writer.writerow(row)
 
 
 # -------------------------
 # Main loop
 # -------------------------
-rows_out = []
+df = pd.read_excel(REGISTRY_PATH)
 
-with REGISTRY_PATH.open(newline="", encoding="utf-8") as f:
-	reader = csv.DictReader(f)
-	papers = list(reader)
+total = int((df["eligible"].astype(str).str.lower() == "yes").sum())
+processed = 0
 
-for row in papers:
-	paper_id = row.get("paper_id")
-	pdf_rel = row.get("pdf_path")
-	eligible = parse_bool(row.get("eligible_full_text", "false"))
+for idx, row in df.iterrows():
+	paper_id = f"row_{idx+1:03d}"
+	pdf_rel = row["filename"]
+	eligible = str(row["eligible"]).strip().lower() == "yes"
+
+	if paper_id in completed_ids:
+		continue
 
 	if not eligible:
 		continue
 
+	processed += 1
+	print(f"[{processed}/{total}] Processing {pdf_rel}")
+
 	pdf_path = FILES_DIR / pdf_rel
 	if not pdf_path.exists():
-		rows_out.append({
+		append_log({
 			"paper_id": paper_id,
 			"pdf_path": pdf_rel,
 			"run_id": RUN_ID,
@@ -115,7 +136,7 @@ for row in papers:
 			results_text=results_text,
 		)
 
-		rows_out.append({
+		append_log({
 			"paper_id": paper_id,
 			"doc_sha256": doc_sha256,
 			"pdf_path": pdf_rel,
@@ -128,7 +149,7 @@ for row in papers:
 		})
 
 	except Exception as e:
-		rows_out.append({
+		append_log({
 			"paper_id": paper_id,
 			"pdf_path": pdf_rel,
 			"run_id": RUN_ID,
@@ -138,17 +159,4 @@ for row in papers:
 		})
 
 
-# -------------------------
-# Write log
-# -------------------------
-LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-fieldnames = sorted({k for r in rows_out for k in r.keys()})
-
-with LOG_PATH.open("w", newline="", encoding="utf-8") as f:
-	writer = csv.DictWriter(f, fieldnames=fieldnames)
-	writer.writeheader()
-	for r in rows_out:
-		writer.writerow(r)
-
-print(f"[DONE] Phase 1 ingest complete. Log written to {LOG_PATH}")
+print("[DONE] Phase 1 ingest finished (resume-safe).")

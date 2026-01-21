@@ -211,10 +211,11 @@ __marimo__/
 .gitmodules
 .gitignore
 runs/
-files/
+snapshots/
+snapshots/**
 chroma/
+chroma/**
 *.pdf
-*.csv
 *.sqlite3
 *.parquet
 

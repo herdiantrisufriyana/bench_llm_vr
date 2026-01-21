@@ -39,7 +39,7 @@ RUN pip install --no-cache-dir -r apps/hypathesis/requirements.txt
 
 # 2) Benchmark-only deps (if any later)
 # (safe even if empty)
-RUN pip install --no-cache-dir pandas numpy scipy scikit-learn
+RUN pip install --no-cache-dir pandas numpy scipy scikit-learn openpyxl
 
 # -------------------------
 # Environment defaults
