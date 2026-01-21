@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Large / derived artifacts
+runs/
+files/
+chroma/
+*.sqlite3
+*.parquet
+
+# PDFs
+*.pdf
+
+# Environment
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.vscode/

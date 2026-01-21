@@ -1,0 +1,3 @@
+[submodule "apps/hypathesis"]
+	path = apps/hypathesis
+	url = git@github.com:herdiantrisufriyana/hypathesis.git
