@@ -207,11 +207,21 @@ marimo/_lsp/
 __marimo__/
 
 # Large / derived artifacts
+.git
+.gitmodules
+.gitignore
 runs/
 files/
 chroma/
+*.pdf
+*.csv
 *.sqlite3
 *.parquet
+
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
 
 # PDFs
 *.pdf
