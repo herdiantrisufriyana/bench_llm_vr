@@ -1,0 +1,300 @@
+---
+title: "Benchmarking LLMs for Evidence-Grounded Variable Relationship Extraction"
+author:
+  - name: Author Name
+    affiliation:
+    - &aff1 Author Institution, City, Country.
+    email: email@website.com
+date: "2026-01-22"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+vignette: >
+  %\VignetteIndexEntry{LLM Evidence-Grounded Benchmark}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Programming environment
+
+```{r Set random seed, include=FALSE}
+seed <- 20260122
+set.seed(seed)
+```
+
+```{r Load packages, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(ggpubr)
+library(pbapply)
+library(fs)
+library(here)
+library(readxl)
+library(jsonlite)
+```
+
+```{r Project root sanity check, include=FALSE}
+stopifnot(dir_exists("."))
+stopifnot(dir_exists(here::here("data_registry")))
+```
+
+```{r Load functions, include=FALSE}
+lapply(list.files("R/", full.names = TRUE), source)
+```
+
+```{r Set theme, include=FALSE}
+my_theme_set()
+```
+
+```{r Session information, echo=FALSE}
+sessionInfo()
+```
+
+# Data Analysis — Benchmark Evaluation Setup
+
+This document initializes the data analysis environment for
+downstream, read-only evaluation of adjudicated extraction outputs.
+No LLM calls are performed beyond this point.
+
+## Raw Data Inputs (Read-only)
+
+The following data sources are treated as immutable, read-only inputs:
+- Phase 1 ingestion log (`../data_registry/phase1_ingest_log.csv`)
+- Phase 2 document-level logs (`../data_registry/phase2_doc_log__*.csv`)
+- Phase 3 per-edge exports and judge outputs under `../data_registry/`
+
+## Phase-3 Result Folders (Enumeration)
+
+This subsection enumerates available Phase-3 result folders per LLM
+under `../data_registry/`. No files are read or loaded at this stage.
+
+```{r Enumerate Phase-3 folders, echo=TRUE}
+phase3_dirs <- list.dirs(
+  here::here("data_registry"),
+  recursive = FALSE,
+  full.names = TRUE
+) |>
+  basename() |>
+  keep(~ str_detect(.x, "^phase3_"))
+
+tibble(
+  llm_phase3_folder = phase3_dirs
+)
+```
+
+## Load Per-edge Adjudicated Data (Phase 3)
+
+This subsection loads per-edge adjudicated data for each available LLM.
+For each Phase-3 folder, the base export is loaded together with any
+available judge outputs. No metrics are computed at this stage.
+
+```{r Load Phase-3 per-edge data, echo=TRUE}
+load_phase3_llm <- function(phase3_dir) {
+  base_path <- here::here("data_registry", phase3_dir)
+  
+  export_file <- file.path(base_path, "export.csv")
+  stopifnot(file_exists(export_file))
+  
+  export_df <- read_csv(export_file, show_col_types = FALSE)
+  
+  judge_files <- list.files(
+    base_path,
+    pattern = "^judge_.*\\.csv$",
+    full.names = TRUE
+  )
+  
+  judges_df <- judge_files |>
+    set_names(basename) |>
+    map(~ read_csv(.x, show_col_types = FALSE))
+  
+  list(
+    llm = phase3_dir,
+    export = export_df,
+    judges = judges_df
+  )
+}
+
+phase3_data <- phase3_dirs |>
+  set_names() |>
+  map(load_phase3_llm)
+
+names(phase3_data)
+```
+
+
+```{r List Phase-3 files per LLM}
+## Diagnostic: list files per Phase-3 folder
+
+phase3_files <- phase3_dirs |>
+  set_names() |>
+  map(~ {
+    fs::dir_ls(
+      here::here("data_registry", .x),
+      type = "file"
+    ) |>
+      basename()
+  })
+
+phase3_files
+```
+
+
+## Human Calibration Sample (300 edges)
+
+We draw a fixed random sample of 300 extracted edges for human
+calibration. Sampling is stratified by study design and LLM, and
+restricted to the first 10 eligible articles per study-design stratum
+(meta-analysis, randomized controlled trial, observational study) as
+ordered in `data_registry/search_log.xlsx`.
+
+The sampling chunk is intentionally set to `eval=FALSE` so it will not
+run during full renders. When you want to refresh the sample, run that
+chunk manually; it will overwrite the recorded sample file. All
+downstream chunks only read the recorded file.
+
+```{r Generate human 300-edge sample (manual), eval=FALSE, echo=TRUE}
+## Generate and record the 300-edge human calibration sample
+## (run manually; downstream chunks only read the recorded file)
+
+set.seed(seed)
+
+stopifnot(file_exists(here::here("data_registry", "search_log.xlsx")))
+
+search_log_raw <- readxl::read_xlsx(
+  here::here("data_registry", "search_log.xlsx")
+)
+
+names_lower <- tolower(names(search_log_raw))
+
+pick_col <- function(pattern) {
+  idx <- which(str_detect(names_lower, pattern))
+  if (length(idx) < 1) {
+    stop("Could not find column matching pattern: ", pattern)
+  }
+  names(search_log_raw)[idx[1]]
+}
+
+col_eligible <- pick_col("eligible")
+col_stratum <- pick_col("strata|study[_ ]?design|design")
+col_paper_id <- pick_col("paper|row|id")
+
+search_log <- search_log_raw |>
+  mutate(
+    eligible_std = tolower(as.character(.data[[col_eligible]])),
+    stratum_std = as.character(.data[[col_stratum]]),
+    paper_id_std = as.character(.data[[col_paper_id]])
+  ) |>
+  filter(eligible_std %in% c("yes", "y", "true", "1")) |>
+  group_by(stratum_std) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  transmute(
+    paper_id = paper_id_std,
+    stratum = stratum_std
+  )
+
+extract_paper_id <- function(x) {
+  if (is.na(x) || !nzchar(x)) {
+    return(NA_character_)
+  }
+  out <- tryCatch(
+    jsonlite::fromJSON(x),
+    error = function(e) NA
+  )
+  if (is.character(out) && length(out) >= 1) {
+    return(out[[1]])
+  }
+  NA_character_
+}
+
+phase3_exports <- phase3_data |>
+  imap_dfr(~ {
+    export_df <- .x$export |>
+      mutate(
+        llm = .x$llm,
+        paper_id = map_chr(paper_id_list, extract_paper_id)
+      )
+
+    export_df
+  })
+
+eligible_edges <- phase3_exports |>
+  inner_join(search_log, by = "paper_id") |>
+  mutate(
+    llm = as.character(llm),
+    stratum = as.character(stratum)
+  )
+
+stopifnot(nrow(eligible_edges) > 0)
+
+llm_levels <- sort(unique(eligible_edges$llm))
+stratum_levels <- sort(unique(eligible_edges$stratum))
+
+n_cells <- length(llm_levels) * length(stratum_levels)
+base_n <- floor(300 / n_cells)
+remainder <- 300 - base_n * n_cells
+
+cell_plan <- tidyr::crossing(
+  llm = llm_levels,
+  stratum = stratum_levels
+) |>
+  mutate(
+    n_target = base_n + if_else(row_number() <= remainder, 1L, 0L)
+  )
+
+sampled_edges <- cell_plan |>
+  group_by(llm, stratum) |>
+  group_modify(~ {
+    cell_edges <- eligible_edges |>
+      filter(
+        llm == .y$llm,
+        stratum == .y$stratum
+      )
+
+    n_take <- min(.x$n_target[1], nrow(cell_edges))
+
+    if (n_take < 1) {
+      return(tibble())
+    }
+
+    cell_edges |>
+      slice_sample(n = n_take)
+  }) |>
+  ungroup() |>
+  mutate(
+    seed = seed,
+    sampled_at_utc = format(Sys.time(), tz = "UTC", usetz = TRUE)
+  )
+
+dir_create(here::here("analysis", "derived"))
+out_file <- here::here(
+  "analysis",
+  "derived",
+  "human_calibration_sample_300_edges.csv"
+)
+
+write_csv(sampled_edges, out_file)
+
+out_file
+```
+
+```{r Load human 300-edge sample, echo=TRUE}
+sample_file <- here::here(
+  "analysis",
+  "derived",
+  "human_calibration_sample_300_edges.csv"
+)
+
+stopifnot(file_exists(sample_file))
+
+human_sample <- read_csv(sample_file, show_col_types = FALSE)
+
+human_sample |>
+  count(llm, stratum) |>
+  arrange(llm, stratum)
+```
