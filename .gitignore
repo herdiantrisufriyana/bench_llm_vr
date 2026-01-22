@@ -247,3 +247,6 @@ data_registry/phase2_run_log.csv
 
 # Any future phase-level run logs
 data_registry/phase*_run_log*.csv
+# Outputs (mutable)
+data_registry/phase3_*/
+analysis/derived/
