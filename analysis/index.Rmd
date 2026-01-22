@@ -399,3 +399,169 @@ if (file_exists(sample_file_labeled)) {
   )
 }
 ```
+
+## Calibration analysis (human vs judges)
+
+This subsection evaluates judge reliability against the human-labeled
+calibration set (300 edges). We report percent agreement and Cohen’s κ.
+If multiple judge files exist, results are reported per judge.
+
+```{r Calibration analysis (human vs judges), echo=TRUE}
+stopifnot(exists("human_sample_labeled"))
+
+## ---- helpers ----
+pick_col <- function(df, pattern) {
+	cn <- names(df)
+	hit <- cn[str_detect(tolower(cn), tolower(pattern))]
+	if (length(hit) < 1) {
+		stop("Could not find column matching pattern: ", pattern)
+	}
+	hit[[1]]
+}
+
+cohen_kappa_2cat_or_multicat <- function(tab) {
+	## tab: square matrix with same labels on rows/cols
+	n <- sum(tab)
+	if (n == 0) {
+		return(NA_real_)
+	}
+
+	po <- sum(diag(tab)) / n
+	pe <- sum(rowSums(tab) * colSums(tab)) / (n^2)
+
+	if (isTRUE(all.equal(1 - pe, 0))) {
+		return(NA_real_)
+	}
+
+	(po - pe) / (1 - pe)
+}
+
+## ---- identify required columns in human file ----
+col_llm <- pick_col(human_sample_labeled, "^llm$")
+col_stratum <- pick_col(human_sample_labeled, "^stratum$")
+col_doc <- pick_col(human_sample_labeled, "doc_sha256")
+col_edge <- pick_col(human_sample_labeled, "edge_id")
+col_human <- pick_col(human_sample_labeled, "^label$")
+
+human_calib <- human_sample_labeled |>
+	transmute(
+		llm = .data[[col_llm]],
+		stratum = .data[[col_stratum]],
+		doc_sha256 = .data[[col_doc]],
+		edge_id = .data[[col_edge]],
+		human_label = as.character(.data[[col_human]])
+	) |>
+	filter(!is.na(human_label), nzchar(human_label))
+
+stopifnot(nrow(human_calib) > 0)
+
+## ---- gather all judge rows from phase3_data ----
+judge_long <- phase3_data |>
+	imap_dfr(~ {
+		llm_name <- .x$llm
+		judges <- .x$judges
+
+		if (length(judges) < 1) {
+			return(tibble())
+		}
+
+		imap_dfr(judges, ~ {
+			judge_file <- .y
+			jdf <- .x
+
+			## Require edge_id + doc_sha256 + judge label-like column
+			if (!("edge_id" %in% names(jdf))) {
+				return(tibble())
+			}
+			if (!("doc_sha256" %in% names(jdf))) {
+				return(tibble())
+			}
+
+			judge_label_col <- {
+				cn <- names(jdf)
+				cand <- cn[str_detect(
+					tolower(cn),
+					"(^label$|judge.*label|final.*label|adjudicated|verdict|decision)"
+				)]
+				if (length(cand) < 1) {
+					NA_character_
+				} else {
+					cand[[1]]
+				}
+			}
+
+			if (is.na(judge_label_col)) {
+				return(tibble())
+			}
+
+			jdf |>
+				transmute(
+					llm = llm_name,
+					judge = judge_file,
+					doc_sha256 = doc_sha256,
+					edge_id = edge_id,
+					judge_label = as.character(.data[[judge_label_col]])
+				)
+		})
+	})
+
+if (nrow(judge_long) < 1) {
+	message(
+		"No judge outputs found yet in phase3_data$...$judges.\n",
+		"Calibration metrics will be computed once judge CSVs exist."
+	)
+} else {
+	## ---- join human with judges ----
+	calib_joined <- human_calib |>
+		inner_join(
+			judge_long,
+			by = c("llm", "doc_sha256", "edge_id")
+		) |>
+		filter(!is.na(judge_label), nzchar(judge_label))
+
+	if (nrow(calib_joined) < 1) {
+		message(
+			"No overlap between human calibration file and judge outputs.\n",
+			"Check that llm/doc_sha256/edge_id keys match."
+		)
+	} else {
+		## ---- agreement + kappa ----
+		calib_summary <- calib_joined |>
+			group_by(judge) |>
+			summarise(
+				n = n(),
+				agreement = mean(human_label == judge_label),
+				kappa = {
+					tab <- table(human_label, judge_label)
+					## Make square on union of labels
+					lv <- union(rownames(tab), colnames(tab))
+					tab2 <- matrix(
+						0L,
+						nrow = length(lv),
+						ncol = length(lv),
+						dimnames = list(lv, lv)
+					)
+					tab2[rownames(tab), colnames(tab)] <- tab
+					cohen_kappa_2cat_or_multicat(tab2)
+				},
+				.groups = "drop"
+			) |>
+			arrange(judge)
+
+		calib_summary |>
+			mutate(
+				agreement = round(agreement, 3),
+				kappa = round(kappa, 3)
+			) |>
+			kable() |>
+			kable_styling(full_width = FALSE)
+
+		## Optional: show confusion table per judge (small n only)
+		## Uncomment if needed:
+		# calib_joined |>
+		#   count(judge, human_label, judge_label) |>
+		#   arrange(judge, desc(n)) |>
+		#   print(n = 50)
+	}
+}
+```
