@@ -22,7 +22,7 @@ vignette: >
 # Programming environment
 
 ```{r Set random seed, include=FALSE}
-seed <- 20260122
+seed <- 2026-01-22
 set.seed(seed)
 ```
 
@@ -169,33 +169,24 @@ search_log_raw <- readxl::read_xlsx(
   here::here("data_registry", "search_log.xlsx")
 )
 
-names_lower <- tolower(names(search_log_raw))
-
-pick_col <- function(pattern) {
-  idx <- which(str_detect(names_lower, pattern))
-  if (length(idx) < 1) {
-    stop("Could not find column matching pattern: ", pattern)
-  }
-  names(search_log_raw)[idx[1]]
-}
-
-col_eligible <- pick_col("eligible")
-col_stratum <- pick_col("strata|study[_ ]?design|design")
-col_paper_id <- pick_col("paper|row|id")
+## search_log.xlsx columns (known):
+## article_type_filter, eligible, rank, filename, ...
 
 search_log <- search_log_raw |>
   mutate(
-    eligible_std = tolower(as.character(.data[[col_eligible]])),
-    stratum_std = as.character(.data[[col_stratum]]),
-    paper_id_std = as.character(.data[[col_paper_id]])
+    paper_id = sprintf("row_%03d", row_number()),
+    eligible_std = tolower(as.character(eligible)),
+    stratum = as.character(article_type_filter),
+    rank_num = suppressWarnings(as.numeric(rank))
   ) |>
   filter(eligible_std %in% c("yes", "y", "true", "1")) |>
-  group_by(stratum_std) |>
+  arrange(stratum, rank_num, paper_id) |>
+  group_by(stratum) |>
   slice_head(n = 10) |>
   ungroup() |>
   transmute(
-    paper_id = paper_id_std,
-    stratum = stratum_std
+    paper_id,
+    stratum
   )
 
 extract_paper_id <- function(x) {
@@ -232,7 +223,29 @@ eligible_edges <- phase3_exports |>
 
 stopifnot(nrow(eligible_edges) > 0)
 
-llm_levels <- sort(unique(eligible_edges$llm))
+## Planned LLMs (paper list). We only run sampling after all are available.
+llm_levels <- c(
+  "phase3_gpt5",
+  "phase3_claude45",
+  "phase3_gemini3",
+  "phase3_llama4",
+  "phase3_mistral2",
+  "phase3_deepseek3"
+)
+
+missing_llms <- setdiff(llm_levels, names(phase3_data))
+
+if (length(missing_llms) > 0) {
+  message(
+    "Phase-3 exports not yet available for: ",
+    paste(missing_llms, collapse = ", ")
+  )
+  message(
+    "Proceeding with currently available Phase-3 exports. ",
+    "Re-run this sampling chunk after additional Phase-3 folders appear."
+  )
+}
+
 stratum_levels <- sort(unique(eligible_edges$stratum))
 
 n_cells <- length(llm_levels) * length(stratum_levels)
@@ -247,29 +260,9 @@ cell_plan <- tidyr::crossing(
     n_target = base_n + if_else(row_number() <= remainder, 1L, 0L)
   )
 
-sampled_edges <- cell_plan |>
-  group_by(llm, stratum) |>
-  group_modify(~ {
-    cell_edges <- eligible_edges |>
-      filter(
-        llm == .y$llm,
-        stratum == .y$stratum
-      )
-
-    n_take <- min(.x$n_target[1], nrow(cell_edges))
-
-    if (n_take < 1) {
-      return(tibble())
-    }
-
-    cell_edges |>
-      slice_sample(n = n_take)
-  }) |>
-  ungroup() |>
-  mutate(
-    seed = seed,
-    sampled_at_utc = format(Sys.time(), tz = "UTC", usetz = TRUE)
-  )
+## Incremental sampler (append-only):
+## If a sample file already exists, keep those rows fixed and only sample
+## additional edges needed for newly-available LLMs / strata.
 
 dir_create(here::here("analysis", "derived"))
 out_file <- here::here(
@@ -277,6 +270,92 @@ out_file <- here::here(
   "derived",
   "human_calibration_sample_300_edges.csv"
 )
+
+existing_sample <- NULL
+if (file_exists(out_file)) {
+  existing_sample <- read_csv(out_file, show_col_types = FALSE) |>
+    mutate(
+      llm = as.character(llm),
+      stratum = as.character(stratum)
+    )
+}
+
+## Define a stable key for de-duplication across re-runs.
+make_edge_key <- function(df) {
+  df |>
+    mutate(
+      edge_key = paste0(llm, "|", doc_sha256, "|", edge_id)
+    )
+}
+
+eligible_edges_keyed <- eligible_edges |>
+  mutate(
+    llm = as.character(llm),
+    stratum = as.character(stratum)
+  ) |>
+  make_edge_key()
+
+locked_keys <- character(0)
+if (!is.null(existing_sample) && nrow(existing_sample) > 0) {
+  existing_keyed <- existing_sample |>
+    mutate(
+      llm = as.character(llm),
+      stratum = as.character(stratum)
+    ) |>
+    make_edge_key()
+
+  locked_keys <- unique(existing_keyed$edge_key)
+}
+
+## How many are already sampled per (llm, stratum)?
+already_counts <- tibble(llm = character(), stratum = character(), n = 0L)
+if (!is.null(existing_sample) && nrow(existing_sample) > 0) {
+  already_counts <- existing_sample |>
+    count(llm, stratum, name = "n")
+}
+
+## Compute per-cell remaining targets.
+cell_plan2 <- cell_plan |>
+  left_join(already_counts, by = c("llm", "stratum")) |>
+  mutate(
+    n = replace_na(n, 0L),
+    n_need = pmax(n_target - n, 0L)
+  )
+
+new_sampled_edges <- cell_plan2 |>
+  filter(n_need > 0) |>
+  group_by(llm, stratum) |>
+  group_modify(~ {
+    cell_edges <- eligible_edges_keyed |>
+      filter(
+        llm == .y$llm,
+        stratum == .y$stratum,
+        !edge_key %in% locked_keys
+      )
+
+    n_take <- min(.x$n_need[1], nrow(cell_edges))
+
+    if (n_take < 1) {
+      return(tibble())
+    }
+
+    ## group_modify() will re-attach the grouping keys (llm, stratum)
+    ## so we must NOT return them from the data frame.
+    cell_edges |>
+      slice_sample(n = n_take) |>
+      select(-llm, -stratum, -edge_key)
+  }) |>
+  ungroup() |>
+  mutate(
+    seed = seed,
+    sampled_at_utc = format(Sys.time(), tz = "UTC", usetz = TRUE)
+  )
+
+sampled_edges <- bind_rows(
+  existing_sample,
+  new_sampled_edges
+) |>
+  distinct(llm, doc_sha256, edge_id, .keep_all = TRUE)
 
 write_csv(sampled_edges, out_file)
 
@@ -297,4 +376,26 @@ human_sample <- read_csv(sample_file, show_col_types = FALSE)
 human_sample |>
   count(llm, stratum) |>
   arrange(llm, stratum)
+```
+
+```{r Load human 300-edge sample (labeled), echo=TRUE}
+sample_file_labeled <- here::here(
+  "analysis",
+  "derived",
+  "human_calibration_sample_300_edges_labeled.csv"
+)
+
+if (file_exists(sample_file_labeled)) {
+  human_sample_labeled <- read_csv(sample_file_labeled, show_col_types = FALSE)
+
+  human_sample_labeled |>
+    count(llm, stratum) |>
+    arrange(llm, stratum)
+} else {
+  message(
+    "Labeled file not found yet: ",
+    sample_file_labeled,
+    "\n(After you label the sample, save it to this path and re-knit.)"
+  )
+}
 ```
