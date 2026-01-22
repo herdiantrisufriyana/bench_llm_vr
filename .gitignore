@@ -234,3 +234,16 @@ __pycache__/
 # OS / editor
 .DS_Store
 .vscode/
+
+# =====================================================
+# Benchmarking run artifacts (Phase 2 / Phase 3)
+# =====================================================
+
+# Phase 2 per-model document logs
+data_registry/phase2_doc_log__*.csv
+
+# Phase 2 run-level logs
+data_registry/phase2_run_log.csv
+
+# Any future phase-level run logs
+data_registry/phase*_run_log*.csv

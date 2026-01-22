@@ -37,8 +37,10 @@ COPY . /app
 # 1) Hypathesis requirements (submodule)
 RUN pip install --no-cache-dir -r apps/hypathesis/requirements.txt
 
-# 2) Benchmark-only deps (if any later)
-# (safe even if empty)
+# 2) Benchmark-only deps (repo root requirements.txt)
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 3) Common scientific stack used in benchmarking/analysis
 RUN pip install --no-cache-dir pandas numpy scipy scikit-learn openpyxl
 
 # -------------------------

@@ -5,8 +5,11 @@ import time
 import uuid
 import shutil
 import argparse
+from types import SimpleNamespace
 from pathlib import Path
 from datetime import datetime, timezone
+
+from langchain_community.vectorstores import Chroma
 
 from modules.document_input import DocumentInputService
 from modules.correlation_extraction import CorrelationExtractionService
@@ -65,6 +68,69 @@ def ensure_chroma_initialized_from_base(chroma_dir: Path):
 
 
 # -------------------------
+# LLM output normalization
+# -------------------------
+
+def _coerce_to_text(x):
+	"""Coerce Gemini/LC message content variants into a single string."""
+	if x is None:
+		return ""
+	if isinstance(x, str):
+		return x
+	if isinstance(x, list):
+		parts = []
+		for item in x:
+			if item is None:
+				continue
+			# Gemini / LangChain sometimes returns list[dict] blocks
+			if isinstance(item, dict):
+				if "text" in item and item["text"] is not None:
+					parts.append(str(item["text"]))
+				elif "content" in item and item["content"] is not None:
+					parts.append(str(item["content"]))
+				else:
+					# fallback: stable string
+					try:
+						parts.append(json.dumps(item, ensure_ascii=False))
+					except Exception:
+						parts.append(str(item))
+			else:
+				parts.append(str(item))
+		return "".join(parts)
+	# fallback for other types
+	return str(x)
+
+
+def _normalize_llm_response(resp):
+	"""Ensure `resp.content` is a string to satisfy downstream `.strip()` calls."""
+	content = getattr(resp, "content", "")
+	text = _coerce_to_text(content)
+	# Prefer preserving the original response object, but fall back if immutable
+	try:
+		setattr(resp, "content", text)
+		return resp
+	except Exception:
+		return SimpleNamespace(content=text)
+
+
+class _SafeContentLLM:
+	"""Wraps a LangChain chat model so `invoke()` always returns content as str."""
+	def __init__(self, llm):
+		self._llm = llm
+
+	def invoke(self, *args, **kwargs):
+		resp = self._llm.invoke(*args, **kwargs)
+		return _normalize_llm_response(resp)
+
+	async def ainvoke(self, *args, **kwargs):
+		resp = await self._llm.ainvoke(*args, **kwargs)
+		return _normalize_llm_response(resp)
+
+	def __getattr__(self, name):
+		# Delegate everything else to the underlying model
+		return getattr(self._llm, name)
+
+# -------------------------
 # LLM builder (per model code name)
 # -------------------------
 def build_extraction_llm(model_code: str):
@@ -88,11 +154,11 @@ def build_extraction_llm(model_code: str):
 			raise RuntimeError("OPENAI_GPT5_API_KEY missing in .env")
 
 		# Use explicit api_key to avoid any confusion with Phase 1 OPENAI_API_KEY
-		return ChatOpenAI(
+		return _SafeContentLLM(ChatOpenAI(
 			model="gpt-5",
 			temperature=0,
 			api_key=api_key,
-		)
+		))
 
 	# Anthropic
 	if model_code == "claude-4.5-sonnet":
@@ -107,11 +173,11 @@ def build_extraction_llm(model_code: str):
 		if not api_key:
 			raise RuntimeError("ANTHROPIC_API_KEY missing in .env")
 
-		return ChatAnthropic(
+		return _SafeContentLLM(ChatAnthropic(
 			model="claude-4.5-sonnet",
 			temperature=0,
 			api_key=api_key,
-		)
+		))
 
 	# Google Gemini
 	if model_code == "gemini-3-pro":
@@ -128,11 +194,11 @@ def build_extraction_llm(model_code: str):
 
 		# langchain_google_genai uses env var GOOGLE_API_KEY by default too,
 		# but we keep it explicit for clarity.
-		return ChatGoogleGenerativeAI(
-			model="gemini-3-pro",
+		return _SafeContentLLM(ChatGoogleGenerativeAI(
+			model="gemini-3-pro-preview",
 			temperature=0,
 			google_api_key=api_key,
-		)
+		))
 
 	# Mistral
 	if model_code == "mistral-large-2":
@@ -147,11 +213,11 @@ def build_extraction_llm(model_code: str):
 		if not api_key:
 			raise RuntimeError("MISTRAL_API_KEY missing in .env")
 
-		return ChatMistralAI(
+		return _SafeContentLLM(ChatMistralAI(
 			model="mistral-large-2",
 			temperature=0,
 			api_key=api_key,
-		)
+		))
 
 	# DeepSeek (OpenAI-compatible)
 	if model_code == "deepseek-v3":
@@ -170,15 +236,15 @@ def build_extraction_llm(model_code: str):
 		# If you use a different endpoint, set DEEPSEEK_BASE_URL in the container env.
 		base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
 
-		return ChatOpenAI(
+		return _SafeContentLLM(ChatOpenAI(
 			model="deepseek-v3",
 			temperature=0,
 			api_key=api_key,
 			base_url=base_url,
-		)
+		))
 
-	# llama-4 (open-weight via OpenAI-compatible endpoint)
-	if model_code == "llama-4":
+	# llama-4 (self-hosted / open-weight; typically via Ollama)
+	if model_code in {"llama-4", "llama4", "llama"}:
 		try:
 			from langchain_openai import ChatOpenAI
 		except Exception as e:
@@ -187,22 +253,45 @@ def build_extraction_llm(model_code: str):
 				"Install langchain-openai."
 			) from e
 
-		base_url = (os.getenv("LLAMA_ENDPOINT") or "").strip()
-		api_key = (os.getenv("LLAMA_API_KEY") or "").strip()
-		if not base_url:
-			raise RuntimeError("LLAMA_ENDPOINT missing in .env")
-		if not api_key:
-			raise RuntimeError("LLAMA_API_KEY missing in .env")
+		llama_endpoint = (os.getenv("LLAMA_ENDPOINT") or "").strip()
+		llama_api_key = (os.getenv("LLAMA_API_KEY") or "").strip()
 
-		# Assume endpoint is OpenAI-compatible.
-		# If your server uses a different model id, set LLAMA_MODEL in .env.
-		llama_model = (os.getenv("LLAMA_MODEL") or "llama-4").strip()
-		return ChatOpenAI(
-			model=llama_model,
+		if not llama_endpoint:
+			raise RuntimeError("LLAMA_ENDPOINT missing in .env")
+
+		# Allow local Ollama without an API key.
+		local_hosts = ("localhost", "127.0.0.1", "host.docker.internal")
+		is_local = any(h in llama_endpoint for h in local_hosts)
+
+		# Require a key only for remote endpoints.
+		if (llama_endpoint.startswith("http://") or llama_endpoint.startswith("https://")) \
+			and (not is_local) and (not llama_api_key):
+			raise RuntimeError(
+				"LLAMA_API_KEY missing in .env (required for non-local LLAMA_ENDPOINT)"
+			)
+
+		# Ollama exposes an OpenAI-compatible API under /v1
+		base_url = llama_endpoint.rstrip("/")
+		if not base_url.endswith("/v1"):
+			base_url = f"{base_url}/v1"
+
+		# Map CLI model_code -> actual Ollama model tag
+		# Your host confirms `ollama list` contains `llama4:latest`.
+		provider_model = "meta-llama/Llama-4-Scout-17B-16E-Instruct" if model_code == "llama-4" else model_code
+
+		# Send Authorization only if a key exists
+		extra_headers = {}
+		if llama_api_key:
+			extra_headers["Authorization"] = f"Bearer {llama_api_key}"
+
+		# ChatOpenAI requires api_key to be non-empty, even for local servers.
+		return _SafeContentLLM(ChatOpenAI(
+			model=provider_model,
 			temperature=0,
-			api_key=api_key,
+			api_key=llama_api_key or "DUMMY",
 			base_url=base_url,
-		)
+			default_headers=extra_headers,
+		))
 
 	raise RuntimeError(
 		"Unknown model_code. Choose one of:\n"
@@ -251,10 +340,20 @@ def get_doc_done_flag_key(model_code: str) -> str:
 	return f"phase2_done_{model_code}"
 
 
+def get_docs_db(doc_service: DocumentInputService):
+	"""Attach to the docs collection (DocumentInputService does not expose docs_db attr)."""
+	return Chroma(
+		persist_directory=str(doc_service.chroma_dir),
+		embedding_function=doc_service.text_embedder,
+		collection_name=doc_service.docs_collection,
+	)
+
+
 def is_doc_already_done(doc_service: DocumentInputService, doc_sha256: str, model_code: str) -> bool:
 	try:
 		# Use docs collection directly for a lightweight flag lookup
-		metas = doc_service.docs_db._collection.get(
+		docs_db = get_docs_db(doc_service)
+		metas = docs_db._collection.get(
 			where={"doc_sha256": doc_sha256},
 			include=["metadatas"],
 			limit=1,
@@ -282,8 +381,9 @@ def mark_doc_done(doc_service: DocumentInputService, doc_sha256: str, model_code
 	DocumentInputService uses Chroma; simplest is upsert via add_texts.
 	"""
 	key = get_doc_done_flag_key(model_code)
+	docs_db = get_docs_db(doc_service)
 	try:
-		got = doc_service.docs_db._collection.get(
+		got = docs_db._collection.get(
 			where={"doc_sha256": doc_sha256},
 			include=["ids", "documents", "metadatas"],
 			limit=1,
@@ -298,65 +398,17 @@ def mark_doc_done(doc_service: DocumentInputService, doc_sha256: str, model_code
 		meta[f"{key}_at"] = _utc_now_iso()
 
 		# Upsert by re-adding with same id
-		doc_service.docs_db.add_texts(
+		docs_db.add_texts(
 			texts=[doc_texts[0] or ""],
 			ids=[doc_id],
 			metadatas=[meta],
 		)
-		doc_service.docs_db.persist()
+		docs_db.persist()
 	except Exception:
 		# non-fatal; resume-safety still mostly works via existing edges/trace
 		return
 
 
-def count_doc_edges(doc_service: DocumentInputService, doc_sha256: str) -> int:
-	try:
-		got = doc_service.edges_db._collection.get(
-			where={"doc_sha256": doc_sha256},
-			include=["ids"],
-		)
-		return len(got.get("ids") or [])
-	except Exception:
-		return 0
-
-
-def count_doc_traces_and_ungrounded(doc_service: DocumentInputService, doc_sha256: str):
-	"""
-	Ungrounded edges = trace record with chu_idx_list == [] (stored as JSON string).
-	This supports Phase 3 metric computation without exporting edge CSVs.
-	"""
-	try:
-		got = doc_service.trace_db._collection.get(
-			where={"doc_sha256": doc_sha256, "evidence_type": "edge"},
-			include=["metadatas"],
-		)
-		metas = got.get("metadatas") or []
-		total = len(metas)
-		ungrounded = 0
-		for m in metas:
-			raw = (m or {}).get("chu_idx_list")
-			if raw is None:
-				ungrounded += 1
-				continue
-			if isinstance(raw, list):
-				if len(raw) == 0:
-					ungrounded += 1
-				continue
-			if isinstance(raw, str):
-				s = raw.strip()
-				if s in {"[]", ""}:
-					ungrounded += 1
-					continue
-				try:
-					arr = json.loads(s)
-					if isinstance(arr, list) and len(arr) == 0:
-						ungrounded += 1
-				except Exception:
-					# if malformed, treat as ungrounded
-					ungrounded += 1
-		return total, ungrounded
-	except Exception:
-		return 0, 0
 
 
 # -------------------------
@@ -414,7 +466,8 @@ def main():
 
 	# Enumerate docs from docs collection
 	# We assume Phase 1 already indexed all eligible PDFs into docs_db
-	got = doc_service.docs_db._collection.get(include=["metadatas"])
+	docs_db = get_docs_db(doc_service)
+	got = docs_db._collection.get(include=["metadatas"])
 	metas = got.get("metadatas") or []
 
 	# Unique doc_sha256s
@@ -487,10 +540,6 @@ def main():
 			# Mark doc done for this model (in docs metadata)
 			mark_doc_done(doc_service, doc_sha256, model_code)
 
-			# Compute article-level metrics proxies now (for later aggregation)
-			n_edges = count_doc_edges(doc_service, doc_sha256)
-			n_traces, n_ungrounded = count_doc_traces_and_ungrounded(doc_service, doc_sha256)
-
 			_append_csv_row(
 				doc_log_path,
 				{
@@ -501,16 +550,13 @@ def main():
 					"edges_created_step": int(res_extract.get("edges_created") or 0),
 					"traces_created_step": int(res_extract.get("traces_created") or 0),
 					"variables_created_step": int(res_recon.get("variables_created") or 0),
-					"edges_in_db": n_edges,
-					"trace_in_db": n_traces,
-					"ungrounded_edges": n_ungrounded,
 					"sec_per_doc": round(time.time() - t_doc0, 3),
 					"run_tag": RUN_ID,
 					"timestamp_utc": _utc_now_iso(),
 				},
 			)
 
-			print(f"[{docs_processed}] ok doc_sha256={doc_sha256} edges={n_edges} ungrounded={n_ungrounded}")
+			print(f"[{docs_processed}] ok doc_sha256={doc_sha256} edges_created={int(res_extract.get('edges_created') or 0)} vars_created={int(res_recon.get('variables_created') or 0)}")
 
 		status = "ok"
 		error_msg = ""
