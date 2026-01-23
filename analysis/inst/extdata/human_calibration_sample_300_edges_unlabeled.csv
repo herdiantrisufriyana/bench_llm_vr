@@ -1,0 +1,490 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,f0fa3b4202c7417a824dd0ad8344c201,SGLT2 inhibitor,renal ultrafiltration,"[chu_idx=677]
+As for the morbidity, renal outcome and HHF, it was clear that SGLT-2i had more significant impact than finerenone, which might be explained by the special potency of SGLT-2i such as reducing blood glucose, reducing oxidative stress, losing weight, reducing uric acid, controlling blood pressure and improving renal ultrafiltration and hypoxia [65, 71–79].",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,63cb353b18c249b5a4000d8d2820f58c,renal outcomes,mortality,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,e18eb09e615b43ccb187106f4d0949a9,GLP-1 receptor agonists,MACE,"[chu_idx=257]
+Compared with placebo, finerenone (RR [95% CI]; 0.88 [0.80–0.97]), SGLT-2i (RR [95% CI]; 0.84 [0.78–0.90]) and GLP-1 RA (RR [95% CI]; 0.86 [0.78–0.94]) were associated with a decreased risk of MACE.
+
+[chu_idx=548]
+MACE
+
+[chu_idx=550]
+GLP-1 RA vs Placebo 0.86 (0.78,0.94) High Not  estimablea – 0.86 (0.78,0.94) High
+
+[chu_idx=561]
+MACE
+
+[chu_idx=563]
+GLP-1 RA vs Placebo 0.86 (0.78,0.94) High Not  estimablea – 0.86 (0.78,0.94) High",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,898a874a25ec46a992ff5897f7b29fbb,sotagliflozin,MACE,"[chu_idx=509]
+CI]; 0.78 [0.68–0.89]), sotagliflozin(RR [95% CI]; 0.76 [0.66–0.87]) efpeglenatide(RR [95% CI]; 0.70 [0.53–0.90]) and liraglutide(RR [95% CI]; 0.69 [0.58–0.82]) displayed significant effect when reducing of MACE, while other interventions were not.
+
+[chu_idx=760]
+MACE
+
+[chu_idx=765]
+Sotagliflozin 0.76 (0.66,0.87) 0.773",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,fb340042564548e49c8ad7cade86d20c,GLP-1 receptor agonists,SGLT2 inhibitors,"[chu_idx=919]
+GLP-1 RA vs SGLT-2i 1.49 1.18–1.89
+
+[chu_idx=925]
+GLP-1 RA vs SGLT-2i 0.99 0.83–1.17",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,54e3f867ae6d432dbf99feabb4cf612b,renal outcomes,end-stage renal disease,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,ccf6d02b1788457ab228617bfdb079a5,finerenone,heart failure hospitalization,"[chu_idx=457]
+Compared with placebo, finerenone (RR [95% CI]; 0.79 [0.67–0.92]) and SGLT2i (RR [95% CI]; 0.60 [0.53– 0.68]) were associated with a decreased risk of HHF while GLP-1 RA (RR [95% CI]; 0.90 [0.73–1.09]) did not.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,4b2f01bb08854f3ba98dbd5bb6dde94a,SGLT2 inhibitor,cardiovascular disease,"[chu_idx=495]
+As for CVD, only SGLT-2i were associated with a decreased events (RR [95% CI]; 0.86, [0.77–0.96]) com pared with placebo.
+
+[chu_idx=928]
+CVD 6519 6507 12,960 11,596 2673 2662 SGLT-2i vs placebo 0.87 0.78–0.97 0.0 0.658",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,63cb353b18c249b5a4000d8d2820f58c,renal outcomes,mortality,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,e6c1a9bf7cc34554af90882d99a2ce35,canagliflozin,hospitalization for heart failure,"[chu_idx=514]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.
+
+[chu_idx=517]
+Another discov ery worth noting is that canagliflozin (RR [95% CI]; 0.76 [0.58–1.00]) and dapagliflozin (RR [95% CI]; 0.71 [0.50– 1.00]) had a tendency to decrease HHF compared to finerenone, and finerenone was associated with a higher
+
+[chu_idx=525]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,5b1ef25d7c5d49faa72619133fee90f4,flunarizine,≥50% responder rate,"[chu_idx=257]
+Association of Treatment With 50% or Greater Responder Rate 0.10 10
+
+[chu_idx=263]
+Flunarizine 4.00 (1.38-11.55)",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,68ce033d39414e4cbad2a1d010da11ce,valproate,headache intensity reduction,"[chu_idx=326]
+Headache intensity reduction graphB
+
+[chu_idx=342]
+Ratioofmeans(RoM)valueswerecalculatedusinga random-effectsmodel(I 2 = 43.5%).Effective treatmentsincludedpropranololwithcinnarizine, pregabalin,valproate,levetiracetam,andcinnarizine.",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,d8a97419b6ca4ef9a78f4721f97ce0a5,riboflavin,Migraine frequency,"[chu_idx=136]
+Downloaded from jamanetwork.com by guest on 01/21/2026 flunarizine(RoM,0.46;95%CI,0.26-0.81),levetiracetam(RoM,0.4795%CI,0.30-0.72),riboflavin (RoM,0.50;95%CI,0.32-0.77),cinnarizine(RoM,0.64;95%CI,0.46-0.88),topiramate(RoM,0.70; 95%CI,0.55-0.89),andamitriptyline(RoM,0.73;95%CI,0.54-0.97)weretreatmentssignificantly associatedwithlowerfrequencyofmigraine.Notably,basedonthenetworkestimates,pregabalin resultedina62%reductioninmigrainefrequency.Secondaryanalysisassumingadditiveinteractions betweenthetreatmentsextrapolatedthattheadditionofvitaminsupplementationwithvitaminD3 andriboflavintopregabalinmayelicitasuperiorresponsecomparedwithplacebo(RoM,0.12;95%",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,0645f3504d364dabb37232b62359d14b,treatment-related adverse events,treatment regimen,"[chu_idx=144]
+There was a strong association between trAEs and irAEs and the intervention treatment in the trial.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,fb62aeb42ce64b94a03f529bca4d44b4,Nivolumab + Ipilimumab + Chemotherapy,skin and subcutaneous tissue disorders,"[chu_idx=301]
+Chemo had the lowest incidence of skin and subcutaneous tissue disorders, followed by Tisle-Chemo and Pem-Chemo (ORs ranging from 0.01 to 0.48), whereas Nivo-IpiChemo had the lowest incidence.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,a0ecd448e2aa46879b0668fd55199ab5,ranking probability of lowest risk,immune-related adverse events,"[chu_idx=260]
+The ranking probability of an ICI treatment regimen having the lowest risk is dependent on the SOC, as well as on the irAE and trAE.",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,13c43b440d414b0f82c44f085c2088b7,SUCRA value,treatment ranking,"[chu_idx=225]
+The larger the SUCRA value, the higher the ranking of the medication intervention ( Shim et al., 2017 ).",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,0f64f653840d4ce0aed90871f9d31063,NSAIDs,WOMAC stiffness score,"[chu_idx=739]
+The SUCRA results suggest that NSAIDs and curcumin are the most effective interventions for reducing the WOMAC stiffness score of KOA patients ( Supplementary Material 7 ).",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,525295464f3c4e51b9acce5755000b3d,chemotherapy + anti-PD-1/PD-L1 + anti-VEGF,grade 3-5 treatment-related adverse events,"[chu_idx=451]
+Compared with “Chemo,” both “Chemo_Ami” (OR, 3.71 [95% CI, 1.08 –12.7]) and “Chemo_anti–PD-1/PD-L1_ anti-VEGF” (OR, 1.94 [95% CI, 0.99–4.06]) appeared to be associated with a higher incidence of grade 3–5 TRAEs (Supplementary",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,98a4d2eae7cc4188bd2fa664d34ff89b,EGFR T790M mutation,hazard ratio,"[chu_idx=470]
+Likewise, the survival bene ﬁts obtained from “Chemo_anti–PD-1/PD-L1_anti-VEGF” compared with “Chemo” d i f f e r e db a s e do nt h ep r e s e n c eo ft h eEGFR T790M variant, with HRs of 0.63 (95% CI, 0.25–1.55) in T790M-positive patients and 0.44 (95% CI, 0.35 –0.56) in T790M-negative patients.",NA
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,86e8885d9c9d490299337d210ffa6bae,N+AVD,peripheral sensory neuropathy,"[chu_idx=425]
+Peripheral sensory neuropathy of any grade occurred in 139 patients (29%) who received
+
+[chu_idx=426]
+N+AVD, as compared with 266 patients (56%) who received BV+AVD; 9% of those in the",NA
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,6c3fd11f95464713868f98221be712db,BV+AVD,1-year progression-free survival,"[chu_idx=316]
+One-year progression-free survival was 94% (95% CI, 91 to 96) with N+AVD, as compared with 86% (95% CI, 82 to 90) with BV+AVD.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,c3bf3a565f4442dc9ca3a850fb1a9219,PTLE vs EET,return to sport rate,"[chu_idx=70]
+There was a trend towards a higher return to sports rate in the
+
+[chu_idx=71]
+PTLE group (43% vs 27%, p=0.13).",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,a3d3b8a4864e4f48ada9d02c75a1c7a4,symptom duration,return to sport rate at 12 weeks,"[chu_idx=440]
+The return to sports rate after 12 weeks (p=0.12) and 24 weeks (p=0.25) was not influenced by the symptom duration prior to the interventions.
+
+[chu_idx=456]
+The return to sports rate after 12 weeks (p=0.12) and 24 weeks (p=0.25) was not influenced by the symptom duration prior to the interventions.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,c13183665221486d8f1b1da229630916,patellar tendon stiffness (shear-wave elastography),patellar tendinopathy,"[chu_idx=1151]
+The association between Patellar tendon stiffness measured with shearw ave elastography and Patellar tendinopathya case-",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,fef92924350f48f099adf2ad6c89ecad,vaccination status,serious adverse events of special interest,"[chu_idx=215]
+This difference corresponds to a 36 % higher risk of serious AESI (RR 1.36 95 % CI 0.93 to 1.99) and a risk difference of 15.1 serious AESI per 10,000 vaccinated participants (95 % CI /C0 3.6 to 33.8).
+
+[chu_idx=216]
+Combining the trials, there was a 43 % higher risk of serious AESI (RR 1.43; 95 % CI 1.07 to 1.92) and a risk difference of 12.5 serious AESI per 10,000 vaccinated participants (95 % CI 2.1 to 22.9).",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,7fdc4a00055940d8b7d18ed4ccb3c268,treatment arm,serious adverse events of special interest,"[chu_idx=230]
+There was still a higher risk of serious AESI when limited to the SPEAC COVID- 19 AESI list, but the magnitude of the excess (in both relative and absolute terms) was smaller than when using the larger AESI list.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,e0d6bc8ee6fc4b8baca51884b3ff54f3,combined,serious adverse events,"[chu_idx=320]
+Risk ratio (95 % CI) e
+
+[chu_idx=322]
+Serious adverse events
+
+[chu_idx=325]
+Combinedf 333 (98.0) 288 (84.8) 13.2 (-3.2 to 29.6) 1.16 (0.97 to 1.39)",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,8ba53de81f2a405b87034f853b110626,mRNA COVID-19 vaccines,cardiovascular events,"[chu_idx=384]
+EudraVigilance comparing the disproportionality of adverse event reports between the inﬂuenza vaccine versus the mRNA COVID- 19 vaccines reported excess risks for the following Brighton AESIs: cardiovascular events, coagulation events, hemorrhages, gastrointestinal events, and thromboses.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,b41fb485c2c94499b02da60fef046af2,mRNA COVID-19 vaccines,hemorrhages,"[chu_idx=384]
+EudraVigilance comparing the disproportionality of adverse event reports between the inﬂuenza vaccine versus the mRNA COVID- 19 vaccines reported excess risks for the following Brighton AESIs: cardiovascular events, coagulation events, hemorrhages, gastrointestinal events, and thromboses.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,4293bb3099cf4e839d574a87cab46671,hemorrhagic stroke,Pfizer vaccine,"[chu_idx=398]
+[25] Among self-controlled case series, one reported a rate ratio of 1.38 (95 % CI 1.12–1.71) for hemorrhagic stroke following Pﬁzer vaccine, [26] another reported 0.97 (95 %
+
+[chu_idx=400]
+CI 0.54–1.27).",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,cf21e8a8a1884556a4d4b52c379208b2,Angioedema,COVID-19,"[chu_idx=448]
+Seen with COVID-19
+
+[chu_idx=452]
+Angioedema 0 2 0.0 1.3 /C0 1.3 0.00",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,72959256441346aeb767b48499552307,heightened awareness of COVID-19 vaccine SAEs,underreporting,"[chu_idx=528]
+At the same time, heightened awareness about COVID-19 vaccine SAEs can result in under and overreporting.
+
+[chu_idx=540]
+At the same time, heightened awareness about COVID-19 vaccine SAEs can result in under and overreporting.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,b555381b4f114ba5b8945679c99c7f60,secukinumab,PASI 100 at week 48,"[chu_idx=35]
+At week 48, a total of 250 patients (67.0%) treated with bimekizumab had a PASI 100 response, as compared with 171 patients (46.2%) treated with secukinumab (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001).
+
+[chu_idx=42]
+At week 48, a total of 250 patients (67.0%) treated with bimekizumab had a PASI 100 response, as compared with 171 patients (46.2%) treated with secukinumab (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001).",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,3bf5ed07a20d4a8989ad65fb5e8a1062,secukinumab,major adverse cardiovascular events,"[chu_idx=440]
+There was one case of new-onset ulcerative colitis each in the bimekizumab and secukinumab groups, two cases of adjudicated MACE in the secukinumab group, and no cases of MACE in the bimekiz",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,b0802c01e0b94fa59ad0503823148f0e,Survival probability,number of interventions received,"[chu_idx=509]
+Received <10 interventions
+
+[chu_idx=510]
+Received ≥10 interventions 600
+
+[chu_idx=512]
+Survival probabilityP <.001
+
+[chu_idx=513]
+Survival probability by number of interventions receivedB 4002000 800
+
+[chu_idx=514]
+Received <10 interventions",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,45cc78ecd5604240aef8b19f9dc69866,catastrophizing,fear,"[chu_idx=376]
+Additionally, the relationships among pain, catastrophizing, and fear might be more nuanced, and factors not measured in our study could be important, such as a history of trauma, perceived racism, and neighborhood safety [50, 51].",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,3d9817b5501a48fbac03d6db3c55db3e,MCID improvement in fear avoidance,physical function,"[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=557]
+Pain, Mean Change (95% CI)* RMDQ, Mean Change (95% CI)* 12-Week Improvement by MCID† N‡ 0 to 12 Weeks 12 to 52 Weeks 0 to 12 Weeks 12 to 52 Weeks",NA
+9,randomized controlled trial,10.1016/S2213-2600(20)30554-3,9,1-s2.0-S2213260020305543.pdf,c02174adc8dbd8cea6dec60b789beea2387f3dcde04d14ce84efdaba15ee9e1f,cad4cf4123ab453389e96d28b1a78491,placebo,annual FVC decline ≥10%,"[chu_idx=398]
+A categorical analysis of relative change from baseline to week 48 in FVC % predicted revealed a higher proportion of patients treated with pirfenidone (25 [71%]) than with placebo (15 [47%]) in the group of patients with less than 5% relative decline of
+
+[chu_idx=399]
+FVC per year, whereas placebo patients were more frequent in the group of patients experiencing deterioration (ie, FVC decline ≥10% per year
+
+[chu_idx=400]
+(p=0∙043).",NA
+10,randomized controlled trial,10.1056/NEJMoa2116846,10,NEJMoa2116846.pdf,c9cc9e434a1e6cb7023f7c55baca7f12633494d7e2ca50d8a67def12f16ebf60,510c5ee2a9c040088651ae0afb5d8450,remdesivir treatment,risk of progression to more severe respiratory disease,"[chu_idx=518]
+Treatment Trial (ACTT-1) showed that patients with moderate-to-severe Covid-19 who were treated with remdesivir had a shorter time to recovery and a lower risk of progression to more severe respiratory disease than patients who received placebo.6 One of the SIMPLE trials (GS-US-540-5774) showed that patients with moderate Covid-19 who received remdesivir for up to 5 days had significantly higher odds of having a better clinical status on day 11.",NA
+1,observational study,10.1097/CM9.0000000000002753,1,hypertension_and_nafld_risk__insights_from_the.9.pdf,fa4c05e72b5636dfdace2061fdff8abe059895b9b0b8f13e70c41b44b699205e,29f4ba78432f41e68e39980272d6b873,obesity,hypertension,"[chu_idx=138]
+However ,  hypertension and NAFLD often co-exist in the same individual in a complex two-way relationship as they share common metabolic risk factors ,  such as age , obesity ,  and IR .",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,d9907e84934041a797322c7190cf13d6,habitual physical activity,intraocular pressure,"[chu_idx=63]
+17 Although many small and experimental studies have identi ﬁed shortterm associations with PA, fewer studies have examined the association of habitual PA with IOP, and the results are inconsistent.18,19",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,67318606455040be9e70461151de2946,total IPAQ PA,mGCIPL thickness,"[chu_idx=288]
+These associations were maintained when examining the difference in mGCIPL thickness across quartiles of time spent in
+
+[chu_idx=289]
+IPAQ PA levels ( Fig 2 AeF).
+
+[chu_idx=291]
+A similar positive association was identi ﬁed between increasing quartile of time spent in total PA and thicker mGCIPL: participants in the second highest and highest quartile (i.e., quartiles 3 and 4) showed thicker mGCIPL by þ0.18 mm( P ¼ 0.016) and þ0.16 mm
+
+[chu_idx=292]
+Madjedi et al /C15 Physical Activity and Glaucoma 1027 (P ¼ 0.029), respectively, compared with those in the lowest quartile, with a signi ﬁcant trend ( P ¼ 0.005 for trend).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,0021b9347cc1413daa8e6ddacaa7dcc8,physical activity,glaucoma status,"[chu_idx=308]
+Physical Activity with Intraocular Pressure, OCT
+
+[chu_idx=309]
+Parameters, and Glaucoma Status
+
+[chu_idx=324]
+No evidence was found for effect modi ﬁcation of the multitrait analysis of a GWAS PRS on the associations between physical activity and glaucoma status ( P ¼ 0.07 for interaction), mRNFL thickness ( P ¼ 0.34 for interaction), mGCIPL thickness (P ¼ 0.87 for interaction), and IOP ( P ¼ 0.57 for interaction).",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,817004d6f5104dbd900f1ff1e85fc2f2,academic stress,anxiety symptoms,"[chu_idx=278]
+For the overall study sample, hierarchical regression models on ac ademic stress were estimated with year of study, clinical stress, problemfocused coping, emotion-focused coping, depression symptoms, anxiety symptoms, and resilience ( Table 3 ).
+
+[chu_idx=279]
+The regression model showed 40 % explained variance, with year of study, clinical stress, and anxiety symptoms as main academic stress predictors.
+
+[chu_idx=361]
+Anxiety symptoms 0.48 ** 0.24 ** 0.01 0.28 ** 0.73 ** – 7.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,2e95dbcb45814905bca95922c8c5dd1f,psychological well-being,emotion-focused coping,"[chu_idx=282]
+Linear regression models were implemented with academic stress, clinical stress, depression, anxiety, resilience, problem coping and emotional coping as predictors of psychological well-being ( Table 4 ).
+
+[chu_idx=283]
+The regression model showed 42 % explained variance, with academic stress, depression, resilience and both types of coping skills being the main psychological well-being predictors.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,21cd6d7b95634109bdf344a79530261f,problem-focused coping,emotion-focused coping,"[chu_idx=359]
+Emotion-focused coping 0.26 ** 0.16 **",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,3cececd210d641ab84a34264b49f7a37,clinical stress,depressive symptoms,"[chu_idx=360]
+Depressive symptoms 0.41 ** 0.13 *",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,c33dab967bf7453cbc04b86b58e43c62,emotion-focused coping,anxiety symptoms,"[chu_idx=361]
+Anxiety symptoms 0.48 ** 0.24 ** 0.01 0.28 ** 0.73 ** – 7.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,b5712db981ad4cdfbb8270c84b9db80c,academic stress,psychological well-being,"[chu_idx=553]
+Finally, academic stress levels were higher than clinical stress in both groups, with the former being the main predictor of poor psychological wellbeing",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,2dcec505e9db4709af7726b384387b3b,irAE occurrence,lung metastases,"[chu_idx=258]
+P valuebWithout irAEs (n = 506) With irAEs (n = 297)
+
+[chu_idx=262]
+Metastatic sited
+
+[chu_idx=263]
+Lung 320/504 (63.5) 130/296 (43.9) .04",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,ea09cb7f301b490b85be2b39719a4de6,immune-related adverse events,clinical outcomes,"[chu_idx=651]
+CortelliniA,FriedlaenderA,BannaGL,etal.Immune-relatedadverseeventsofpembrolizumabinalargerealworldcohortofpatientswithNSCLCwithaPD-L1expression /H1135050%andtheirrelationshipwithclinicaloutcomes.",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,d3df86ccad284ac7a1b0c837a12f6ed4,immune-related adverse events,PD-1/PD-L1 inhibitor efficacy,"[chu_idx=784]
+ZhangQ,WangW,YuanQ,etal.Correlationbetweenimmune-relatedadverseeventsandtheefficacyofPD-1/
+
+[chu_idx=785]
+PD-L1inhibitorsinthetreatmentofnon–smallcelllungcancer:systematicreviewandmeta-analysis.",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,aa14c6060af14f05b74c1d17f377723f,rheumatoid arthritis,sepsis,"[chu_idx=334]
+After mul tivariable adjustment, we found that RA (OR = 1.091, 95% CI = 1.061–1.123, p = 1.66E-09) continues to exhibit a causal association with sepsis by adjusting for SLE (Fig.
+
+[chu_idx=348]
+After mul tivariable adjustment, we found that RA (OR = 1.091, 95% CI = 1.061–1.123, p = 1.66E-09) continues to exhibit a causal association with sepsis by adjusting for SLE (Fig.",NA
+7,observational study,10.1001/jamanetworkopen.2023.52314,8,tingsgrd_2024_oi_231531_1705094530.5946.pdf,5d9910c19281766d0aef3f551c241c342f4152adebe169eff127001fbee234d0,30b8b4343ff64c6193f9444cea1ba7af,time-varying factors,adherence,"[chu_idx=131]
+Same as the target trial; baseline and time-varying factors associated with adherence were adjusted for using the approach as in the intention-to-treat analysis i",NA
+8,observational study,10.1097/JS9.0000000000002658,9,causal_relationship_between_basal_metabolic_rate.25.pdf,ebd63041c17fe9eb8aa04cf438f9e677c483181e6644bd5ffedc11f046634880,ca5e1dc7fe034bde91b9118345a4edea,basal metabolic rate,sarcopenic obesity,"[chu_idx=1161]
+Predictive roles of basal metabolic rate and body water distribution in sarcopenia and sarcopenic obesity: the link to",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,bfb87d1634da4899ab2c1faf7eab6cdc,reduced heel BMD,current drinking,"[chu_idx=183]
+Furthermore, there were more current smokers and fewer current drinkers in the reduced heel BMD group, while participants with reduced heel BMD had significantly lower",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,6cf20ebd5a2e42479468f90f8c1833ab,reduced heel BMD,triglycerides,"[chu_idx=184]
+BMI, waist circumference (WC), and FLI and significantly higher levels of glycated hemoglobin (HBA1c), plasma high–density lipoprotein cholesterol (HDL-C), low-density lipoprotein-cholesterol (LDL-C), and total cholesterol (CHO) compared to those in the normal heel BMD group; triglycerides (TG) and gamma-glutamyl transferase (GGT) were lower.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,b7e1a443fc25414da983976ae153f4b2,atherogenic index of plasma,arterial stiffness,"[chu_idx=75]
+Recently, AIP was reported as a novel independent prognostic biomarker of coronary artery disease [11–15] and arterial stiffness [16] beyond traditional risk factors.
+
+[chu_idx=765]
+Atherogenic index of plasma is related to arterial stiffness but not to blood pressure in normotensive and nevertreated hypertensive subjects.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,8d8c926ba08449059abc329943776640,major adverse cardiovascular events,incidence of cardiovascular events,"[chu_idx=285]
+Patients with MACEs also had significantly larger body weight, higher blood pressure, longer duration of diabe tes, and higher incidence of cardiovascular events and congestive heart failure.
+
+[chu_idx=297]
+Patients with MACEs also had significantly larger body weight, higher blood pressure, longer duration of diabe tes, and higher incidence of cardiovascular events and congestive heart failure.",NA
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,
+0,,,0,,,,,,,

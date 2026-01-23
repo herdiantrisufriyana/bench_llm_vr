@@ -1,0 +1,92 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,86e8885d9c9d490299337d210ffa6bae,N+AVD,peripheral sensory neuropathy,"[chu_idx=425]
+Peripheral sensory neuropathy of any grade occurred in 139 patients (29%) who received
+
+[chu_idx=426]
+N+AVD, as compared with 266 patients (56%) who received BV+AVD; 9% of those in the",NA
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,6c3fd11f95464713868f98221be712db,BV+AVD,1-year progression-free survival,"[chu_idx=316]
+One-year progression-free survival was 94% (95% CI, 91 to 96) with N+AVD, as compared with 86% (95% CI, 82 to 90) with BV+AVD.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,c3bf3a565f4442dc9ca3a850fb1a9219,PTLE vs EET,return to sport rate,"[chu_idx=70]
+There was a trend towards a higher return to sports rate in the
+
+[chu_idx=71]
+PTLE group (43% vs 27%, p=0.13).",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,a3d3b8a4864e4f48ada9d02c75a1c7a4,symptom duration,return to sport rate at 12 weeks,"[chu_idx=440]
+The return to sports rate after 12 weeks (p=0.12) and 24 weeks (p=0.25) was not influenced by the symptom duration prior to the interventions.
+
+[chu_idx=456]
+The return to sports rate after 12 weeks (p=0.12) and 24 weeks (p=0.25) was not influenced by the symptom duration prior to the interventions.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,c13183665221486d8f1b1da229630916,patellar tendon stiffness (shear-wave elastography),patellar tendinopathy,"[chu_idx=1151]
+The association between Patellar tendon stiffness measured with shearw ave elastography and Patellar tendinopathya case-",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,fef92924350f48f099adf2ad6c89ecad,vaccination status,serious adverse events of special interest,"[chu_idx=215]
+This difference corresponds to a 36 % higher risk of serious AESI (RR 1.36 95 % CI 0.93 to 1.99) and a risk difference of 15.1 serious AESI per 10,000 vaccinated participants (95 % CI /C0 3.6 to 33.8).
+
+[chu_idx=216]
+Combining the trials, there was a 43 % higher risk of serious AESI (RR 1.43; 95 % CI 1.07 to 1.92) and a risk difference of 12.5 serious AESI per 10,000 vaccinated participants (95 % CI 2.1 to 22.9).",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,7fdc4a00055940d8b7d18ed4ccb3c268,treatment arm,serious adverse events of special interest,"[chu_idx=230]
+There was still a higher risk of serious AESI when limited to the SPEAC COVID- 19 AESI list, but the magnitude of the excess (in both relative and absolute terms) was smaller than when using the larger AESI list.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,e0d6bc8ee6fc4b8baca51884b3ff54f3,combined,serious adverse events,"[chu_idx=320]
+Risk ratio (95 % CI) e
+
+[chu_idx=322]
+Serious adverse events
+
+[chu_idx=325]
+Combinedf 333 (98.0) 288 (84.8) 13.2 (-3.2 to 29.6) 1.16 (0.97 to 1.39)",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,8ba53de81f2a405b87034f853b110626,mRNA COVID-19 vaccines,cardiovascular events,"[chu_idx=384]
+EudraVigilance comparing the disproportionality of adverse event reports between the inﬂuenza vaccine versus the mRNA COVID- 19 vaccines reported excess risks for the following Brighton AESIs: cardiovascular events, coagulation events, hemorrhages, gastrointestinal events, and thromboses.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,b41fb485c2c94499b02da60fef046af2,mRNA COVID-19 vaccines,hemorrhages,"[chu_idx=384]
+EudraVigilance comparing the disproportionality of adverse event reports between the inﬂuenza vaccine versus the mRNA COVID- 19 vaccines reported excess risks for the following Brighton AESIs: cardiovascular events, coagulation events, hemorrhages, gastrointestinal events, and thromboses.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,4293bb3099cf4e839d574a87cab46671,hemorrhagic stroke,Pfizer vaccine,"[chu_idx=398]
+[25] Among self-controlled case series, one reported a rate ratio of 1.38 (95 % CI 1.12–1.71) for hemorrhagic stroke following Pﬁzer vaccine, [26] another reported 0.97 (95 %
+
+[chu_idx=400]
+CI 0.54–1.27).",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,cf21e8a8a1884556a4d4b52c379208b2,Angioedema,COVID-19,"[chu_idx=448]
+Seen with COVID-19
+
+[chu_idx=452]
+Angioedema 0 2 0.0 1.3 /C0 1.3 0.00",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,72959256441346aeb767b48499552307,heightened awareness of COVID-19 vaccine SAEs,underreporting,"[chu_idx=528]
+At the same time, heightened awareness about COVID-19 vaccine SAEs can result in under and overreporting.
+
+[chu_idx=540]
+At the same time, heightened awareness about COVID-19 vaccine SAEs can result in under and overreporting.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,b555381b4f114ba5b8945679c99c7f60,secukinumab,PASI 100 at week 48,"[chu_idx=35]
+At week 48, a total of 250 patients (67.0%) treated with bimekizumab had a PASI 100 response, as compared with 171 patients (46.2%) treated with secukinumab (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001).
+
+[chu_idx=42]
+At week 48, a total of 250 patients (67.0%) treated with bimekizumab had a PASI 100 response, as compared with 171 patients (46.2%) treated with secukinumab (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001).",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,3bf5ed07a20d4a8989ad65fb5e8a1062,secukinumab,major adverse cardiovascular events,"[chu_idx=440]
+There was one case of new-onset ulcerative colitis each in the bimekizumab and secukinumab groups, two cases of adjudicated MACE in the secukinumab group, and no cases of MACE in the bimekiz",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,b0802c01e0b94fa59ad0503823148f0e,Survival probability,number of interventions received,"[chu_idx=509]
+Received <10 interventions
+
+[chu_idx=510]
+Received ≥10 interventions 600
+
+[chu_idx=512]
+Survival probabilityP <.001
+
+[chu_idx=513]
+Survival probability by number of interventions receivedB 4002000 800
+
+[chu_idx=514]
+Received <10 interventions",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,45cc78ecd5604240aef8b19f9dc69866,catastrophizing,fear,"[chu_idx=376]
+Additionally, the relationships among pain, catastrophizing, and fear might be more nuanced, and factors not measured in our study could be important, such as a history of trauma, perceived racism, and neighborhood safety [50, 51].",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,3d9817b5501a48fbac03d6db3c55db3e,MCID improvement in fear avoidance,physical function,"[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=557]
+Pain, Mean Change (95% CI)* RMDQ, Mean Change (95% CI)* 12-Week Improvement by MCID† N‡ 0 to 12 Weeks 12 to 52 Weeks 0 to 12 Weeks 12 to 52 Weeks",NA
+9,randomized controlled trial,10.1016/S2213-2600(20)30554-3,9,1-s2.0-S2213260020305543.pdf,c02174adc8dbd8cea6dec60b789beea2387f3dcde04d14ce84efdaba15ee9e1f,cad4cf4123ab453389e96d28b1a78491,placebo,annual FVC decline ≥10%,"[chu_idx=398]
+A categorical analysis of relative change from baseline to week 48 in FVC % predicted revealed a higher proportion of patients treated with pirfenidone (25 [71%]) than with placebo (15 [47%]) in the group of patients with less than 5% relative decline of
+
+[chu_idx=399]
+FVC per year, whereas placebo patients were more frequent in the group of patients experiencing deterioration (ie, FVC decline ≥10% per year
+
+[chu_idx=400]
+(p=0∙043).",NA
+10,randomized controlled trial,10.1056/NEJMoa2116846,10,NEJMoa2116846.pdf,c9cc9e434a1e6cb7023f7c55baca7f12633494d7e2ca50d8a67def12f16ebf60,510c5ee2a9c040088651ae0afb5d8450,remdesivir treatment,risk of progression to more severe respiratory disease,"[chu_idx=518]
+Treatment Trial (ACTT-1) showed that patients with moderate-to-severe Covid-19 who were treated with remdesivir had a shorter time to recovery and a lower risk of progression to more severe respiratory disease than patients who received placebo.6 One of the SIMPLE trials (GS-US-540-5774) showed that patients with moderate Covid-19 who received remdesivir for up to 5 days had significantly higher odds of having a better clinical status on day 11.",NA

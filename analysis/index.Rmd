@@ -31,6 +31,7 @@ library(knitr)
 library(kableExtra)
 library(ggpubr)
 library(pbapply)
+library(readxl)
 ```
 
 ```{r Load functions, include=FALSE}
@@ -47,7 +48,266 @@ sessionInfo()
 
 # Raw data
 
-```{r}
-list.files("../data_registry/")
+```{r List raw data, include=FALSE}
+raw_data_files <-
+  list.files("../data_registry/", full.names = TRUE, recursive = TRUE)
+```
+
+```{r List of article type filter, include=FALSE}
+article_type_filter <-
+  c(ma = "meta-analysis"
+    , rct = "randomized controlled trial"
+    , os = "observational study"
+  )
+```
+
+```{r Search log, include=FALSE}
+search_log <-
+  raw_data_files[str_detect(raw_data_files, "search_log\\.xlsx$")] |>
+  read_xlsx()
+```
+
+```{r List of LLMs, include=FALSE}
+llm <-
+  c(gpt5 = "gpt-5"
+    , claude45 = "claude-4.5-sonnet"
+    , gemini3 = "gemini-3-pro"
+    , mistral2 = "mistral-large-2"
+    , deepseek3 = "deepseek-v3"
+  )
+```
+
+```{r LLM results, include=FALSE}
+llm_results3 <-
+  intersect(
+    paste0("../data_registry//phase3_", names(llm), "/export.csv")
+    , raw_data_files[str_detect(raw_data_files, "export\\.csv$")]
+  )
+
+llm_results3 <-
+  llm_results3 |>
+  `names<-`(
+    unlist(str_extract_all(llm_results3, paste0(names(llm), collapse = "|")))
+  ) |>
+  lapply(read_csv, show_col_types = FALSE)
+
+llm_results2 <-
+  intersect(
+    paste0("../data_registry//phase2_doc_log__", llm, ".csv")
+    , raw_data_files[str_detect(raw_data_files, "phase2_doc_log__")]
+  )
+
+llm_results2 <-
+  llm_results2 |>
+  `names<-`(
+    data.frame(path = llm_results2) |>
+      mutate(
+        code =
+          path |>
+          sapply(\(x) str_extract_all(x, paste0(llm, collapse = "|"))[[1]])
+      ) |>
+      left_join(data.frame(code = llm, name = names(llm)), by = "code") |>
+      pull(name)
+  ) |>
+  lapply(read_csv, show_col_types = FALSE)
+```
+
+```{r LLM-as-judge 1 results, include=FALSE}
+judge1_llm_results <-
+  intersect(
+    paste0("../data_registry//phase3_", names(llm), "/judge_gpt41mini.csv")
+    , raw_data_files[str_detect(raw_data_files, "judge_gpt41mini\\.csv$")]
+  )
+
+judge1_llm_results <-
+  judge1_llm_results |>
+  `names<-`(
+    unlist(
+      str_extract_all(judge1_llm_results, paste0(names(llm), collapse = "|"))
+    )
+  ) |>
+  lapply(read_csv, show_col_types = FALSE)
+```
+
+```{r LLM-as-judge 2 results, include=FALSE}
+judge2_llm_results <-
+  intersect(
+      paste0("../data_registry//phase3_", names(llm), "/judge_claude45.csv")
+      , raw_data_files[str_detect(raw_data_files, "judge_claude45\\.csv$")]
+    )
+
+judge2_llm_results <-
+  judge2_llm_results |>
+  `names<-`(
+    unlist(
+      str_extract_all(judge2_llm_results, paste0(names(llm), collapse = "|"))
+    )
+  ) |>
+  lapply(read_csv, show_col_types = FALSE)
+```
+
+# Data preprocessing
+
+```{r Eligible main PDFs, include=FALSE}
+eligible_main_pdf <-
+  search_log |>
+  filter(eligible == "yes") |>
+  group_by(article_type_filter) |>
+  mutate(row = seq(n())) |>
+  ungroup() |>
+  filter(row <= 10) |>
+  select(row, article_type_filter, doi, rank, filename)
+```
+
+```{r Documents per LLM, include=FALSE}
+docs_per_llm <-
+  llm_results3 |>
+  lapply(
+    select
+    , filename = pdf_path
+    , doc_sha256, , est_token = est_total_tokens_phase2
+  ) |>
+  lapply(unique)
+
+docs_per_llm <-
+  docs_per_llm |>
+  lapply(\(x) inner_join(eligible_main_pdf, x, by = "filename")) |>
+  imap(
+    ~ .x |>
+      left_join(
+        llm_results2[[.y]] |>
+          group_by(doc_sha256) |>
+          arrange(doc_sha256, desc(timestamp_utc)) |>
+          filter(seq(n()) == 1) |>
+          select(doc_sha256, sec_per_doc)
+        , by = "doc_sha256"
+      )
+  )
+```
+
+```{r Edges per LLM, include=FALSE}
+edges_per_llm <-
+  llm_results3 |>
+  lapply(
+    select
+    , filename = pdf_path
+    , doc_sha256, edge_id, var1, var2, evidence = evidence_text, label
+  )
+
+edges_per_llm <-
+  edges_per_llm |>
+  lapply(
+    \(x)
+    eligible_main_pdf |>
+      inner_join(x, by = "filename", relationship = "many-to-many")
+  )
+```
+
+```{r LLM-as-judge 1 results per LLM, include=FALSE}
+judge1_results_per_llm <-
+  judge1_llm_results |>
+  lapply(
+    select
+    , filename = pdf_path
+    , doc_sha256, edge_id, var1, var2, evidence = evidence_text, label
+  )
+
+judge1_results_per_llm <-
+  judge1_results_per_llm |>
+  lapply(
+    \(x)
+    eligible_main_pdf |>
+      inner_join(x, by = "filename", relationship = "many-to-many")
+  )
+```
+
+```{r LLM-as-judge 2 results per LLM, include=FALSE}
+judge2_results_per_llm <-
+  judge2_llm_results |>
+  lapply(
+    select
+    , filename = pdf_path
+    , doc_sha256, edge_id, var1, var2, evidence = evidence_text, label
+  )
+
+judge2_results_per_llm <-
+  judge2_results_per_llm |>
+  lapply(
+    \(x)
+    eligible_main_pdf |>
+      inner_join(x, by = "filename", relationship = "many-to-many")
+  )
+```
+
+# Human calibration
+
+```{r Sample size per strata, include=FALSE}
+ssize <- 300
+strata_n <- length(article_type_filter) * length(llm)
+ssize_per_strata <- ssize / strata_n
+
+strata <-
+  expand.grid(
+    article_type_filter
+    , names(llm)
+    , stringsAsFactors = FALSE
+  )
+```
+
+```{r Sample edges per strata, eval=FALSE, include=FALSE}
+strata |>
+  filter(Var2 %in% names(edges_per_llm)) |>
+  pmap(
+	  \(Var1, Var2)
+	  edge_sampling(edges_per_llm, Var1, Var2, ssize_per_strata)
+	)
+```
+
+```{r Unify edge samples per strata, eval=FALSE, include=FALSE}
+strata |>
+  pmap(
+	  \(Var1, Var2)
+	  read_human_calibration_sample_unlabeled(Var1, Var2, ssize_per_strata)
+	) |>
+  reduce(rbind) |>
+  write_csv("inst/extdata/human_calibration_sample_300_edges_unlabeled.csv")
+```
+
+```{r Human calibration labels, include=FALSE}
+human_calibration_label <-
+  read_csv(
+    "inst/extdata/human_calibration_sample_300_edges_labeled.csv"
+    , show_col_types = FALSE
+  )
+```
+
+```{r Incorporating human calibration labels to judge 1, include=FALSE}
+judge1_human_per_llm <-
+  judge1_results_per_llm |>
+  lapply(rename, llm_as_judge = label) |>
+  lapply(
+    left_join
+    , rename(human_calibration_label, human_as_judge = label)
+    , by =
+      join_by(
+        row, article_type_filter, doi, rank, filename, doc_sha256
+        , edge_id, var1, var2, evidence
+      )
+  )
+```
+
+```{r Incorporating human calibration labels to judge 2, include=FALSE}
+judge2_human_per_llm <-
+  judge2_results_per_llm |>
+  lapply(rename, llm_as_judge = label) |>
+  lapply(
+    left_join
+    , rename(human_calibration_label, human_as_judge = label)
+    , by =
+      join_by(
+        row, article_type_filter, doi, rank, filename, doc_sha256
+        , edge_id, var1, var2, evidence
+      )
+  )
 ```
 

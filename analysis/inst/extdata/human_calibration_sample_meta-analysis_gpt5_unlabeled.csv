@@ -1,0 +1,77 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,f0fa3b4202c7417a824dd0ad8344c201,SGLT2 inhibitor,renal ultrafiltration,"[chu_idx=677]
+As for the morbidity, renal outcome and HHF, it was clear that SGLT-2i had more significant impact than finerenone, which might be explained by the special potency of SGLT-2i such as reducing blood glucose, reducing oxidative stress, losing weight, reducing uric acid, controlling blood pressure and improving renal ultrafiltration and hypoxia [65, 71–79].",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,63cb353b18c249b5a4000d8d2820f58c,renal outcomes,mortality,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,e18eb09e615b43ccb187106f4d0949a9,GLP-1 receptor agonists,MACE,"[chu_idx=257]
+Compared with placebo, finerenone (RR [95% CI]; 0.88 [0.80–0.97]), SGLT-2i (RR [95% CI]; 0.84 [0.78–0.90]) and GLP-1 RA (RR [95% CI]; 0.86 [0.78–0.94]) were associated with a decreased risk of MACE.
+
+[chu_idx=548]
+MACE
+
+[chu_idx=550]
+GLP-1 RA vs Placebo 0.86 (0.78,0.94) High Not  estimablea – 0.86 (0.78,0.94) High
+
+[chu_idx=561]
+MACE
+
+[chu_idx=563]
+GLP-1 RA vs Placebo 0.86 (0.78,0.94) High Not  estimablea – 0.86 (0.78,0.94) High",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,898a874a25ec46a992ff5897f7b29fbb,sotagliflozin,MACE,"[chu_idx=509]
+CI]; 0.78 [0.68–0.89]), sotagliflozin(RR [95% CI]; 0.76 [0.66–0.87]) efpeglenatide(RR [95% CI]; 0.70 [0.53–0.90]) and liraglutide(RR [95% CI]; 0.69 [0.58–0.82]) displayed significant effect when reducing of MACE, while other interventions were not.
+
+[chu_idx=760]
+MACE
+
+[chu_idx=765]
+Sotagliflozin 0.76 (0.66,0.87) 0.773",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,fb340042564548e49c8ad7cade86d20c,GLP-1 receptor agonists,SGLT2 inhibitors,"[chu_idx=919]
+GLP-1 RA vs SGLT-2i 1.49 1.18–1.89
+
+[chu_idx=925]
+GLP-1 RA vs SGLT-2i 0.99 0.83–1.17",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,54e3f867ae6d432dbf99feabb4cf612b,renal outcomes,end-stage renal disease,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,ccf6d02b1788457ab228617bfdb079a5,finerenone,heart failure hospitalization,"[chu_idx=457]
+Compared with placebo, finerenone (RR [95% CI]; 0.79 [0.67–0.92]) and SGLT2i (RR [95% CI]; 0.60 [0.53– 0.68]) were associated with a decreased risk of HHF while GLP-1 RA (RR [95% CI]; 0.90 [0.73–1.09]) did not.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,4b2f01bb08854f3ba98dbd5bb6dde94a,SGLT2 inhibitor,cardiovascular disease,"[chu_idx=495]
+As for CVD, only SGLT-2i were associated with a decreased events (RR [95% CI]; 0.86, [0.77–0.96]) com pared with placebo.
+
+[chu_idx=928]
+CVD 6519 6507 12,960 11,596 2673 2662 SGLT-2i vs placebo 0.87 0.78–0.97 0.0 0.658",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,63cb353b18c249b5a4000d8d2820f58c,renal outcomes,mortality,"[chu_idx=1146]
+Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,e6c1a9bf7cc34554af90882d99a2ce35,canagliflozin,hospitalization for heart failure,"[chu_idx=514]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.
+
+[chu_idx=517]
+Another discov ery worth noting is that canagliflozin (RR [95% CI]; 0.76 [0.58–1.00]) and dapagliflozin (RR [95% CI]; 0.71 [0.50– 1.00]) had a tendency to decrease HHF compared to finerenone, and finerenone was associated with a higher
+
+[chu_idx=525]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,5b1ef25d7c5d49faa72619133fee90f4,flunarizine,≥50% responder rate,"[chu_idx=257]
+Association of Treatment With 50% or Greater Responder Rate 0.10 10
+
+[chu_idx=263]
+Flunarizine 4.00 (1.38-11.55)",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,68ce033d39414e4cbad2a1d010da11ce,valproate,headache intensity reduction,"[chu_idx=326]
+Headache intensity reduction graphB
+
+[chu_idx=342]
+Ratioofmeans(RoM)valueswerecalculatedusinga random-effectsmodel(I 2 = 43.5%).Effective treatmentsincludedpropranololwithcinnarizine, pregabalin,valproate,levetiracetam,andcinnarizine.",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,d8a97419b6ca4ef9a78f4721f97ce0a5,riboflavin,Migraine frequency,"[chu_idx=136]
+Downloaded from jamanetwork.com by guest on 01/21/2026 flunarizine(RoM,0.46;95%CI,0.26-0.81),levetiracetam(RoM,0.4795%CI,0.30-0.72),riboflavin (RoM,0.50;95%CI,0.32-0.77),cinnarizine(RoM,0.64;95%CI,0.46-0.88),topiramate(RoM,0.70; 95%CI,0.55-0.89),andamitriptyline(RoM,0.73;95%CI,0.54-0.97)weretreatmentssignificantly associatedwithlowerfrequencyofmigraine.Notably,basedonthenetworkestimates,pregabalin resultedina62%reductioninmigrainefrequency.Secondaryanalysisassumingadditiveinteractions betweenthetreatmentsextrapolatedthattheadditionofvitaminsupplementationwithvitaminD3 andriboflavintopregabalinmayelicitasuperiorresponsecomparedwithplacebo(RoM,0.12;95%",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,0645f3504d364dabb37232b62359d14b,treatment-related adverse events,treatment regimen,"[chu_idx=144]
+There was a strong association between trAEs and irAEs and the intervention treatment in the trial.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,fb62aeb42ce64b94a03f529bca4d44b4,Nivolumab + Ipilimumab + Chemotherapy,skin and subcutaneous tissue disorders,"[chu_idx=301]
+Chemo had the lowest incidence of skin and subcutaneous tissue disorders, followed by Tisle-Chemo and Pem-Chemo (ORs ranging from 0.01 to 0.48), whereas Nivo-IpiChemo had the lowest incidence.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,a0ecd448e2aa46879b0668fd55199ab5,ranking probability of lowest risk,immune-related adverse events,"[chu_idx=260]
+The ranking probability of an ICI treatment regimen having the lowest risk is dependent on the SOC, as well as on the irAE and trAE.",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,13c43b440d414b0f82c44f085c2088b7,SUCRA value,treatment ranking,"[chu_idx=225]
+The larger the SUCRA value, the higher the ranking of the medication intervention ( Shim et al., 2017 ).",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,0f64f653840d4ce0aed90871f9d31063,NSAIDs,WOMAC stiffness score,"[chu_idx=739]
+The SUCRA results suggest that NSAIDs and curcumin are the most effective interventions for reducing the WOMAC stiffness score of KOA patients ( Supplementary Material 7 ).",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,525295464f3c4e51b9acce5755000b3d,chemotherapy + anti-PD-1/PD-L1 + anti-VEGF,grade 3-5 treatment-related adverse events,"[chu_idx=451]
+Compared with “Chemo,” both “Chemo_Ami” (OR, 3.71 [95% CI, 1.08 –12.7]) and “Chemo_anti–PD-1/PD-L1_ anti-VEGF” (OR, 1.94 [95% CI, 0.99–4.06]) appeared to be associated with a higher incidence of grade 3–5 TRAEs (Supplementary",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,98a4d2eae7cc4188bd2fa664d34ff89b,EGFR T790M mutation,hazard ratio,"[chu_idx=470]
+Likewise, the survival bene ﬁts obtained from “Chemo_anti–PD-1/PD-L1_anti-VEGF” compared with “Chemo” d i f f e r e db a s e do nt h ep r e s e n c eo ft h eEGFR T790M variant, with HRs of 0.63 (95% CI, 0.25–1.55) in T790M-positive patients and 0.44 (95% CI, 0.35 –0.56) in T790M-negative patients.",NA
