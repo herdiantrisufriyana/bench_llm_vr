@@ -8,6 +8,7 @@ openai>=1.0.0
 
 # --- Anthropic (claude-4.5-sonnet)
 anthropic>=0.25.0
+langchain-anthropic>=0.1.11
 
 # --- Google Gemini (gemini-3-pro)
 langchain-google-genai>=1.0.0
