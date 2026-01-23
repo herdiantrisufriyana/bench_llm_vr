@@ -174,7 +174,8 @@ def build_extraction_llm(model_code: str):
 			raise RuntimeError("ANTHROPIC_API_KEY missing in .env")
 
 		return _SafeContentLLM(ChatAnthropic(
-			model="claude-4.5-sonnet",
+			# Anthropic API model ids use the "claude-sonnet-4-5" naming scheme
+			model="claude-sonnet-4-5",
 			temperature=0,
 			api_key=api_key,
 		))
