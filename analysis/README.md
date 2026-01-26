@@ -1,5 +1,17 @@
 # Benchmarking LLMs for Evidence-Grounded Variable Relationship Extraction
 
+**Authors**  
+Herdiantri Sufriyana<sup>1</sup>, Emily Chia-Yu Su<sup>1,2,3</sup>  
+
+**Affiliations**  
+<sup>1</sup> Institute of Biomedical Informatics, College of Medicine, National Yang Ming Chiao Tung University, Taipei 112, Taiwan  
+<sup>2</sup> Graduate Institute of Biomedical Informatics, College of Medical Science and Technology, Taipei Medical University, Taipei 110, Taiwan  
+<sup>3</sup> Clinical Big Data Research Center, Taipei Medical University Hospital, Taipei 110, Taiwan  
+
+**Emails**  
+herdi@nycu.edu.tw (Herdiantri Sufriyana)  
+emilysu@nycu.edu.tw (Emily Chia-Yu Su)  
+
 ## Vignette
 
 [Progress report](https://herdiantrisufriyana.github.io/bench_llm_vr/index.html)
