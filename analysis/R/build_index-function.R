@@ -1,5 +1,4 @@
-build_index <- function() {
-  input <- "index.Rmd"
+build_index <- function(input = "index.Rmd") {
   name <- tools::file_path_sans_ext(basename(input))
   
   rmarkdown::render(

@@ -1,0 +1,131 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,fad5e8be5f68418eb1a88f823752b9ed,SGLT2 inhibitor,renal outcome,"[chu_idx=451]
+Cardiovascular Diabetology          (2022) 21:232 (finerenone vs SGLT2i: RR [95% CI]; 1.31 [1.07–1.61]) and GLP-1 RA (GLP-1 RA vs SGLT2i: RR [95% CI]; 1.49 [1.18–1.89]), SGLT-2i were associated with a decreased morbidity of renal outcome.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,ada52cc2e1e7416a8c4304da57de5b7d,liraglutide,ACD,"[chu_idx=687]
+Interestingly, in the three observed outcomes of ACD, HHF and CVD, GLP-1 RA did not show a significant advantage over placebo, but liraglutide, a GLP-1 RA did.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,23db9bad6f734180b4ce4d14ef342dd8,Dapagliflozin,MACE,"[chu_idx=751]
+Empagliflozin 1.11 (0.74,1.65) 1.09 (0.70,1.70) 1.12 (0.71,1.77) 1.14 (0.76,1.72) 1.13 (0.77,1.65) 1.40 (0.92,2.14) 0.88 (0.56,1.37) 1.28 (0.90,1.81) 1.02 (0.67,1.56) Canagliflozin 0.99 (0.71,1.38) 1.02 (0.72,1.44) 1.03 (0.77,1.37) 1.02 (0.80,1.30) 1.27 (0.94,1.72) 0.79 (0.57,1.11) 1.16 (0.95,1.40) 1.06 (0.69,1.62) 1.04 (0.78,1.37) Dapagliflozin 1.03 (0.69,1.54) 1.04 (0.74,1.48) 1.03 (0.76,1.41) 1.28 (0.89,1.84) 0.80 (0.54,1.18) 1.17 (0.89,1.54) 0.73 (0.41,1.30) 0.72 (0.45,1.16) 0.70 (0.43,1.12) Ertugliflozin 1.01 (0.71,1.46) 1.00 (0.72,1.39) 1.25 (0.86,1.81) 0.78 (0.52,1.16) 1.14 (0.85,1.52) 0.86 (0.57,1.31) 0.85 (0.65,1.10) 0.82 (0.63,1.06) 1.18 (0.74,1.87) Sotagliflozin 0.99 (0.76,1.28) 1.23 (0.90,1.69) 0.77 (0.54,1.09) 1.12 (0.91,1.39) 0.95 (0.64,1.41) 0.93 (0.74,1.16) 0.90 (0.72,1.13) 1.29 (0.83,2.02) 1.10 (0.90,1.35) Finerenone 1.24 (0.94,1.64) 0.78 (0.57,1.06) 1.13 (0.98,1.31) 0.84 (0.55,1.28) 0.82 (0.63,1.08) 0.79 (0.61,1.04) 1.14 (0.71,1.83) 0.97 (0.76,1.25) 0.88 (0.71,1.10) Exenatide 0.62 (0.43,0.90) 0.91 (0.72,1.15) 1.13 (
+
+[chu_idx=760]
+MACE",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,1d090463a5474c94b8d6685782f20b08,liraglutide,HHF,"[chu_idx=514]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.
+
+[chu_idx=525]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.
+
+[chu_idx=687]
+Interestingly, in the three observed outcomes of ACD, HHF and CVD, GLP-1 RA did not show a significant advantage over placebo, but liraglutide, a GLP-1 RA did.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,68960247938a4e6eb099555512593262,SGLT2 inhibitor,placebo,"[chu_idx=549]
+SGLT2i vs Placebo 0.83 (0.77,0.90) High Not  estimablea – 0.84 (0.78,0.90) High
+
+[chu_idx=556]
+SGLT2i vs Placebo 0.67 (0.60,0.74) High Not  estimablea – 0.67 (0.60,0.74) High
+
+[chu_idx=562]
+SGLT2i vs Placebo 0.83 (0.77,0.90) High Not  estimablea – 0.84 (0.78,0.90) High
+
+[chu_idx=569]
+SGLT2i vs Placebo 0.67 (0.60,0.74) High Not  estimablea – 0.67 (0.60,0.74) High
+
+[chu_idx=576]
+SGLT2i vs Placebo 0.60 (0.53,0.68) High Not  estimablea – 0.60 (0.53,0.68) High
+
+[chu_idx=583]
+SGLT2i vs Placebo 0.86 (0.77,0.96) High Not  estimablea – 0.86 (0.77,0.96) High
+
+[chu_idx=590]
+SGLT2i vs Placebo 0.90 (0.81,0.99) High Not  estimablea – 0.89 (0.81,0.99) High
+
+[chu_idx=602]
+SGLT2i vs Placebo 0.90 (0.81,0.99) High Not  estimablea – 0.89 (0.81,0.99) High",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,bea7e636e4824737bd0ea272973145e4,finerenone,placebo,"[chu_idx=551]
+Finerenone vs Placebo 0.89 (0.75,1.05) High Not  estimablea – 0.88 (0.80,0.97) High
+
+[chu_idx=558]
+Finerenone vs Placebo 0.86 (0.79,0.93) High Not  estimablea – 0.86 (0.79,0.93) High
+
+[chu_idx=564]
+Finerenone vs Placebo 0.89 (0.75,1.05) High Not  estimablea – 0.88 (0.80,0.97) High
+
+[chu_idx=571]
+Finerenone vs Placebo 0.86 (0.79,0.93) High Not  estimablea – 0.86 (0.79,0.93) High
+
+[chu_idx=578]
+Finerenone vs Placebo 0.79 (0.67,0.92) High Not  estimablea – 0.79 (0.67,0.92) High
+
+[chu_idx=585]
+Finerenone vs Placebo 0.88 (0.76,1.02) High Not  estimablea – 0.88 (0.76,1.02) High
+
+[chu_idx=592]
+Finerenone vs Placebo 0.90 (0.80,1.00) High Not  estimablea – 0.90 (0.80,1.00) High
+
+[chu_idx=597]
+Finerenone vs Placebo 0.88 (0.76,1.02) High Not  estimablea – 0.88 (0.76,1.02) High
+
+[chu_idx=918]
+Finerenone vs placebo 0.79 0.67–0.92
+
+[chu_idx=924]
+Finerenone vs placebo 0.90 0.80–1.00
+
+[chu_idx=930]
+Finerenone vs placebo 0.88 0.76–1.02",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,84d545eef7194b2ba5d2b289829219d2,finerenone,renal outcome,"[chu_idx=677]
+As for the morbidity, renal outcome and HHF, it was clear that SGLT-2i had more significant impact than finerenone, which might be explained by the special potency of SGLT-2i such as reducing blood glucose, reducing oxidative stress, losing weight, reducing uric acid, controlling blood pressure and improving renal ultrafiltration and hypoxia [65, 71–79].
+
+[chu_idx=686]
+As for the morbidity, renal outcome and HHF, it was clear that SGLT-2i had more significant impact than finerenone, which might be explained by the special potency of SGLT-2i such as reducing blood glucose, reducing oxidative stress, losing weight, reducing uric acid, controlling blood pressure and improving renal ultrafiltration and hypoxia [65, 71–79].
+
+[chu_idx=746]
+Empagliflozin 1.07 (0.83,1.37) 0.91 (0.69,1.20) 1.26 (0.84,1.87) 1.31 (1.08,1.59) 1.38 (1.09,1.75) 1.50 (1.02,2.19) 1.34 (1.02,1.76) 1.53 (1.28,1.83) 0.94 (0.73,1.20) Canagliflozin 0.85 (0.65,1.13) 1.18 (0.79,1.76) 1.23 (1.01,1.50) 1.30 (1.02,1.65) 1.40 (0.96,2.06) 1.25 (0.95,1.65) 1.44 (1.20,1.72) 1.10 (0.83,1.45) 1.17 (0.89,1.55) Dapagliflozin 1.38 (0.91,2.09) 1.44 (1.14,1.81) 1.52 (1.16,1.98) 1.64 (1.10,2.45) 1.47 (1.09,1.98) 1.68 (1.36,2.08) 0.80 (0.53,1.19) 0.85 (0.57,1.27) 0.72 (0.48,1.10) Sotagliflozin 1.04 (0.72,1.51) 1.10 (0.74,1.63) 1.19 (0.73,1.95) 1.06 (0.70,1.61) 1.22 (0.85,1.74) 0.76 (0.63,0.93) 0.81 (0.67,0.99) 0.70 (0.55,0.87) 0.96 (0.66,1.39) Finerenone 1.06 (0.88,1.26) 1.14 (0.81,1.62) 1.02 (0.82,1.28) 1.17 (1.08,1.27) 0.72 (0.57,0.92) 0.77 (0.61,0.98) 0.66 (0.51,0.86) 0.91 (0.61,1.35) 0.95 (0.79,1.14) Dulaglutide 1.08 (0.75,1.57) 0.97 (0.74,1.26) 1.11 (0.94,1.30) 0.67 (0.46,0.98) 0.71 (0.49,1.04) 0.61 (0.41,0.91) 0.84 (0.51,1.37) 0.87 (0.62,1.24) 0.92 (0.64,1.34) Exenatide 0.89 (0.60,1.33) 1.02 (0.73,1.43) 0.75 (0.57,0.98) 0.80 (0.61,1.05) 0.68 (0.51,0.92) 0.94 (0.62,1.42) 0.98 (0.78,1.23) 1.03 (0.79,1.34) 1.12 (0.75,1.66) Liraglutide 1.14 (0.93,1.41) 0.65 (0.55,0.78) 0.70 (0.58,0.83) 0.59 (0.48,0.74) 0.82 (0.57,1.18) 0.86 (0.79,0.",NA
+3,meta-analysis,10.1016/j.ejca.2022.06.058,3,PIIS0959804922004105.pdf,d825a83bd288cf5f7c681b00d3f0bb22b8638220249bc111ea966c236f19e163,e4325516d84642fd9294ee3ddf0ef31f,atezolizumab plus bevacizumab,progression risk,"[chu_idx=198]
+We found that treatment with atezolizumab plus bevacizumab signiﬁcantly reduced the risk of progression compared to placebo (HR 0 $34; 95%CI 0 $25-0$46), donafenib (HR: 0 $65; 95% CI 0 $48- 0$87), sorafenib (HR 0 $59; 95%CI 0 $46-0$75) and nivolumab (HR 0 $63; 95%CI 0 $47-0$85) ( Fig.
+
+[chu_idx=212]
+We found that treatment with atezolizumab plus bevacizumab signiﬁcantly reduced the risk of progression compared to placebo (HR 0 $34; 95%CI 0 $25-0$46), donafenib (HR: 0 $65; 95% CI 0 $48- 0$87), sorafenib (HR 0 $59; 95%CI 0 $46-0$75) and nivolumab (HR 0 $63; 95%CI 0 $47-0$85) ( Fig.",NA
+3,meta-analysis,10.1016/j.ejca.2022.06.058,3,PIIS0959804922004105.pdf,d825a83bd288cf5f7c681b00d3f0bb22b8638220249bc111ea966c236f19e163,2c78b5c4419947c68d5e1c3154505dcb,therapeutic efficacy,viral versus non-viral,"[chu_idx=478]
+The emergent ﬁnding of differential therapeutic efﬁcacy in patients with viral versus non-viral",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,16fb35f7c9b446a1a50689725f7952cf,vitamin B complex,migraine,"[chu_idx=451]
+Vitamin B complex 0.88 (0.47-1.63)",NA
+6,meta-analysis,10.1016/j.ijid.2024.107109,6,PIIS1201971224001802.pdf,fe9bef5e68bef18d40b89982ae0efb1f0d331ea144e7dd8c0b5fe83ce714bea8,ee08c940217446d1b5b86b071b21105d,MRSA prevalence,study site region,"[chu_idx=65]
+The study showed that MRSA prevalence ranged from 0 to 73% at 19 sites in the Asia-Paciﬁc region from 20 0 0 to 2016 [ 3 ].",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,c0322e34b5044e3f807281d5a6f8eff4,curcumin and lecithin complex,chondroprotective effect,"[chu_idx=1302]
+Chondroprotective effect of curcumin and lecithin complex in human chondrocytes stimulated by IL-1 β via an anti-inflammatory mechanism.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,7341d56fdcd64b3eadab0dc35bb2cf40,EGFR T790M mutation,Hazard ratio: Chemotherapy + anti-PD-1/PD-L1 + anti-VEGF vs Chemotherapy,"[chu_idx=470]
+Likewise, the survival bene ﬁts obtained from “Chemo_anti–PD-1/PD-L1_anti-VEGF” compared with “Chemo” d i f f e r e db a s e do nt h ep r e s e n c eo ft h eEGFR T790M variant, with HRs of 0.63 (95% CI, 0.25–1.55) in T790M-positive patients and 0.44 (95% CI, 0.35 –0.56) in T790M-negative patients.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,7726abc012f14815adb1ca25d4d5b67e,ALK rearrangements,response to PD-1 blockade,"[chu_idx=896]
+EGFR mutations and ALK rearrangements are associated with low response rates to PD-1 pathway blockade in non-small cell lung cancer: a retrospective analysis.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,43f3448fb845488aab600887a7c50953,nivolumab cost,ICER,"[chu_idx=291]
+A 2-way sensitivity analysis revealed that when the cost of nivolumab was less than $22 per mg, the ICER was lower than $100 000 per QALY regardless of the variability in the price of pembrolizumab between $37 per mg and $63 per mg.
+
+[chu_idx=292]
+When the cost of nivolumab was less than $25 per mg, the ICER was always lower than $150 000 per QALY (eFigure 7 in the Supplement).
+
+[chu_idx=526]
+When the cost of nivolumab dropped below $23 per mg, the ICER was close to zero.
+
+[chu_idx=538]
+When the cost of nivolumab dropped below $23 per mg, the ICER was close to zero.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,2d2d9641a8e24a8b80843134fdbfb467,ICER,PFS hazard ratio,"[chu_idx=359]
+ICER, $/QALY
+
+[chu_idx=363]
+HR for PFS (nivolumab vs pembrolizumab)",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,66a80fbf43b3413197060cd6915e6f89,ICER,proportion receiving BSC in pembrolizumab group,"[chu_idx=359]
+ICER, $/QALY
+
+[chu_idx=366]
+Proportion of subsequent receiving BSC in the pembrolizumab group",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,01d25ffcfc114f318501d02763747693,proportion receiving BSC in nivolumab group,proportion receiving BSC in pembrolizumab group,"[chu_idx=388]
+Proportion of subsequent receiving BSC in the nivolumab group
+
+[chu_idx=389]
+Proportion of subsequent receiving BSC in the pembrolizumab group",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,b418854ba30d4b958c804991e29be9b6,body weight,dosage preference,"[chu_idx=546]
+Thus, for patients weighing less than 75 kg, the weight-based dosage was associated with greater cost savings; otherwise, a fixed dosage was preferred.",NA
+10,meta-analysis,10.1093/ageing/afad091,10,afad091.pdf,c232d33db120a79d27727ba3b7c8cc4b358969ec9f15d2f06c06cd9022761241,03b9718abe7f474ab521390ef6e1bf18,Treatment duration (weeks),Alzheimer's disease severity,"[chu_idx=609]
+Treatment duration (selected time-point, weeks)
+
+[chu_idx=633]
+AD 78/80/66 16 (16) 79.5 16.0 74.9 (1.0) 16.0 (0.4) Mild to moderate",NA

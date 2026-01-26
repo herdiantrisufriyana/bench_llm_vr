@@ -1,31 +1,8 @@
----
-title: "Benchmarking LLMs for Evidence-Grounded Variable Relationship Extraction"
-author:
-  - name: Author Name
-    affiliation:
-    - &aff1 Author Institution, City, Country.
-    email: email@website.com
-date: "2026-01-22"
-output: 
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float:
-      collapsed: false
-      smooth_scroll: true
-vignette: >
-  %\VignetteIndexEntry{LLM Evidence-Grounded Benchmark}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
-# Programming environment
-
-```{r Set random seed, include=FALSE}
+## ----Set random seed, include=FALSE---------------------------------------------------------------------------------------------------
 seed <- 2026-01-22
-```
 
-```{r Load packages, include=FALSE}
+
+## ----Load packages, include=FALSE-----------------------------------------------------------------------------------------------------
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -33,42 +10,40 @@ library(ggpubr)
 library(pbapply)
 library(readxl)
 library(ggforce)
-```
 
-```{r Load functions, include=FALSE}
+
+## ----Load functions, include=FALSE----------------------------------------------------------------------------------------------------
 lapply(list.files("R/", full.names = TRUE), source)
-```
 
-```{r Set theme, include=FALSE}
+
+## ----Set theme, include=FALSE---------------------------------------------------------------------------------------------------------
 my_theme_set()
-```
 
-```{r Session information, echo=FALSE}
+
+## ----Session information, echo=FALSE--------------------------------------------------------------------------------------------------
 sessionInfo()
-```
 
-# Raw data
 
-```{r List raw data, include=FALSE}
+## ----List raw data, include=FALSE-----------------------------------------------------------------------------------------------------
 raw_data_files <-
   list.files("../data_registry/", full.names = TRUE, recursive = TRUE)
-```
 
-```{r List of article type filter, include=FALSE}
+
+## ----List of article type filter, include=FALSE---------------------------------------------------------------------------------------
 article_type_filter <-
   c(ma = "meta-analysis"
     , rct = "randomized controlled trial"
     , os = "observational study"
   )
-```
 
-```{r Search log, include=FALSE}
+
+## ----Search log, include=FALSE--------------------------------------------------------------------------------------------------------
 search_log <-
   raw_data_files[str_detect(raw_data_files, "search_log\\.xlsx$")] |>
   read_xlsx()
-```
 
-```{r List of LLMs, include=FALSE}
+
+## ----List of LLMs, include=FALSE------------------------------------------------------------------------------------------------------
 llm <-
   c(gpt5 = "gpt-5"
     , claude45 = "claude-4.5-sonnet"
@@ -77,9 +52,9 @@ llm <-
     , llama4 = "llama-4"
     , deepseek3 = "deepseek-v3"
   )
-```
 
-```{r Reconciled LLM names for resumables, include=FALSE}
+
+## ----Reconciled LLM names for resumables, include=FALSE-------------------------------------------------------------------------------
 reconciled_llm_names <-
   names(llm) |>
   sapply(
@@ -87,16 +62,16 @@ reconciled_llm_names <-
   ) |>
   reduce(c) |>
   unique()
-```
 
-```{r List of LLM-as-judges, include=FALSE}
+
+## ----List of LLM-as-judges, include=FALSE---------------------------------------------------------------------------------------------
 llm_as_judge <-
   c(gpt41mini = "gpt-4.1-mini"
     , claude45 = "claude-4.5-sonnet"
   )
-```
 
-```{r LLM results, include=FALSE}
+
+## ----LLM results, include=FALSE-------------------------------------------------------------------------------------------------------
 llm_results3 <-
   intersect(
     paste0("../data_registry//phase3_", reconciled_llm_names, "/export.csv")
@@ -134,9 +109,9 @@ llm_results2 <-
       pull(name)
   ) |>
   lapply(read_csv, show_col_types = FALSE)
-```
 
-```{r LLM-as-judge 1 results, include=FALSE}
+
+## ----LLM-as-judge 1 results, include=FALSE--------------------------------------------------------------------------------------------
 judge1_llm_results <-
   intersect(
     paste0(
@@ -158,9 +133,9 @@ judge1_llm_results <-
   unique(names(judge1_llm_results)) |>
   `names<-`(unique(names(judge1_llm_results))) |>
   lapply(\(x) reduce(judge1_llm_results[x], rbind))
-```
 
-```{r LLM-as-judge 2 results, include=FALSE}
+
+## ----LLM-as-judge 2 results, include=FALSE--------------------------------------------------------------------------------------------
 judge2_llm_results <-
   intersect(
       paste0(
@@ -183,11 +158,9 @@ judge2_llm_results <-
   unique(names(judge2_llm_results)) |>
   `names<-`(unique(names(judge2_llm_results))) |>
   lapply(\(x) reduce(judge2_llm_results[x], rbind))
-```
 
-# Data preprocessing
 
-```{r Eligible main PDFs, include=FALSE}
+## ----Eligible main PDFs, include=FALSE------------------------------------------------------------------------------------------------
 eligible_main_pdf <-
   search_log |>
   filter(eligible == "yes") |>
@@ -196,9 +169,9 @@ eligible_main_pdf <-
   ungroup() |>
   filter(row <= 10) |>
   select(row, article_type_filter, doi, rank, filename)
-```
 
-```{r Documents per LLM, include=FALSE}
+
+## ----Documents per LLM, include=FALSE-------------------------------------------------------------------------------------------------
 docs_per_llm <-
   llm_results3 |>
   lapply(
@@ -222,9 +195,9 @@ docs_per_llm <-
         , by = "doc_sha256"
       )
   )
-```
 
-```{r Edges per LLM, include=FALSE}
+
+## ----Edges per LLM, include=FALSE-----------------------------------------------------------------------------------------------------
 edges_per_llm <-
   llm_results3 |>
   lapply(
@@ -240,9 +213,9 @@ edges_per_llm <-
     eligible_main_pdf |>
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
-```
 
-```{r LLM-as-judge 1 results per LLM, include=FALSE}
+
+## ----LLM-as-judge 1 results per LLM, include=FALSE------------------------------------------------------------------------------------
 judge1_results_per_llm <-
   judge1_llm_results |>
   lapply(
@@ -258,9 +231,9 @@ judge1_results_per_llm <-
     eligible_main_pdf |>
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
-```
 
-```{r LLM-as-judge 2 results per LLM, include=FALSE}
+
+## ----LLM-as-judge 2 results per LLM, include=FALSE------------------------------------------------------------------------------------
 judge2_results_per_llm <-
   judge2_llm_results |>
   lapply(
@@ -276,35 +249,13 @@ judge2_results_per_llm <-
     eligible_main_pdf |>
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
-```
 
-# Article selection
 
-Collection date: January 21, 2026 1:23 PM UTC +8
-
-Keywords
-("Results"[Title/Abstract] AND (association OR correlation OR correlated OR relationship OR "associated with" OR "was associated with") AND (cohort OR "case-control" OR cross-sectional OR randomized OR trial) AND (human OR patients OR samples) NOT (review[Publication Type] OR editorial[Publication Type] OR comment[Publication Type] OR protocol[Title]) AND ("odds ratio" OR "hazard ratio" OR "risk ratio" OR regression OR adjusted OR multivariable))
-
-Publication date
-•	5 years
-
-Text availability
-•	Full text
-
-268,509 results
-
-Article type
-•	Meta-Analysis: 126 results
-•	Randomized Controlled Trial: 10,808 results
-•	Observational Study: 12,524 results
-
-Consecutively screen from the most to least relevant until 10 eligible PDFs are collected.
-
-```{r Step label, include=FALSE}
+## ----Step label, include=FALSE--------------------------------------------------------------------------------------------------------
 step_label <- read_csv("inst/extdata/step_label.csv", show_col_types = FALSE)
-```
 
-```{r Search log summary - create, include=FALSE}
+
+## ----Search log summary - create, include=FALSE---------------------------------------------------------------------------------------
 max_rank_to_eligible_10 <-
   search_log |>
   mutate_at("article_type_filter", \(x) factor(x, unique(x))) |>
@@ -351,15 +302,13 @@ search_log_sum <-
       str_replace_all("_", " ") |>
       str_to_sentence()
   )
-```
 
-```{r Search log summary - show, echo=FALSE}
+
+## ----Search log summary - show, echo=FALSE--------------------------------------------------------------------------------------------
 show_table(search_log_sum, "search_log_sum", "Search log summary")
-```
 
-# Human calibration
 
-```{r Sample size per strata, include=FALSE}
+## ----Sample size per strata, include=FALSE--------------------------------------------------------------------------------------------
 strata_n <- length(article_type_filter) * length(llm)
 ssize_per_strata <- 20
 ssize <- strata_n * ssize_per_strata
@@ -370,56 +319,56 @@ strata <-
     , names(llm)
     , stringsAsFactors = FALSE
   )
-```
 
-```{r Sample edges per strata, eval=FALSE, include=FALSE}
-strata |>
-  filter(Var2 %in% names(edges_per_llm)) |>
-  pmap(
-	  \(Var1, Var2)
-	  edge_sampling(edges_per_llm, Var1, Var2, ssize_per_strata)
-	)
-```
 
-```{r Unify edge samples per strata, eval=FALSE, include=FALSE}
-human_calibration_label <-
-  strata |>
-  pmap(
-	  \(Var1, Var2)
-	  read_human_calibration_sample_unlabeled(Var1, Var2, ssize_per_strata)
-	) |>
-  reduce(rbind)
+## ----Sample edges per strata, eval=FALSE, include=FALSE-------------------------------------------------------------------------------
+## strata |>
+##   filter(Var2 %in% names(edges_per_llm)) |>
+##   pmap(
+## 	  \(Var1, Var2)
+## 	  edge_sampling(edges_per_llm, Var1, Var2, ssize_per_strata)
+## 	)
 
-if(file.exists("inst/extdata/human_calibration_sample_300_edges_labeled.csv")){
-  human_calibration_label <-
-    human_calibration_label |>
-    select(-label) |>
-    left_join(
-      read_csv(
-        "inst/extdata/human_calibration_sample_300_edges_labeled.csv"
-        , show_col_types = FALSE
-      )
-      , by =
-        join_by(
-          row, article_type_filter, doi, rank, filename, doc_sha256,
-          edge_id, var1, var2, evidence
-        )
-    )
-}
 
-human_calibration_label|>
-  write_csv("inst/extdata/human_calibration_sample_300_edges_unlabeled.csv")
-```
+## ----Unify edge samples per strata, eval=FALSE, include=FALSE-------------------------------------------------------------------------
+## human_calibration_label <-
+##   strata |>
+##   pmap(
+## 	  \(Var1, Var2)
+## 	  read_human_calibration_sample_unlabeled(Var1, Var2, ssize_per_strata)
+## 	) |>
+##   reduce(rbind)
+## 
+## if(file.exists("inst/extdata/human_calibration_sample_300_edges_labeled.csv")){
+##   human_calibration_label <-
+##     human_calibration_label |>
+##     select(-label) |>
+##     left_join(
+##       read_csv(
+##         "inst/extdata/human_calibration_sample_300_edges_labeled.csv"
+##         , show_col_types = FALSE
+##       )
+##       , by =
+##         join_by(
+##           row, article_type_filter, doi, rank, filename, doc_sha256,
+##           edge_id, var1, var2, evidence
+##         )
+##     )
+## }
+## 
+## human_calibration_label|>
+##   write_csv("inst/extdata/human_calibration_sample_300_edges_unlabeled.csv")
 
-```{r Human calibration labels, include=FALSE}
+
+## ----Human calibration labels, include=FALSE------------------------------------------------------------------------------------------
 human_calibration_label <-
   read_csv(
     "inst/extdata/human_calibration_sample_300_edges_labeled.csv"
     , show_col_types = FALSE
   )
-```
 
-```{r Incorporating human calibration labels to judge 1, include=FALSE}
+
+## ----Incorporating human calibration labels to judge 1, include=FALSE-----------------------------------------------------------------
 judge1_human_per_llm <-
   judge1_results_per_llm |>
   lapply(rename, llm_as_judge = label) |>
@@ -432,9 +381,9 @@ judge1_human_per_llm <-
         , edge_id, var1, var2, evidence
       )
   )
-```
 
-```{r Incorporating human calibration labels to judge 2, include=FALSE}
+
+## ----Incorporating human calibration labels to judge 2, include=FALSE-----------------------------------------------------------------
 judge2_human_per_llm <-
   judge2_results_per_llm |>
   lapply(rename, llm_as_judge = label) |>
@@ -447,11 +396,9 @@ judge2_human_per_llm <-
         , edge_id, var1, var2, evidence
       )
   )
-```
 
-# Calibration analysis
 
-```{r Calibration data, include=FALSE}
+## ----Calibration data, include=FALSE--------------------------------------------------------------------------------------------------
 calibration_data <-
   list(judge1 = judge1_human_per_llm, judge2 = judge2_human_per_llm) |>
   lapply(
@@ -475,9 +422,9 @@ calibration_data <-
   select(-code) |>
   mutate_at("llm", factor, llm) |> 
   mutate_at("judge", factor, llm_as_judge)
-```
 
-```{r Calibration summary - create, include=FALSE}
+
+## ----Calibration summary - create, include=FALSE--------------------------------------------------------------------------------------
 calibration_sum <-
   calibration_data |> 
   group_by(llm, judge, label_human, label_llm) |>
@@ -492,20 +439,18 @@ calibration_sum <-
       str_replace_all("Llm|llm", "LLM") |>
       str_replace_all("N", "n")
   )
-```
 
-```{r Calibration summary - show, echo=FALSE}
+
+## ----Calibration summary - show, echo=FALSE-------------------------------------------------------------------------------------------
 show_table(calibration_sum, "calibration_sum", "Calibration summary.")
-```
 
-# Model evaluation
 
-```{r USD per token per LLM, include=FALSE}
+## ----USD per token per LLM, include=FALSE---------------------------------------------------------------------------------------------
 usd_per_token_per_llm <-
   read_csv("inst/extdata/usd_per_token_per_llm.csv", show_col_types = FALSE)
-```
 
-```{r Aggregate per-edge data to article-level metrics, include=FALSE}
+
+## ----Aggregate per-edge data to article-level metrics, include=FALSE------------------------------------------------------------------
 doc_edge_metrics <-
   calibration_data |>
   left_join(
@@ -544,9 +489,9 @@ doc_edge_metrics <-
     , runtime_doc = sec_per_doc, runtime_edge = sec_per_doc_edge
     , cost_doc, cost_edge
   ) 
-```
 
-```{r Summarize article-level metrics, include=FALSE}
+
+## ----Summarize article-level metrics, include=FALSE-----------------------------------------------------------------------------------
 doc_edge_metrics_sum <-
   doc_edge_metrics|>
   gather(metric, value, -llm) |>
@@ -573,14 +518,14 @@ doc_edge_metrics_sum <-
   			)
   	)
   )
-```
 
-```{r Metric labels, include=FALSE}
+
+## ----Metric labels, include=FALSE-----------------------------------------------------------------------------------------------------
 metric_label <-
   read_csv("inst/extdata/metric_label.csv", show_col_types = FALSE)
-```
 
-```{r Report article-level metrics - create, include=FALSE}
+
+## ----Report article-level metrics - create, include=FALSE-----------------------------------------------------------------------------
 doc_edge_metrics_report <-
   doc_edge_metrics_sum |>
   mutate(
@@ -613,14 +558,14 @@ doc_edge_metrics_report <-
     colnames(doc_edge_metrics_report) |>
       str_replace_all("metric", "Metric")
   )
-```
 
-```{r Report article-level metrics - show, echo=FALSE}
+
+## ----Report article-level metrics - show, echo=FALSE----------------------------------------------------------------------------------
 doc_edge_metrics_report |>
   show_table("doc_edge_metrics_report", "Model benchmark.")
-```
 
-```{r Cost-performance tradeoff - plot, include=FALSE}
+
+## ----Cost-performance tradeoff - plot, include=FALSE----------------------------------------------------------------------------------
 cost_performance_tradeoff <-
   doc_edge_metrics_sum |>
   filter(metric %in% c("egrc", "uer", "red")) |>
@@ -688,10 +633,8 @@ cost_performance_tradeoff <-
     legend.position = "bottom"
     , legend.title = element_blank()
   )
-```
 
-```{r Cost-performance tradeoff - show, echo=FALSE, fig.height=7, fig.width=3.54331}
+
+## ----Cost-performance tradeoff - show, echo=FALSE, fig.height=7, fig.width=3.54331----------------------------------------------------
 cost_performance_tradeoff
-```
-
 

@@ -1,0 +1,59 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,39646e93dcd340eaab21f03a6a9b85ca,finerenone,MACE,"[chu_idx=257]
+Compared with placebo, finerenone (RR [95% CI]; 0.88 [0.80–0.97]), SGLT-2i (RR [95% CI]; 0.84 [0.78–0.90]) and GLP-1 RA (RR [95% CI]; 0.86 [0.78–0.94]) were associated with a decreased risk of MACE.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,21769f8bf1ab4724bd606862bad7e9d9,finerenone,ACD,"[chu_idx=467]
+Compared with placebo, finerenone (RR [95% CI]; 0.90 [0.80–1.00) had a tendency to decrease the risk of ACD and SGLT-2i (RR [95% CI]; 0.89 [0.81–0.99]) were asso ciated with a decreased risk of ACD, while GLP-1 RA (RR [95% CI]; 0.89 [0.77–1.02]) did not.",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,4ed83afdd48e49e3b726a95ebee27125,SGLT2_inhibitor,MACE,"[chu_idx=257]
+Compared with placebo, finerenone (RR [95% CI]; 0.88 [0.80–0.97]), SGLT-2i (RR [95% CI]; 0.84 [0.78–0.90]) and GLP-1 RA (RR [95% CI]; 0.86 [0.78–0.94]) were associated with a decreased risk of MACE.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,39646e93dcd340eaab21f03a6a9b85ca,finerenone,MACE,"[chu_idx=257]
+Compared with placebo, finerenone (RR [95% CI]; 0.88 [0.80–0.97]), SGLT-2i (RR [95% CI]; 0.84 [0.78–0.90]) and GLP-1 RA (RR [95% CI]; 0.86 [0.78–0.94]) were associated with a decreased risk of MACE.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,2f517ddb567a4f9faa2f566773d1aa35,finerenone,placebo,"[chu_idx=457]
+Compared with placebo, finerenone (RR [95% CI]; 0.79 [0.67–0.92]) and SGLT2i (RR [95% CI]; 0.60 [0.53– 0.68]) were associated with a decreased risk of HHF while GLP-1 RA (RR [95% CI]; 0.90 [0.73–1.09]) did not.
+
+[chu_idx=476]
+There was no significant difference between finerenone and placebo, GLP-1 RA and placebo.
+
+[chu_idx=496]
+There was no significant difference between finerenone and placebo, GLP-1 RA and placebo.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,1f66602ee90b4bd28bae49662ba3c44a,SGLT2_inhibitor,ACD,"[chu_idx=467]
+Compared with placebo, finerenone (RR [95% CI]; 0.90 [0.80–1.00) had a tendency to decrease the risk of ACD and SGLT-2i (RR [95% CI]; 0.89 [0.81–0.99]) were asso ciated with a decreased risk of ACD, while GLP-1 RA (RR [95% CI]; 0.89 [0.77–1.02]) did not.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,494f019dbef2402fa1736951e8585d1c,finerenone,SGLT2_inhibitor,"[chu_idx=258]
+Finerenone didn`t show a significant difference in reducing the risk of MACE compared with SGLT-2i (RR [95% CI]; 1.05 [0.93–1.19]) and GLP-1 RA (RR [95% CI]; 1.03 [0.90– 1.17]).",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,960975e0292d4243a6ee8d29a786b2b4,vitamin_D3_and_pregabalin,response,"[chu_idx=136]
+Downloaded from jamanetwork.com by guest on 01/21/2026 flunarizine(RoM,0.46;95%CI,0.26-0.81),levetiracetam(RoM,0.4795%CI,0.30-0.72),riboflavin (RoM,0.50;95%CI,0.32-0.77),cinnarizine(RoM,0.64;95%CI,0.46-0.88),topiramate(RoM,0.70; 95%CI,0.55-0.89),andamitriptyline(RoM,0.73;95%CI,0.54-0.97)weretreatmentssignificantly associatedwithlowerfrequencyofmigraine.Notably,basedonthenetworkestimates,pregabalin resultedina62%reductioninmigrainefrequency.Secondaryanalysisassumingadditiveinteractions betweenthetreatmentsextrapolatedthattheadditionofvitaminsupplementationwithvitaminD3 andriboflavintopregabalinmayelicitasuperiorresponsecomparedwithplacebo(RoM,0.12;95%",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,d24fa10a88464c1d91efb5d4f15bc049,vitamin_D3,migraine_frequency,"[chu_idx=168]
+Association of Treatment With Headache Frequency 0.10 10
+
+[chu_idx=174]
+Topiramate and vitamin D3 0.44 (0.30-0.65)",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,31bbf204078a4e5ebeea6755a75bdc49,flunarizine,migraine_frequency,"[chu_idx=168]
+Association of Treatment With Headache Frequency 0.10 10
+
+[chu_idx=175]
+Flunarizine 0.46 (0.26-0.81)",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,bf752574ad22488d87a4ebd92d7d8e2a,propranolol,cinnarizine,"[chu_idx=189]
+Propranolol and cinnarizine 1.08 (0.51-2",NA
+4,meta-analysis,10.1001/jamanetworkopen.2024.38666,4,kohandel_gargari_2024_oi_241121_1727811818.96597.pdf,66f7b794d7b0864d7cf4de5e20ef00cdf53d0f54d0b586f8b85f4725481ca288,7159921a5880466292517ce8d0ed45d3,various_treatments,quality_of_life,"[chu_idx=429]
+Placebo 1 1 1 1 1 1 1 2 2 2 1 1 Forestplot(A)andnetworkgraph(B)displayingthe associationofvarioustreatmentswithqualityoflife, measuredusingthePediatricMigraineDisability",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,f152ad330a7e42cbafb1bc65b7e45857,atezolizumab_bevacizumab_chemotherapy,grade_3-5_immune-related_adverse_events,"[chu_idx=258]
+In terms of grades 3-5 irAEs, Bevac-Chemo, Atezo-Bevac-Chemo, and Chemo associated with the lowest risk and were safer than most other ICIs (ORs ranging between 0.0001 and 0.40), they were most likely to rank as the best, whereas Sinti, Camre-Chemo, and Pem plus ipilimumab (Pem-Ipi) were among the least safety ICIs.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,66e101bfd6574e2980d3a3ffb17bdc58,sintilimab,grade_3-5_immune-related_adverse_events,"[chu_idx=258]
+In terms of grades 3-5 irAEs, Bevac-Chemo, Atezo-Bevac-Chemo, and Chemo associated with the lowest risk and were safer than most other ICIs (ORs ranging between 0.0001 and 0.40), they were most likely to rank as the best, whereas Sinti, Camre-Chemo, and Pem plus ipilimumab (Pem-Ipi) were among the least safety ICIs.",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,0fa903da7d3a473bb3fd7b419aa405be,sugemalimab_chemotherapy,endocrine_disorders,"[chu_idx=267]
+Chemo had the lowest risk of endocrine disorders, followed by Suge-Chemo and Atezo-Chemo (ORs ranging between 0.008 and 0.26), whereas Nivo-Ipi-Chemo and",NA
+5,meta-analysis,10.3389/fimmu.2024.1396752,5,fimmu-15-1396752.pdf,f621af8c2702493ddd25cd46c45cbd39a6f0a2f4308702ceb68c582ef7dd85d3,2ea7991ffdda4ccaa158219d2c43d4ef,pembrolizumab_chemotherapy,safety,"[chu_idx=258]
+In terms of grades 3-5 irAEs, Bevac-Chemo, Atezo-Bevac-Chemo, and Chemo associated with the lowest risk and were safer than most other ICIs (ORs ranging between 0.0001 and 0.40), they were most likely to rank as the best, whereas Sinti, Camre-Chemo, and Pem plus ipilimumab (Pem-Ipi) were among the least safety ICIs.
+
+[chu_idx=270]
+Pem (ORs ranging from 0.02 to 0.63), whereas Pem-Chemo appeared to be among the most unsafe ICI regim ens.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,332be3dd94a541fda7d5162c5831816d,EGFR_mutation,uninflamed_phenotype,"[chu_idx=892]
+EGFR mutation correlates with uninﬂamed phenotype and weak immunogenicity, causing impaired response to PD-1 blockade in non-small cell lung cancer.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,e37cb0dff9924d63a95bda7fa678e59a,ALK_rearrangement,low_response_to_PD1_blockade,"[chu_idx=896]
+EGFR mutations and ALK rearrangements are associated with low response rates to PD-1 pathway blockade in non-small cell lung cancer: a retrospective analysis.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,5175adf69d3b47559cf227435bbc7e70,nivolumab_cost,pembrolizumab_cost,"[chu_idx=175]
+Given that the price of nivolumab and pembrolizumab could vary simultaneously, a 2-way sensitivity analysis was also conducted to examine the association of simultaneous changes in these 2 variables with ICERs.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,0a1c10c0dbce449fa74295013036152f,pembrolizumab_cost,cost_effectiveness,"[chu_idx=520]
+If the cost of pembrolizumab decreased to $49 per mg, it was cost-effective at a WTP threshold of $100 000 per
+
+[chu_idx=522]
+If the cost decreased to $43 per mg, it was more cost-effective than nivolumab at the WTP threshold of $150 000 per QALY.",NA

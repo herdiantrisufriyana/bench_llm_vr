@@ -82,7 +82,7 @@ RUN R -e "remotes::install_github('jeroen/curl@v6.2.0')"
 RUN R -e "remotes::install_github('tidyverse/ellmer@v0.1.1')"
 
 # Install additional system dependencies, Python libraries and R packages, chronologically
-
+RUN R -e "BiocManager::install('ggforce', version='3.20', ask=FALSE, update=FALSE, force=TRUE)"
 
 # Set the working directory to ~/project on R session start
 RUN echo 'setwd("~/project")' >> /home/rstudio/.Rprofile

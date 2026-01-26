@@ -1,0 +1,7 @@
+llm,usd_per_token
+gpt-5,0.00000125
+claude-4.5-sonnet,0.000003
+gemini-3-pro,0.000002
+mistral-large-2,0.000002
+deepseek-v3,0.00000028
+llama-4,0.00000018

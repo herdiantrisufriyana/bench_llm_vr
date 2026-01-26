@@ -1,0 +1,7 @@
+step,label
+vvr_exp_abstract,"Is variable-variable relationship relevant based on title/abstract?"
+full_text_pub,"Is full-text available?"
+vvr_exp_full,"Is variable-variable relationship relevant based on full-text?"
+pdf_access,"Is full-text PDF accessibile"
+pdf_selectable,"Is content extractable at sentence level?"
+eligible,"Is article eligibile?"

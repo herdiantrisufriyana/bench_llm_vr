@@ -1,0 +1,89 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,ce49af9a0f924b22bd9b234d958ba405,colitis,treatment group,"[chu_idx=428]
+Occurrences of pneumonitis, gastritis, rash, and colitis were similar in the two groups (Table S9).",NA
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,d52fbdd5d1f843cd8107621b1c5ea385,anorexia,abdominal pain,"[chu_idx=590]
+Anorexia 61 (13) 106 (22)
+
+[chu_idx=591]
+Abdominal pain 58 (12) 107 (22)",NA
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,8a1b95911d394f2f9f1007de31a1a5a6,abdominal pain,platelet count decreased,"[chu_idx=591]
+Abdominal pain 58 (12) 107 (22)
+
+[chu_idx=593]
+Platelet count decreased 52 (11) 86 (18)",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,7852b5df27f042a8b30ec9d080cabf0e,exercise adherence,treatment group,"[chu_idx=72]
+No significant betweengroup difference w as found for subjective patient satisfaction (81% vs 83%, p=0.54) and exercise adherence between the PTLE group and EET group after 24 weeks (40% vs 49%, p=0.33).",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,ce11ac2f49a740cea2fa81f937a50106,symptom duration,treatment group,"[chu_idx=405]
+group differences in baseline characteristics, except for a longer symptom duration in the intervention group (119 vs 78 weeks) and more ultrasoundassessed erosions of the inferior patellar border (45% vs 18%) in the intervention group (table 1",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,a2de6b95a7064ea8831efc9271d39725,serious adverse events,Pfizer trial,"[chu_idx=241]
+In their review of SAEs supporting the authorization of the Pﬁzer and Moderna vaccines, the FDA concluded that SAEs were, for
+
+[chu_idx=242]
+Pﬁzer, ‘‘balanced between treatment groups,” [15] and for Moderna, were ‘‘without meaningful imbalances between study arms.” [16] In contrast to the FDA analysis, we found an excess risk of
+
+[chu_idx=243]
+SAEs in the Pﬁzer trial.",NA
+4,randomized controlled trial,10.1016/j.vaccine.2022.08.036,4,1-s2.0-S0264410X22010283-main.pdf,79591d055f1066325726c99845bf1ed4a9383d3bdf6104e4997ac4e214bab758,61fd28a41296402593653e54a216cc57,Bell's palsy,COVID-19,"[chu_idx=431]
+Bell’s Palsy 1 0 0.7 0.0 0.7 N/A
+
+[chu_idx=433]
+Seen with COVID-19",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,fba536e8127d4955ab158386b920c518,bimekizumab,PASI 75 response,"[chu_idx=36]
+At the week 4 time point, 265 patients (71.0%) in the bimekizumab group had 75% or greater reduction from baseline in the PASI score, as compared with 175 patients (47.3%) in the secukinumab group (adjusted risk difference, 23.7; 95% CI, 17.0 to 30.4; P<0.001).",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,b75bd3a8083048ac8a806ddffe9489de,bimekizumab,oral candidiasis,"[chu_idx=37]
+Oral candidiasis occurred more often with bimekizumab (72 patients, 19.3%) than with secukinumab (11 patients, 3.0%).",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,59af990a784c4e158df0e933ce3873f3,bimekizumab,oral candidiasis,"[chu_idx=44]
+Oral candidiasis occurred more often with bimekizumab (72 patients, 19.3%) than with secukinumab (11 patients, 3.0%).
+
+[chu_idx=68]
+BE SURE10 trials, bimekizumab led to greater clinical improvements in patients with moder ate-to-severe plaque psoriasis than placebo, than the interleukin-12/23 inhibitor ustekinumab, and than the tumor necrosis factor inhibitor adali mumab but was associated with a greater inci dence of oral candidiasis.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,da17c7f9b4774d8d834d2044b300dfca,secukinumab,PASI 100 response,"[chu_idx=262]
+In the maintenance population at week 48, a total of 108 patients (73.5%) who continued to receive bimekizumab every 4 weeks and 142 (66.0%) who transitioned to receive bimekizumab every 8 weeks, as compared with 171 (48.3%) who continued to receive secukinumab after week 16, had a PASI 100 response (adjusted risk differ
+
+[chu_idx=269]
+At week 48, a total of 250 patients (67.0%) who received bimekizumab as compared with 171 (46.2%) who received secukinumab had a PASI 100 response (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001) (Fig.
+
+[chu_idx=271]
+In the maintenance population at week 48, a total of 108 patients (73.5%) who continued to receive bimekizumab every 4 weeks and 142 (66.0%) who transitioned to receive bimekizumab every 8 weeks, as compared with 171 (48.3%) who continued to receive secukinumab after week 16, had a PASI 100 response (adjusted risk differ ence, bimekizumab every 4 weeks vs.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,f4a5bfe73b094388928cbed7ecb6c580,bimekizumab,PASI 90 response,"[chu_idx=275]
+By week 16, a total of 319 patients (85.5%) receiving bimekizumab, as compared with 275 patients (74.3%) receiving secukinumab, had a
+
+[chu_idx=276]
+PASI 90 response (adjusted risk difference, 11.3 percentage points; 95% CI, 5.8 to 16.8) (Fig.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,9dd01d07b8154f13b16ecc6cc7761125,oral candidiasis,bimekizumab,"[chu_idx=445]
+Oral candidiasis infections with bimekizumab were predominantly mild (36 of 72 cases) or moderate (34 of 72 cases); none were classified by the site investigators as seri ous (according to the criteria defined in Methods), and none led to discontinuation of treatment.
+
+[chu_idx=446]
+Among patients who had oral candidiasis, 31 (43.1%) treated with bimekizumab and 4 (36.4%) treated with secukinumab reported more than one instance of the infection.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,6aa68c61c0924b03b44b6ed69177a359,PASI 100 response at week 48,hypothesis 4,"[chu_idx=519]
+PASI 100 response at wk 48 — no./total no.
+
+[chu_idx=520]
+(%) H4 250/373 (67.0) 171/370 (46.2) 20.9 (14.1–27.7)",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,b53c5c8cacf3431d8e3d84e8cae14e79,educational level,intervention group,"[chu_idx=237]
+In the analysis of baseline sociodemographic characteristics, there were no significant differences between the intervention and control groups in sex, age, educational level, employment status, marital status, household monthly income, or area of residence.",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,01ed80653d684d97adf16ae3f19f886e,intervention group,physical functioning,"[chu_idx=327]
+Significant differences in score changes also were shown at 24 weeks for physical functioning (12.12 [95% CI, 3.31-20.93] points;P = .007; effect size = 0.54) and fatigue (−7 .84 [95% CI, −13.52 to −1.08] points; P = .02; effect size = −0.36).
+
+[chu_idx=338]
+Significant differences in score changes also were shown at 24 weeks for physical functioning (12.12 [95% CI, 3.31-20.93] points;P = .007; effect size = 0.54) and fatigue (−7 .84 [95% CI, −13.52 to −1.08] points; P = .02; effect size = −0.36).",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,d54cbf402947466582550610f2bb46f7,intervention group,self-management preparation strategies change,"[chu_idx=348]
+All 3 strategies showed significant differences in the range of change in scores up to 24 weeks (core: 17 .16 [95% CI, 6.14-28.18] points,P = .002, effect size = 0.63; preparation: 23.44 [95%",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,8110e37eee364f66b1ff02abc2119576,pseq_below_mcid_12_weeks,pain_change_12_52_weeks,"[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=557]
+Pain, Mean Change (95% CI)* RMDQ, Mean Change (95% CI)* 12-Week Improvement by MCID† N‡ 0 to 12 Weeks 12 to 52 Weeks 0 to 12 Weeks 12 to 52 Weeks
+
+[chu_idx=558]
+PSEQ
+
+[chu_idx=560]
+< MCID 119/254 /C0 1.32 (/C0 1.67 to /C0 0.98) /C0 0.56 (/C0 1.08 to /C0 0.04) /C0 1.92 (/C0 2.78 to /C0 1.06) /C0 0.90 (/C0 1.92 to 0.13)",NA
+9,randomized controlled trial,10.1016/S2213-2600(20)30554-3,9,1-s2.0-S2213260020305543.pdf,c02174adc8dbd8cea6dec60b789beea2387f3dcde04d14ce84efdaba15ee9e1f,798c68d27ba344d69184f56a2717c0cb,FVC,forced vital capacity,"[chu_idx=600]
+(A) FVC=forced vital capacity.",NA
+10,randomized controlled trial,10.1056/NEJMoa2116846,10,NEJMoa2116846.pdf,c9cc9e434a1e6cb7023f7c55baca7f12633494d7e2ca50d8a67def12f16ebf60,3c7458f2f3034e98857133bbd4e5f162,time,SARS-CoV-2 viral load,"[chu_idx=286]
+SARS-CoV-2 viral load decreased from 6.31±1.75 log10 copies per milliliter at baseline to 4.11±1.36 log10 copies per milliliter at day 7.
+
+[chu_idx=287]
+In the placebo group, the mean viral load decreased from 6.28±1.79 log10 copies per milliliter at baseline to 4.06±1.19 log10 copies per milliliter at day 7 (Fig.",NA

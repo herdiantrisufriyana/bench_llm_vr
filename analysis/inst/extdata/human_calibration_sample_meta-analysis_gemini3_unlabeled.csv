@@ -1,0 +1,56 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,6ea4daa1f4e0409eac7dff6aaf6309a0,finerenone,ACD,"[chu_idx=16]
+Conclusions: In patients with T2DM and CKD, SGLT2i, GLP-1 RA and finerenone were comparable in MACE, ACD and",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,d9cb8dd182a14ff0991db96e8f6f9a5e,SGLT2i,Kidney Outcomes,"[chu_idx=643]
+steroi dal and selective mineralocorticoid receptor antago nists, SGLT2i and GLP-1 RA, this network meta-analysis evaluated the relative efficacy of three drugs on cardio vascular and renal outcomes in patients with T2DM and
+
+[chu_idx=652]
+Fig.5 Network meta-analysis reporting RR for renal outcome in patients with T2DM and CKD",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,bb81bd69330c472da3ca91ff44a78cae,finerenone,SGLT2i,"[chu_idx=920]
+Finerenone vs SGLT-2i 1.31 1.07–1.61
+
+[chu_idx=926]
+Finerenone vs SGLT-2i 1.00 0.86–1.16",NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,e489608fdb474067b700394047507d17,sotagliflozin,MACE,NA,NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,ff26b5d72771448fb442430b0e258b15,SGLT2i,Placebo,NA,NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,7ff91a73a7da4002b45ec7957e55d727,Finerenone,Placebo,NA,NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,3c9a7bf065c14970bc1146476f743e0a,finerenone,cardiovascular outcomes,NA,NA
+1,meta-analysis,10.1186/s12933-022-01676-5,1,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,16e32c5e635b436d961692a6b001fdd0,liraglutide,ACD,NA,NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,3e2097964d434e1db47b7e59ed7cfd9c,finerenone,HHF,"[chu_idx=457]
+Compared with placebo, finerenone (RR [95% CI]; 0.79 [0.67–0.92]) and SGLT2i (RR [95% CI]; 0.60 [0.53– 0.68]) were associated with a decreased risk of HHF while GLP-1 RA (RR [95% CI]; 0.90 [0.73–1.09]) did not.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,be93e44ee1d44e1fa6939f5a46ea8101,canagliflozin,HHF,"[chu_idx=514]
+Finerenone (RR [95% CI]; 0.72 [0.52–0.99]), empagli flozin (RR [95% CI]; 0.54 [0.33–0.88]), canagliflozin (RR [95% CI]; 0.55 [0.38–0.78]), dapagliflozin (RR [95% CI]; 0.51 [0.33–0.77]), ertugliflozin (RR [95% CI]; 0.46 [0.28– 0.75]), sotagliflozin (RR [95% CI]; 0.61 [0.42–0.88]) and liraglutide (RR [95% CI]; 0.67 [0.45–0.99]) significantly reduced HHF compared to exenatide.",NA
+2,meta-analysis,10.1186/s12978-021-01207-7,2,s12933-022-01676-5.pdf,278fdfe55f17c5d28b78f7ad083e7511e1a503905fc9f15e7086ea58ef13ec94,479adb8901d34032b7ca8cd55c0bab50,dapagliflozin,HHF,NA,NA
+3,meta-analysis,10.1016/j.ejca.2022.06.058,3,PIIS0959804922004105.pdf,d825a83bd288cf5f7c681b00d3f0bb22b8638220249bc111ea966c236f19e163,b1f4b933cac34d57b03fb2e74af60f2a,overall survival,objective response rate,"[chu_idx=249]
+Forest plot for overall survival, progression-free survival and objective response rate ,( a) Forest plot for overall survival (OS) considering atezolizumab plus bevacizumab as exposure and all other treatments as reference; ( b) forest plot for progression-free survival (PFS) considering atezolizumab plus bevacizumab as exposure and all other treatments as reference; ( c) Forest plot for objective response rate (ORR) considering atezolizumab plus bevacizumab as exposure and all other treatments as reference.",NA
+6,meta-analysis,10.1016/j.ijid.2024.107109,6,PIIS1201971224001802.pdf,fe9bef5e68bef18d40b89982ae0efb1f0d331ea144e7dd8c0b5fe83ce714bea8,4a1494f8381a4030b05e088a2835b44d,vancomycin,treatment duration,"[chu_idx=558]
+It was followed by vancomycin (53.6%), teicoplanin (41.4%) and linezolid (15.0%).
+
+[chu_idx=562]
+According to the forest map ( Figure 4 C3 ), linezolid (SMD 0.85 95% CI 0.19-1.5) has a longer treatment duration than vancomycin.",NA
+7,meta-analysis,10.1016/j.jep.2023.117493,7,1-s2.0-S0378874123013636-main.pdf,9dc57737be4d9985f313e51d5e8625904029700db4655a05a1547c442e4d4340,85aa2312019345f780c20988c04c200e,NSAIDs,Use of Rescue Medication,"[chu_idx=37]
+Compared with placebo, curcumin (OR = 0.17, 95% CI: 0.08 to 0.36), curcumin + NSAIDs (OR = 0.01, 95% CI: 0.00 to 0.13) and NSAIDs (OR = 0.11, 95% CI: 0.02 to 0.47) reduced the use of rescue medication.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,ad849d3b3f424ebda7126a153bc576e0,Amivantamab + Chemotherapy,Efficacy,"[chu_idx=17]
+Based on their superior efﬁcacy, “Chemo_anti–PD-1/PD-L1_anti-VEGF” and
+
+[chu_idx=18]
+“Chemo_Ami” are recommended as preferred treatment options for patients who experienced disease progression on EGFR-TKIs.",NA
+8,meta-analysis,10.6004/jnccn.2024.7092,8,jnccn-article-e247092.pdf,6b1b33862d646f8aa93e55440581a73f2b7056de51af51ad48fe9888eeb1df4e,252f5fdc24db4fb0bb48dc1aeeb0dc8a,EGFR mutation,Weak immunogenicity,"[chu_idx=892]
+EGFR mutation correlates with uninﬂamed phenotype and weak immunogenicity, causing impaired response to PD-1 blockade in non-small cell lung cancer.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,19ac3765dd4145f4b4604404f54bb676,Body Weight,Treatment Comparison (Nivolumab vs Pembrolizumab),"[chu_idx=38]
+Findings In this cost-effectiveness analysis that included 487 patients, when the willingness-to-pay threshold was $100 000 per quality-adjusted lifeyear, for patients weighing less than 72 kg, nivolumab (3 mg/kg administered biweekly) was considered cost-effective; otherwise, pembrolizumab was preferable.
+
+[chu_idx=41]
+Meaning Findings suggest considering both the willingness-to-pay threshold and patient body weight when choosing between nivolumab and pembrolizumab for treating platinumrefractory recurrent or metastatic head and neck squamous cell carcinoma.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,41af2e834f164b1cb60663fb6d67f0c0,ICER (Nivolumab vs Pembrolizumab),Body Weight,"[chu_idx=195]
+The model was particularly sensitive to body weight, the cost of pembrolizumab and nivolumab, and the HR for PFS (nivolumab vs pembrolizumab) (Figure 1).
+
+[chu_idx=196]
+We explored the association of these key factors with the ICER between nivolumab and pembrolizumab.",NA
+9,meta-analysis,10.1001/jamanetworkopen.2021.8065,9,pei_2021_oi_210256_1619637748.9816.pdf,f5f96edde5c290bf6de5e1db7a2fdc419989ae72957186cc0bd01bcbfafb33d7,5ecc50cb9d1c4a02a4204d2f58873fed,ICER (Nivolumab vs Pembrolizumab),HR for PFS (Nivolumab vs Pembrolizumab),"[chu_idx=195]
+The model was particularly sensitive to body weight, the cost of pembrolizumab and nivolumab, and the HR for PFS (nivolumab vs pembrolizumab) (Figure 1).
+
+[chu_idx=196]
+We explored the association of these key factors with the ICER between nivolumab and pembrolizumab.",NA
+10,meta-analysis,10.1093/ageing/afad091,10,afad091.pdf,c232d33db120a79d27727ba3b7c8cc4b358969ec9f15d2f06c06cd9022761241,bc22b9b554b04e6fa705cc0a71ff3fcb,Circle Size,Number of Assigned Patients,"[chu_idx=893]
+Network meta-analysis of eligible comparisons for primary outcomes, overall symptoms eﬃcacy (A) and acceptability (B).Thesizeofeverycircleisproportionaltothenumberofrandomlyassignedpatientsandindicatesthesamplesize,andthewidth of the lines corresponds to the number of trials.",NA

@@ -1,0 +1,92 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,3f1e78931cc14d4798df9a212c9022ee,physical activity,neuroprotective effects,"[chu_idx=41]
+Physical activity (PA) is well established to be protective against various chronic diseases 1e3 and has been associated with neuroprotective effects in age-related neurodegenerative conditions.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,148b542bd8694fb18c5d3f4bf91cf90f,physical activity,intraocular pressure,"[chu_idx=63]
+17 Although many small and experimental studies have identi ﬁed shortterm associations with PA, fewer studies have examined the association of habitual PA with IOP, and the results are inconsistent.18,19",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,ad39dd57b53d43f0a3d20153e0798f25,physical activity,ophthalmic disease,"[chu_idx=70]
+Accelerometry has emerged as the gold standard for objective assessment of PA 30 and is playing an increasingly important role in evaluating associations between PA and ophthalmic disease.
+
+[chu_idx=83]
+Accelerometry has emerged as the gold standard for objective assessment of PA 30 and is playing an increasingly important role in evaluating associations between PA and ophthalmic disease.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,bec3321273394af5a2bfbcfd98c31cbf,total physical activity,intraocular pressure,"[chu_idx=265]
+IOP: þ0.06 mmHg [95% con ﬁdence interval [CI], 0.00 e0.12 mmHg; P ¼ 0.037] for moderate and þ0.08 mmHg [95% CI, 0.02e0.14 mmHg; P ¼ 0.010] for high) with an overall signi ﬁcant trend for higher habitual overall PA associated with very modestly higher IOP ( P ¼ 0.017 for trend; Table 3 ).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,8485280820214474bcae784dd277bc8a,physical activity level,macular perfusion,"[chu_idx=922]
+Short-term effects of exercise on optic nerve and macular perfusion measured by optical coherence tomography angiography.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,836130aa268c4c6d8438d9282576b1f8,physical exercise,choroidal thickness,"[chu_idx=964]
+Effects of physical exercise on macular vessel density and choroidal thickness in children.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,b203cf6dc60b46fe8b2774863f01f729,physical activity,disease prevention,"[chu_idx=1176]
+Genome-wide association analyses of physical activity and sedentary behavior provide insights into underlying mechanisms and roles in disease prevention.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,968954b12e4143b2a19dca25388f2303,problem-focused coping,year of study,"[chu_idx=266]
+We found statistically significant higher levels of aca demic stress ( t = 3.57; p < .001); problem-focused coping ( t = 3.66; p <
+
+[chu_idx=267]
+.001); emotion-focused coping ( t = 1.63; p = .10); depressive symptoms ( t = 2.15; p = .03); and anxiety symptoms ( t = 3.68; p < .001) in the firstyear students.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,19e75d546b434f92a6bcad4314edc653,depressive symptoms,clinical stress,"[chu_idx=360]
+Depressive symptoms 0.41 ** 0.13 * ",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,e0bc24716a3148a78d47424769a7f7f5,immune-related adverse events,overall survival,"[chu_idx=407]
+With Overall Survival
+
+[chu_idx=410]
+HR (95% CI) P valuea irAE 0.53 (0.40-0.70) <.001",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,a584930656444c519b20e57be96b3989,BMI,outcome,"[chu_idx=271]
+BMI (kg/m∧ 2), n (%) <0.001",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,eefd99cfcce14f9dadb561c5ffbf7966,other_hispanic_ethnicity,outcome,"[chu_idx=355]
+Other Hispanic 1782 (8.75%) 1.98 (1.65, 2.37) <0.001",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,a050648e58114806b25f8532201cc138,low_education,depression,"[chu_idx=450]
+on the prevalence and inf luencing factors of depression in 387 asthma patients showed that the severity of asthma symptoms, use of asthma medication, frequency of asthma attacks, lack of education, and race were major risk factors for depression among asthmatics, aligning with our study findings [ 26].",NA
+7,observational study,10.1001/jamanetworkopen.2023.52314,8,tingsgrd_2024_oi_231531_1705094530.5946.pdf,5d9910c19281766d0aef3f551c241c342f4152adebe169eff127001fbee234d0,3f04172c6365484bbbfc44ac209215ea,pathogen,overall,"[chu_idx=298]
+Pathogen
+
+[chu_idx=299]
+Overall NA NA NA 0.21 0.004",NA
+8,observational study,10.1097/JS9.0000000000002658,9,causal_relationship_between_basal_metabolic_rate.25.pdf,ebd63041c17fe9eb8aa04cf438f9e677c483181e6644bd5ffedc11f046634880,a654a11fb97147d89a03f51b69f2cc0d,BMR,KSD,"[chu_idx=357]
+Specifically, the OR for KSD in Q4 compared to Q1 was 0.49 (95% CI: 0.35, 0.70; P < 0.001) in the fully adjusted model (Model 3), indicating a 51% reduction in KSD risk among individuals with the highest BMR levels.
+
+[chu_idx=383]
+In females from the UK Biobank cohort, the effect of BMR on KSD risk was more pronounced at lower BMR levels but plateaued at higher values (Fig.
+
+[chu_idx=396]
+In the US NHANES cohort, BMR was inversely associated with developing KSD in all three groups ( P for overall < 0.05), of which this inverse association was more stable after BMR≥1500 kcal/d in participants with BMI≥30 (P for nonlinearity = 0.049).
+
+[chu_idx=712]
+Overall, BMR is inversely associated with KSD across all subgroups, but the strength and pattern of this association vary by sex and age.
+
+[chu_idx=728]
+but the strength and pattern of this association vary by sex and age.
+
+[chu_idx=770]
+International Journal of Surgery (2025) factor against KSD, offering clinically relevant evidence for future prevention strategies.
+
+[chu_idx=771]
+The identification of BMR as a potential protective factor for
+
+[chu_idx=772]
+KSD
+
+[chu_idx=781]
+By leveraging these extensive datasets, we investigate the relationship between
+
+[chu_idx=782]
+BMR and KSD risk across a broader population, beyond just obese individuals, with comprehensive epidemiological methods, including dose-response analyses, sensitivity testing, and robust adjustments for a wide range of confounding factors.
+
+[chu_idx=784]
+Notably, our findings demonstrate that higher BMR is independently linked to a reduced risk of kidney stones, even after adjusting for BMI and waist circumference, suggesting that the protective effect of higher BMR may involve mechanisms beyond body weight alone.",NA
+8,observational study,10.1097/JS9.0000000000002658,9,causal_relationship_between_basal_metabolic_rate.25.pdf,ebd63041c17fe9eb8aa04cf438f9e677c483181e6644bd5ffedc11f046634880,44a4bfdcd6b3485cb67a8ab52f195284,BMR,lifestyle_behaviors,"[chu_idx=672]
+Specifically, higher BMR is often correlated with more frequent physical activity and healthier lifestyle behaviors [ 4 , 38 , 39 ]",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,fe9e3d66a85f436fbbc4fd893d50199c,fasting_plasma_glucose,MACE,"[chu_idx=298]
+In addition, they showed sig nificantly higher levels of fasting plasma glucose, HbA1c, plasma TG, and LDL-C than non-MACE individuals.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,ddd4aa0cdf194ffa986b2023264db8df,plasma triglycerides,MACE,"[chu_idx=298]
+In addition, they showed sig nificantly higher levels of fasting plasma glucose, HbA1c, plasma TG, and LDL-C than non-MACE individuals.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,5597c0a1a8714131b3acc077ee0448c6,atherogenic_index_of_plasma,nonfatal myocardial infarction,"[chu_idx=385]
+Association was also observed between AIP and cardiovas cular deaths or nonfatal myocardial infarction (Table  3).
+
+[chu_idx=393]
+Association was also observed between AIP and cardiovas cular deaths or nonfatal myocardial infarction (Table  3).
+
+[chu_idx=400]
+On the other hand, sex seemed to also interact with the association between AIP and nonfatal myocardial infarction.
+
+[chu_idx=402]
+Furthermore, the association between AIP and nonfatal myocardial infarction was evaluated, and similar results were found across different population subgroups (Table  4, Addi tional file 1: Figure S3).",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,9379f5613f1e4a8dace3ff1551dc9ccb,age,outcome,"[chu_idx=459]
+≥ 65 295/1623 18.18 543/2139 25.39 1.410 1.224–1.625  < 0.001",NA

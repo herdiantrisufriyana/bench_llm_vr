@@ -1,0 +1,71 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,5b29049f4a804bfc8cc325b7547754f6,physical activity level,mGCIPL thickness,"[chu_idx=47]
+Conclusions: Higher overall PA level and greater time spent in moderate and vigorous PA were not associated with glaucoma status but were associated with thicker mGCIPL.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,2b646aa49c64422fb2fd872819367e60,intense exercise level,retinal ganglion cell death resistance,"[chu_idx=64]
+Animal studies have shown that intense exercise may protect the optic nerve from injury caused by elevated IOP and may attenuate retinal in ﬂammatory responses.20,21 High levels of intense exercise in rats were associated with an increased ability to withstand retinal ganglion cell (RGC) death after acute elevations in IOP, 20 and rats with axotomized optic nerves placed in a forced PA group showed greater RGC survival rates than rats that were not subjected to high levels of activity.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,6eb5f5240aa34315b0a789d1206f060c,leisure screen time,glaucoma outcomes,"[chu_idx=246]
+We conducted 2-sample MR analyses to test for a causal association between 2 genetically determined PA phenotypes and 5 glaucoma-related outcomes.
+
+[chu_idx=247]
+We used published data from a recent large GWAS meta-analysis of physical activity 51 to construct instrumental variables for leisure screen time (LST) and moderate to vigorous physical activity (MVPA).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,5bc3357df9f64487964a64a80cfe3fab,physical activity level,mGCIPL thickness,"[chu_idx=285]
+Higher levels of self-reported
+
+[chu_idx=286]
+PA were associated with a thicker mGCIPL ( P < 0.001 for trend; Table S5, available at www.aaojournal.org).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,11f4e7fc86cc4cac89b171ae698b062d,Vigorous physical activity,Reference group,"[chu_idx=472]
+Vigorous 1.00 (0.99 e1.00) 0.19 1.00 (0.99 e1.00) 0.24",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,d82eea0f78c74e66b0fe348c0c6d522c,Quartile 2,Hazard ratio,"[chu_idx=486]
+Quartile 2 0.97 (0.84 e1.12) 0.67 0.69 (0.52 e0.90) 0.007",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,ba7b3289e6a34f7dbda13484c2bbbea6,Physical activity quartile 4,Hazard ratio,"[chu_idx=494]
+Quartile 4 0.91 (0.79 e1.05) 0.21 0.84 (0.62 e1.14) 0.28",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,8b1a9718df624be6bae4b6aa235f397c,Quartile 3,Hazard ratio,"[chu_idx=499]
+Quartile 3 0.95 (0.82 e1.10) 0.49 dd",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,c4258d1fdf98485cab835f55201d9c70,Forced exercise,Optic nerve protection against IOP injury,"[chu_idx=900]
+Forced exercise protects the aged optic nerve against intraocular pressure injury.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,57a1f173ffbc440d989e4dd83d6a9c9b,problem-focused coping,psychological well-being,"[chu_idx=275]
+However, this type of coping strategy was directly and significantly associated with resilience and psychological wellbeing, and indirectly with depressive symptoms.",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,6e4466021d6d44e69082962523f1d7a0,rheumatoid arthritis,sepsis,"[chu_idx=281]
+In the univariable MR study, there was a causal association between genetically predicted RA (OR = 1.077, 95%
+
+[chu_idx=282]
+CI = 1.058–1.097, p = 1.00E-15) and T1DM (OR = 1.036, 95% CI = 1.023–1.048, p = 9.130E-09) with sepsis.
+
+[chu_idx=334]
+After mul tivariable adjustment, we found that RA (OR = 1.091, 95% CI = 1.061–1.123, p = 1.66E-09) continues to exhibit a causal association with sepsis by adjusting for SLE (Fig.
+
+[chu_idx=348]
+After mul tivariable adjustment, we found that RA (OR = 1.091, 95% CI = 1.061–1.123, p = 1.66E-09) continues to exhibit a causal association with sepsis by adjusting for SLE (Fig.",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,3ba9407c8b8c4480b7634a436de27db7,Sex,Group,"[chu_idx=501]
+Sex (% Female) 42.6% 46.0%  < 0.001",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,59a99e915db64498a80bc8e53d03d2f0,Type 1 diabetes,odds ratio,"[chu_idx=546]
+Type 1 diabetes 0.81 (0.59–1.12) 0.22",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,6c9e37929b5a487284c9ef114a3a0946,exposure,outcome,"[chu_idx=234]
+Scatter plots illustrated the trend of correlation between exposure and outcome.",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,81c1f8a88a5a45158cac206d84df3f76,Non-Hispanic Black,outcome,"[chu_idx=357]
+Non-Hispanic Black 4131 (20.29%) 2.26 (1.94, 2.64) <0.001",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,37c9875c09a8444bb3595611c39f8f5d,asthma symptom severity,depression,"[chu_idx=450]
+on the prevalence and inf luencing factors of depression in 387 asthma patients showed that the severity of asthma symptoms, use of asthma medication, frequency of asthma attacks, lack of education, and race were major risk factors for depression among asthmatics, aligning with our study findings [ 26].",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,cb3693fc16af4084ae5a57c17f6da96a,LDL cholesterol,BMD,"[chu_idx=370]
+Moreover, the metabolic index, including diastolic blood pressure (DBP; β : 0.011 mmHg, 95% CI: [0.003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=371]
+CI: [− 0.038, − 0.014], P = 1.41e − 05), CHO (β : − 0.026
+
+[chu_idx=379]
+003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=380]
+CI: [− 0.038, − 0.014], P = 1.41e − 05), CHO (β : − 0.026",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,5a60e5452ed94b76a5c65cf4557cfb84,steatosis,BMD,"[chu_idx=392]
+MAFLD and steatosis and
+
+[chu_idx=393]
+BMD.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,782f2ba8edfa4f5bb50ff77438a56483,Diastolic blood pressure,Group,"[chu_idx=243]
+Diastolic 74.88 (SD: 10.66) 75.14 (SD: 10.48) 73.70 (SD: 11.37)  < 0.001",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,68cbdac9a933435da0ea3838e4be8068,Systolic blood pressure,Diastolic blood pressure,"[chu_idx=257]
+Systolic 136.36 (SD: 17.11) 136.00 (SD: 16.88) 138.02 (SD: 18.04)  < 0.001
+
+[chu_idx=258]
+Diastolic 74.88 (SD: 10.66) 75.14 (SD: 10.48) 73.70 (SD: 11.37)  < 0.001",NA

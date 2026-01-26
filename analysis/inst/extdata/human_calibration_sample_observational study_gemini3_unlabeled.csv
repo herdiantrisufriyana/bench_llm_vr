@@ -1,0 +1,62 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,observational study,10.1097/CM9.0000000000002753,1,hypertension_and_nafld_risk__insights_from_the.9.pdf,fa4c05e72b5636dfdace2061fdff8abe059895b9b0b8f13e70c41b44b699205e,cf8ec25972884fdb8011057966923d7e,NAFLD,age,"[chu_idx=121]
+However ,  hypertension and NAFLD often co-exist in the same individual in a complex two-way relationship as they share common metabolic risk factors ,  such as age , obesity ,  and IR .
+
+[chu_idx=138]
+However ,  hypertension and NAFLD often co-exist in the same individual in a complex two-way relationship as they share common metabolic risk factors ,  such as age , obesity ,  and IR .",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,01b4d7822f564825b7c5f2352da8fea9,single nucleotide polymorphisms (SNPs),Glaucoma,"[chu_idx=219]
+For glaucoma-related genetic variants, we constructed a polygenic risk score (PRS) based on 2673 independent single nucleotide polymorphisms (SNPs) associated with glaucoma ( P /C20 0.001) from a recent multitrait analysis of a genome-wide association study (GWAS) that included the UK Biobank.
+
+[chu_idx=223]
+GWAS to generate a glaucoma PRS for each participant using a standard weighted sum of individual SNPs: X 2673 i ¼ 1 bbðiÞ /C3 SNPðiÞ; where bbðiÞ is the estimated effect size of SNP (i) on glaucoma.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,6962fae39f24467083c67effe5fc85f3,self-reported physical activity,Intraocular Pressure,"[chu_idx=264]
+In a maximally adjusted multivariable model, self-reported overall habitual moderate and high PA levels were associated with a very modestly higher IOP compared with participants who reported the lowest level of overall PA (difference in
+
+[chu_idx=265]
+IOP: þ0.06 mmHg [95% con ﬁdence interval [CI], 0.00 e0.12 mmHg; P ¼ 0.037] for moderate and þ0.08 mmHg [95% CI, 0.02e0.14 mmHg; P ¼ 0.010] for high) with an overall signi ﬁcant trend for higher habitual overall PA associated with very modestly higher IOP ( P ¼ 0.017 for trend; Table 3 ).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,52ab7113d4e84eec916fb5ba844af655,Intraocular Pressure,Smoking Status,"[chu_idx=590]
+*b Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, and height.
+
+[chu_idx=591]
+yb Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, height, and season.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,18231d46d5944f509beea4500d588dc4,Exercise,Retinal Ganglion Cell Death,"[chu_idx=911]
+Aerobic exercise delays retinal ganglion cell death after optic nerve injury.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,c3ede9a446d54dc19fa7ade9fb18c1a7,Exercise,Optic Nerve Perfusion,"[chu_idx=922]
+Short-term effects of exercise on optic nerve and macular perfusion measured by optical coherence tomography angiography.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,aaff29ce603b4205954ae9a83774e7d8,Genetic Factors,Smoking Behavior,"[chu_idx=1161]
+Novel insights into the genetics of smoking behaviour, lung function, and chronic obstructive pulmonary disease (UK BiLEVE): a genetic association study in UK Biobank.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,824732a2fa2b43bf8ee7fcbfa8e60c56,physical activity,Disease Prevention,"[chu_idx=1176]
+Genome-wide association analyses of physical activity and sedentary behavior provide insights into underlying mechanisms and roles in disease prevention.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,717046c2e5f84e5bba860ae7aa00cd6e,resilience,depressive symptoms,"[chu_idx=294]
+Path d shows that resilience was negatively associated with depression and anxiety ( p < .001).
+
+[chu_idx=543]
+Finally, resilience, associated with depression, was a mediating factor in the relationship between academic stress and psychological well-being.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,de936f50dbee407183880ada33e53ccc,coping skills,psychological well-being,"[chu_idx=542]
+Finally, regardless of year group, the most important predictors of aca demic stress were clinical stress and anxiety, while academic stress, depression, and coping skills were the most significant predictors of psychological well-being.",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,52a4d236534748d2862b032020ed240b,scores,restrictions,"[chu_idx=290]
+c Lowerscoresindicatefewerrestrictionsandcapable ofmoreactivity.",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,274017187ce7453cbaba355bac80a69d,Infection,Immunosuppressive/immunomodulatory medication,"[chu_idx=444]
+demonstrated that the occurrence of infections, including severe infections, among SLE patients is correlated with immunosuppres sive or immune-modulating medications [55].",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,fd9ac7bb8fdf4a3b803c1d7b2ca4bd96,Exposure,Outcome,"[chu_idx=234]
+Scatter plots illustrated the trend of correlation between exposure and outcome.",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,068fc19ffb244196b17799baef6bb10b,Psychological symptoms,T-bet mRNA expression,"[chu_idx=501]
+found that individuals with asthma who exhibit psychological symptoms, such as depression and anxiety , show a significant increase in the levels of IFN- γ, TNF- α, and IL-17A, as well as an elevation in
+
+[chu_idx=502]
+T -bet mRNA expression; whereas asthma patients without psychological symptoms did not show an increase in the levels of these related biomarkers [ 46].Given the role of inf lammation in both asthma and depression, the persistent inf lammation during asthma attacks may serve as a “bridge” linking the two, with repeated asthma episodes potentially leading to the onset of depression.",NA
+8,observational study,10.1097/JS9.0000000000002658,9,causal_relationship_between_basal_metabolic_rate.25.pdf,ebd63041c17fe9eb8aa04cf438f9e677c483181e6644bd5ffedc11f046634880,cd66a9d04ca44a92b011b09f0b2a1264,Circulating vitamin D,Nephrolithiasis,"[chu_idx=1085]
+Association between circulating vitamin d level and urolithiasis: a systematic review and meta-analysis.",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,75a40805adcf43689845640b317b54dc,heel bone mineral density,drinking status,"[chu_idx=183]
+Furthermore, there were more current smokers and fewer current drinkers in the reduced heel BMD group, while participants with reduced heel BMD had significantly lower",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,db8b790c966141d48417c180db70715b,race,heel bone mineral density,"[chu_idx=188]
+First, we included age, sex, race, and BMI, traditional risk factors for reduced heel BMD, as covariates in model 1.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,099ca72d4e7b42cea574ce22f05ed085,Primary and Secondary Outcomes,Previous Cardiovascular Event,"[chu_idx=351]
+Covariables included in multivariable cox regression models were model 1: age, sex, previous cardiovascular event, smoking, BMI, and duration of diabetes.
+
+[chu_idx=352]
+Model 2: age, sex, previous cardiovascular event, smoking, BMI, duration of diabetes, previous congestive heart failure, eGFR, HbA1c, plasma triglycerides, total plasma cholesterol, and plasma HDL-C.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,5b37a074258f46e6a31e4887c793508d,Atherogenic Index of Plasma (AIP),Cardiovascular Disease,"[chu_idx=727]
+Atherogenic index of plasma: novel predictive biomarker for cardiovascular illnesses.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,ee4e8a530f7e4302ae1e30a2425b43c4,Atherogenic Index of Plasma (AIP),Coronary Artery Disease,"[chu_idx=737]
+Atherogenic index of plasma is an independent risk factor for coronary artery disease and a higher",NA

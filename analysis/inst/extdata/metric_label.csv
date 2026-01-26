@@ -1,0 +1,8 @@
+metric,label
+egrc,Evidence-grounded relationship correctness - %
+uer,Ungrounded extraction rate - %
+red,Relative extraction density - times of avg. across LLMs
+runtime_doc, Runtime per article - seconds/article
+runtime_edge, Runtime per relationship - seconds/relationship
+cost_doc, Cost per article - USD/article
+cost_edge, Cost per relationship - USD/relationship

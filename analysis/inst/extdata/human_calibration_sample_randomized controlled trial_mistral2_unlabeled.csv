@@ -1,0 +1,80 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,01afa41c4d364e5888d0f879f6189e22,patellar_tendon_stiffness,patellar_tendinopathy,"[chu_idx=1151]
+The association between Patellar tendon stiffness measured with shearw ave elastography and Patellar tendinopathya case-",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,a7d00901eecf4706a01bccb1066d70df,physical_functioning,dyspnea,"[chu_idx=397]
+Physical functioning 12 40 3.83 (−1.54 to 9.21) 40 0.67 (−3.98 to 5.32) 2.68 (−5.11 to 10.47) .50 0.17 18 31 −1.94 (−10.53 to 6.66) 38 −3.86 (−9.57 to 1.85) 2.07 (−6.21 to 10.35) .63 0.10 24 27 4.20 (−3.72 to 12.11) 30 −7.74 (−16.14 to 0.66) 12.12 (3.31 to 20.93) b .007 0.54
+
+[chu_idx=399]
+Dyspnea 12 40 2.50 (−4.90 to 9.91) 40 0.00 (−7.23 to 7.24) 3.50 (−6.47 to 13.46) .49 0.15 18 31 1.08 (−6.32 to 8.47) 38 3.51 (−4.46 to 11.48) −3.85 (−14.44 to 6.73) .48 −0.17 24 27 2.47 (−7.16 to 12.09) 30 1.08 (−10.94 to 13.09) 2.66 (−8.61 to 13.92) .64 0.09",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,7f7253c27f984609928fe1a86403ffc3,physical_functioning,pain,"[chu_idx=397]
+Physical functioning 12 40 3.83 (−1.54 to 9.21) 40 0.67 (−3.98 to 5.32) 2.68 (−5.11 to 10.47) .50 0.17 18 31 −1.94 (−10.53 to 6.66) 38 −3.86 (−9.57 to 1.85) 2.07 (−6.21 to 10.35) .63 0.10 24 27 4.20 (−3.72 to 12.11) 30 −7.74 (−16.14 to 0.66) 12.12 (3.31 to 20.93) b .007 0.54
+
+[chu_idx=400]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.
+
+[chu_idx=404]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.02) .31 −0.21 24 27 −3.70 (−10.86 to 3.46) 30 2.22 (−8.21 to 12.65) −2.98 (−14.03 to 8.07) .60 −0.13",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,30ae08606ddf4cb49f266f6bec15906b,emotional_functioning,pain,"[chu_idx=398]
+Emotional functioning 12 40 5.83 (0.07 to 11.6) 40 2.71 (−3.22 to 8.63) 2.89 (−5.21 to 10.99) .48 0.16 18 31 1.07 (−6.44 to 8.59) 38 −3.73 (−9.41 to 1.96) 2.35 (−6.25 to 10.96) .59 0.12 24 27 5.56 (0.38 to 10.73) 30 −2.50 (−13.47 to 8.47) 6.03 (−3.18 to 15.24) .20 0.26
+
+[chu_idx=400]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.
+
+[chu_idx=402]
+Emotional functioning 12 40 5.83 (0.07 to 11.6) 40 2.71 (−3.22 to 8.63) 2.89 (−5.21 to 10.99) .48 0.16 18 31 1.07 (−6.44 to 8.59) 38 −3.73 (−9.41 to 1.96) 2.35 (−6.25 to 10.96) .59 0.12 24 27 5.56 (0.38 to 10.73) 30 −2.50 (−13.47 to 8.47) 6.03 (−3.18 to 15.24) .20 0.26
+
+[chu_idx=404]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.02) .31 −0.21 24 27 −3.70 (−10.86 to 3.46) 30 2.22 (−8.21 to 12.65) −2.98 (−14.03 to 8.07) .60 −0.13",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,3668ae354dae4564a68891f18fe68a21,epc_intervention_count,two_year_survival_probability,"[chu_idx=421]
+When divided by the number of EPC interventions, the 2-year survival probability increased significantly if the intervention was received 10 or more times (difference, 53.6%;P < .001) (Figure 2B).",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,2bd5ee20a126434592d862c68b56d97b,qol_score_change,group_allocation,"[chu_idx=449]
+This study showed that the score changes in various QOL measures, especially existential burden, were substantially better even after 24 weeks in the intervention group compared with the control group.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,2f8e7bb8d55241f5b96c80807de3d976,FABQ,pain,"[chu_idx=217]
+PSEQ, CSQ, or FABQ subscale scores at 12 weeks was associated with a concurrent change in pain or disability over the intervention period (0 to 12 weeks) or a future change over the remaining follow-up period (12 to 52 weeks).",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,2a839669d4034fb5b295adf2d95894e7,PSEQ,CSQ,"[chu_idx=218]
+We additionally calculated Pearson correlation coefficients between continuous versions of the scales across 1) baseline values, 2) changes during the intervention period (0 to 12 weeks), and 3) intervention period changes with followup period (12 to 52 weeks) changes
+
+[chu_idx=229]
+We additionally calculated Pearson correlation coefficients between continuous versions of the scales across 1) baseline values, 2) changes during the intervention period (0 to 12 weeks), and 3) intervention period changes with followup period (12 to 52 weeks) changes.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,4dcc22fb92b146eb8d2a8a04067a09d9,PSEQ,FABQ,"[chu_idx=218]
+We additionally calculated Pearson correlation coefficients between continuous versions of the scales across 1) baseline values, 2) changes during the intervention period (0 to 12 weeks), and 3) intervention period changes with followup period (12 to 52 weeks) changes
+
+[chu_idx=229]
+We additionally calculated Pearson correlation coefficients between continuous versions of the scales across 1) baseline values, 2) changes during the intervention period (0 to 12 weeks), and 3) intervention period changes with followup period (12 to 52 weeks) changes.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,c14b8e43f11045fea828c99266b2c5dc,improvement in cognitive appraisal,improvement in pain,"[chu_idx=285]
+For most measures, clinically meaningful improvements in cognitive appraisal were associated with larger post-intervention improvements in pain and physical function (Table 4).",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,99322fb63bb2455e84bf8ff487311682,improvement in cognitive appraisal,improvement in physical function,"[chu_idx=285]
+For most measures, clinically meaningful improvements in cognitive appraisal were associated with larger post-intervention improvements in pain and physical function (Table 4).",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,9e2604b5b42b4e738c69fc605f0bce42,improvement in pain,improvement in PSEQ,"[chu_idx=286]
+For example, those with a clinically meaningful improvement in the PSEQ at the end of the intervention (week 12) experienced an additional 0.80-point improvement in pain and a 2.56-point improvement in disability at week 12, compared with those without a clinical meaningful improvement in the PSEQ.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,a389f09a86e846fe93fa1fd476c8c6d9,improvement in disability,improvement in PSEQ,"[chu_idx=286]
+For example, those with a clinically meaningful improvement in the PSEQ at the end of the intervention (week 12) experienced an additional 0.80-point improvement in pain and a 2.56-point improvement in disability at week 12, compared with those without a clinical meaningful improvement in the PSEQ.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,08c8d32a249f4a64a96221bd174edcf9,self-efficacy,improvement in physical function,"[chu_idx=306]
+Irrespective of treatment, clinically meaningful improvements in self-efficacy, catastrophizing, and fear avoidance were associated with larger 12-week improvements in pain and function.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,6d7b847a8f4b45f5b76f1105b3571cfd,fear avoidance,improvement in pain,"[chu_idx=306]
+Irrespective of treatment, clinically meaningful improvements in self-efficacy, catastrophizing, and fear avoidance were associated with larger 12-week improvements in pain and function.",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,0e443d8c14eb41adac2b21af32bb7489,improvement in self-efficacy,change in pain,"[chu_idx=539]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,45cbcce425824484b854dc94ffb7ca38,improvement in self-efficacy,change in physical function,"[chu_idx=539]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,b154fb6e51ba4e069b405edb2977478e,improvement in coping skills,change in pain,"[chu_idx=539]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,c627dce7b54548a097b4944437b2395d,fear_avoidance_improvement,change in physical function,"[chu_idx=539]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed
+
+[chu_idx=555]
+The association of minimal clinically important improvements in self-efﬁcacy, coping skills, and fear avoidance by 12 weeks with changes in pain and physical function during the treatment phase and follow-up period, with missing data imputed",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,939838d2014e4cb190babdf18e6137f8,catastrophizing,back_physical_function_improvement,"[chu_idx=592]
+Downloaded from https://academic.oup.com/painmedicine/article/23/4/834/6410653 by 82544544-INACTIVE user on 21 January 2026 catastrophizing, were associated with larger improvements in pain and back-related physical function.
+
+[chu_idx=606]
+Downloaded from https://academic.oup.com/painmedicine/article/23/4/834/6410653 by 82544544-INACTIVE user on 21 January 2026 catastrophizing, were associated with larger improvements in pain and back-related physical function.",NA

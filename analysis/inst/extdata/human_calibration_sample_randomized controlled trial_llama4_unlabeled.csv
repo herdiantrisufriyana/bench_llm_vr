@@ -1,0 +1,77 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,randomized controlled trial,10.1056/NEJMoa2405888,1,NEJMoa2405888.pdf,8a231b7571bc2716948f042e17bc19419b2d73582b96e246275dfeb8f385d405,e4d51a7525634cbc8683a6f7a4e0f558,Bone pain,Alkaline phosphatase increased,"[chu_idx=594]
+Bone pain 40 (8) 96 (20)
+
+[chu_idx=595]
+Alkaline phosphatase increased 54 (11) 81 (17)",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,dc94f404b09e420eb13735816a811544,patient satisfaction,PTLE group,"[chu_idx=72]
+No significant betweengroup difference w as found for subjective patient satisfaction (81% vs 83%, p=0.54) and exercise adherence between the PTLE group and EET group after 24 weeks (40% vs 49%, p=0.33).
+
+[chu_idx=90]
+No significant betweengroup difference w as found for subjective patient satisfaction (81% vs 83%, p=0.54) and exercise adherence between the PTLE group and EET group after 24 weeks (40% vs 49%, p=0.33).",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,1df3d38ed1164a57be0c264f0971c2f6,age,sex,"[chu_idx=696]
+These scores and the adjusted mean betweengroup differences were calculated using Generalised Estimating Equations with adjustments for the following predefined baseline v ariables: age, sex, BMI, symptom duration and Cincinnati Sports Activity Scale.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,5fae1498f4a14761aa1134a9af8b4e52,sex,BMI,"[chu_idx=696]
+These scores and the adjusted mean betweengroup differences were calculated using Generalised Estimating Equations with adjustments for the following predefined baseline v ariables: age, sex, BMI, symptom duration and Cincinnati Sports Activity Scale.",NA
+2,randomized controlled trial,10.1136/bjsports-2020-103403,2,501.full.pdf,c3ce1fb927c5c97a7df62f62aba50cf5bd548fc2253ffaefaa3f803bdd8e23b2,13771d0639824d85bb288b1cff0470b0,EET group,patient satisfaction,"[chu_idx=820]
+ive patient satisfaction (81% vs 83%, p=0.54) and exercise adherence (40% vs 49%, p=0.33) between the PTLE group and EET group after 24 weeks.",NA
+3,randomized controlled trial,10.1001/jamapediatrics.2021.5547,3,jamapediatrics_williams_2022_oi_210080_1646329686.28064.pdf,ca304b988918a5feb579f321d49fbab5d2eb51e6941e7ad8811ae3322b4ac3fe,4909e5219c9a41c6b5b53a39563fe6b0,treatment duration,antibiotic-associated adverse effects,"[chu_idx=49]
+However,thesestudieswere designedasnoninferiorityefficacytrialsanddidnotcomprehensivelyconsiderpotentialantibiotic-associatedadverseeffects,animportantpatient-centeredoutcomethatimpactspatientexperience,treatmentadherence,andefficacy.Noneof theaforementionedstudiesexaminedpotentialassociations betweentreatmentdurationanditsimpactonthereservoirof antibiotic resistance genes in the respiratory tract microbiome(ie,theresistome).
+
+[chu_idx=90]
+Downloaded from jamanetwork.com by National Yang Ming University Library user on 01/21/2026 the presence and severity of antibiotic-associated adverse effects(Figure1;eMethodsin Supplement2 ).Next,usingactualreportedtreatmentduration(nottreatmentassignment) foreachparticipant,werankedtheparticipants’overallexperiences according to the following criteria: (1) when comparing2participantswithdifferentDOORranks,theparticipant with a more desirable DOOR received a higher (more desirable)rankand(2)whencomparingtheoveralloutcomesof2 participants with identical DOOR ranks, the participant with fewerreportedtotaldaysofantibioticreceivedahigherrank.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,44632f55ecd247af9cf1d22b6f6ca2ad,bimekizumab,ustekinumab,"[chu_idx=68]
+BE SURE10 trials, bimekizumab led to greater clinical improvements in patients with moder ate-to-severe plaque psoriasis than placebo, than the interleukin-12/23 inhibitor ustekinumab, and than the tumor necrosis factor inhibitor adali mumab but was associated with a greater inci dence of oral candidiasis.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,2212d3c275d3437080be44566894dfa7,bimekizumab,PASI 100,"[chu_idx=246]
+At week 16, a total of 230 patients (61.7%) who received bimekizumab, as compared with 181 patients (48.9%) who received secukinumab, had
+
+[chu_idx=259]
+At week 4, after one dose of bimekizumab, 265 patients (71.0%) in that group, as compared with 175 patients (47.3%) in the secukinumab group, had a PASI 75 response (adjusted risk difference, 23.7 percentage points; 95% CI, 17.0 to 30.4; P<0.001) (Table 2).
+
+[chu_idx=260]
+At week 48, a total of 250 patients (67.0%) who received bimekizumab as compared with 171 (46.2%) who received secukinumab had a PASI 100 response (adjusted risk difference, 20.9 percentage points; 95% CI, 14.1 to 27.7; P<0.001) (Fig.
+
+[chu_idx=271]
+In the maintenance population at week 48, a total of 108 patients (73.5%) who continued to receive bimekizumab every 4 weeks and 142 (66.0%) who transitioned to receive bimekizumab every 8 weeks, as compared with 171 (48.3%) who continued to receive secukinumab after week 16, had a PASI 100 response (adjusted risk differ ence, bimekizumab every 4 weeks vs.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,25a10875420a46db8bf5b4835da5bd51,bimekizumab,IGA score,"[chu_idx=278]
+Furthermore, at week 16, a total of 319 patients (85.5%) in the bimekizumab group as compared with 291 (78.6%) in the secukinumab group had an IGA score of 0 or 1 (adjusted risk difference, 7.0 percentage points; 95% CI, 1.6 to 12.4), and 348 patients (93.3%) in the bimekizumab group as compared with 337 (91.1%) in the secukinumab group had a PASI 75 response (adjusted risk difference, 2.3 percentage points; 95% CI, −1.5 to 6.1) (Fig.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,2d5dff6a148f4838826b1f3e9f5fab56,secukinumab,IGA score,"[chu_idx=278]
+Furthermore, at week 16, a total of 319 patients (85.5%) in the bimekizumab group as compared with 291 (78.6%) in the secukinumab group had an IGA score of 0 or 1 (adjusted risk difference, 7.0 percentage points; 95% CI, 1.6 to 12.4), and 348 patients (93.3%) in the bimekizumab group as compared with 337 (91.1%) in the secukinumab group had a PASI 75 response (adjusted risk difference, 2.3 percentage points; 95% CI, −1.5 to 6.1) (Fig.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,3eb9251dde4444b9b8005545d6325278,secukinumab,upper respiratory tract infection,"[chu_idx=433]
+The most common adverse events that oc curred during the treatment period, reported in more than 5% of patients in any group, were upper respiratory tract infection, oral candidia sis, and urinary tract infection.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,3fa4dc496b30428ca9a67776517293d7,oral candidiasis,secukinumab,"[chu_idx=434]
+Oral candidiasis infections were more common among patients receiving bimekizumab than among those re ceiving secukinumab (19.3% [72 patients] vs.
+
+[chu_idx=443]
+Oral candidiasis infections were more common among patients receiving bimekizumab than among those re ceiving secukinumab (19.3% [72 patients] vs.",NA
+5,randomized controlled trial,10.1056/NEJMoa2102383,5,NEJMoa2102383.pdf,5386174a842adc587038870e0476c2bfe17b7de9a7d24f174116a9d8477a8f84,8edff19b498b41a6b5849ead0819e763,urinary tract infection,oral candidiasis,"[chu_idx=442]
+The most common adverse events that oc curred during the treatment period, reported in more than 5% of patients in any group, were upper respiratory tract infection, oral candidia sis, and urinary tract infection.",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,243943481f6741239f448dd71720fbab,global health status,QOL,"[chu_idx=336]
+In the case of global health status or QOL, there were no significant differences between 12 and 24 weeks, but at 18 weeks the difference from the baseline score was significantly higher in the intervention group than in the control group (11.00 [95% CI, 0.78-21.22] points;P = .04; effect size = 0.42).",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,dfa979c39d844eae815681fa44b1b4b5,physical functioning,pain,"[chu_idx=397]
+Physical functioning 12 40 3.83 (−1.54 to 9.21) 40 0.67 (−3.98 to 5.32) 2.68 (−5.11 to 10.47) .50 0.17 18 31 −1.94 (−10.53 to 6.66) 38 −3.86 (−9.57 to 1.85) 2.07 (−6.21 to 10.35) .63 0.10 24 27 4.20 (−3.72 to 12.11) 30 −7.74 (−16.14 to 0.66) 12.12 (3.31 to 20.93) b .007 0.54
+
+[chu_idx=400]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.
+
+[chu_idx=404]
+Pain 12 40 −0.83 (−8.74 to 7.08) 40 −0.83 (−7.55 to 5.88) 1.69 (−8.02 to 11.40) .73 0.07 18 31 0.00 (−9.73 to 9.73) 38 7.89 (−0.23 to 16.02) −5.30 (−15.62 to 5.02) .31 −0.21 24 27 −3.70 (−10.86 to 3.46) 30 2.22 (−8.21 to 12.65) −2.98 (−14.03 to 8.07) .60 −0.13",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,53d8409adc9c4ad79748a34835bacb8f,QOL,EPC,"[chu_idx=447]
+In previous studies, QOL substantially improved or deteriorated less in patients receiving EPC, 5 but most studies confirmed the QOL improvement only in the short term of 12 weeks or demonstrated a small effect size.",NA
+6,randomized controlled trial,10.1001/jamanetworkopen.2024.26304,6,kang_2024_oi_240820_1722527189.44019.pdf,91b1227742aac9b08d85b7b0d493295580cf011a849b99640d9c63d53893edf2,77c8e58e1219401ab9bb277c6961851a,Core strategy,Implementation strategy,"[chu_idx=465]
+Core strategy 12 40 3.80 (−5.32 to 12.92) 40 −4.74 (−11.41 to 1.93) 9.11 (−0.68 to 18.90) b .07 0.37 18 31 0.09 (−12.85 to 13.03) 38 −6.41 (−11.50 to −1.33) 5.20 (−5.09 to 15.50) .32 0.20 24 27 13.09 (1.89 to 24.30) 30 −5.44 (−14.34 to 3.46) 17.16 (6.14 to 28.18) b .002 0.63
+
+[chu_idx=467]
+Implementation strategy 12 40 7.05 (0.73 to 13.38) 40 0.07 (−4.13 to 4.27) 7.57 (−0.33 to 15.48) b .06 0.45 18 31 12.68 (3.14 to 22.21) 38 −0.99 (−6.59 to 4.62) 12.16 (3.84 to 20.47) b .004 0.54 24 27 23.30 (13.48 to 33.13) 30 0.97 (−6.21 to 8.16) 21.27 (12.37 to 30.17) b <.001 0.87",NA
+7,randomized controlled trial,10.1093/pm/pnab318,7,pnab318.pdf,8eefc735351d4d5f4bf33e24644c750c53ad538af5a9f27fb092ee635a6a9e3a,fa727fca51944822a4ab2ae4433f094e,PSEQ,PT,"[chu_idx=38]
+All three groups showed improvements in PSEQ (range 0–60) at 12 weeks (yoga, mean difference [MD] ¼ 7.0, 95% conﬁdence interval [CI]: 4.9, 9.0; PT, MD ¼ 6.9, 95% CI: 4.7 to 9.1; and education, MD ¼ 3.4, 95% CI: 0.54 to 6.3), with yoga and PT improvements being clinically meaningful.",NA
+8,randomized controlled trial,10.1001/jamapsychiatry.2024.2349,8,jamapsychiatry_diefenbach_2024_oi_240051_1733254046.61977.pdf,ce64c9e63ce68eeeac89b3ac517df7bf50873941399e1a4c673d6522426a36b7,4bd1d5c8da8a4e66867ed00c17b2be7c,Anxiety,race (White vs historically marginalized groups),"[chu_idx=287]
+Groupcomparisons:genderidentity(cisvsgenderdiverse),race(Whitevs historicallymarginalizedgroups),suicideattemptmethod(overdose vsallothers),diagnosticcategory(presencevsabsence).
+
+[chu_idx=300]
+Groupcomparisons:genderidentity(cisvsgenderdiverse),race(Whitevs historicallymarginalizedgroups),suicideattemptmethod(overdose vsallothers),diagnosticcategory(presencevsabsence).",NA
+10,randomized controlled trial,10.1056/NEJMoa2116846,10,NEJMoa2116846.pdf,c9cc9e434a1e6cb7023f7c55baca7f12633494d7e2ca50d8a67def12f16ebf60,a74330599ce846aeb35316db8b05b79a,remdesivir group,alleviation of symptoms,"[chu_idx=279]
+FLU-PRO Plus questionnaire before the first in fusion, 23 of 66 patients (34.8%) in the remde sivir group and 15 of 60 (25.0%) in the placebo group reported alleviation of symptoms by day 14 (rate ratio, 1.41; 95% CI, 0.73 to 2.69) (Fig.
+
+[chu_idx=281]
+In a post hoc analysis involving patients who completed the baseline questionnaire any time on the day of the first infusion (either before or after the infusion), 61 of 169 patients (36.1%) in the remdesivir group and 33 of 165 (20.0%) in the placebo group reported alleviation of symptoms by day 14 (rate ratio, 1.92; 95% CI, 1.26 to 2.94) (Fig.",NA

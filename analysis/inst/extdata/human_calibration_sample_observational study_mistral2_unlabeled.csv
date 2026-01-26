@@ -1,0 +1,92 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,observational study,10.1097/CM9.0000000000002753,1,hypertension_and_nafld_risk__insights_from_the.9.pdf,fa4c05e72b5636dfdace2061fdff8abe059895b9b0b8f13e70c41b44b699205e,9f9174feee3d46da8b9a2065619046be,NAFLD,obesity,"[chu_idx=138]
+However ,  hypertension and NAFLD often co-exist in the same individual in a complex two-way relationship as they share common metabolic risk factors ,  such as age , obesity ,  and IR .",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,6ad6962fad7c4d2191cfd71f7076d395,vigorous_physical_activity,optic_nerve_protection,"[chu_idx=64]
+Animal studies have shown that intense exercise may protect the optic nerve from injury caused by elevated IOP and may attenuate retinal in ﬂammatory responses.20,21 High levels of intense exercise in rats were associated with an increased ability to withstand retinal ganglion cell (RGC) death after acute elevations in IOP, 20 and rats with axotomized optic nerves placed in a forced PA group showed greater RGC survival rates than rats that were not subjected to high levels of activity.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,a51d517f44e041e181f520fecc5e4a80,moderate_to_vigorous_physical_activity,glaucoma_outcome,"[chu_idx=246]
+We conducted 2-sample MR analyses to test for a causal association between 2 genetically determined PA phenotypes and 5 glaucoma-related outcomes.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,3a85e9cba78847008f0892c31dda06cc,light_physical_activity_time,mGCIPL_thickness,"[chu_idx=290]
+Compared with participants in the lowest quartiles, those in the highest quartile of self-reported time spent in each of light, moderate, and vigorous PA showed thicker mGCIPL by þ0.03 mm (95% CI, 0.05 e0.36 mm; P ¼ 0.009), þ0.18 mm (95% CI, 0.03 e0.32 mm; P ¼ 0.018), and þ0.18 mm (95% CI, 0.04 e0.31; P ¼ 0.012), respectively.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,34b258d0746d46e5a0562caa181a7769,physical_activity,visual_field_loss,"[chu_idx=996]
+Greater physical activity is associated with slower visual ﬁeld loss in glaucoma.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,3c7bee1df6e041718654f97816bbe0a1,academic stress,stress,"[chu_idx=272]
+Tak ing academic stress as the reference, the most significant results were as follows: academic stress presented a significant and direct association with clinical stress, emotion-focused coping, and depression and anxiety symptoms (all p s < .01).
+
+[chu_idx=341]
+Academic stress – 2.
+
+[chu_idx=357]
+Clinical stress 0.48 ** – 3.
+
+[chu_idx=542]
+Finally, regardless of year group, the most important predictors of aca demic stress were clinical stress and anxiety, while academic stress, depression, and coping skills were the most significant predictors of psychological well-being.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,31dba46ee9614682b5cdbbc52ebf41ce,academic stress,depression,"[chu_idx=291]
+Nurse Education Today 139 (2024) 106258 4 regression step (path a), academic stress was positively associated with depression and anxiety, and negatively with resilience ( p < .001).
+
+[chu_idx=542]
+Finally, regardless of year group, the most important predictors of aca demic stress were clinical stress and anxiety, while academic stress, depression, and coping skills were the most significant predictors of psychological well-being.
+
+[chu_idx=543]
+Finally, resilience, associated with depression, was a mediating factor in the relationship between academic stress and psychological well-being.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,b986655797694478abe77c074a4f3f6a,depression,psychological well-being,"[chu_idx=292]
+In the next step regression step (path b), depression and anxiety were negatively associated with psychological well-being ( p < .001) and ( p <
+
+[chu_idx=542]
+Finally, regardless of year group, the most important predictors of aca demic stress were clinical stress and anxiety, while academic stress, depression, and coping skills were the most significant predictors of psychological well-being.",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,b7c4e68a11e847d49916d752d1c0210d,resilience,anxiety,"[chu_idx=294]
+Path d shows that resilience was negatively associated with depression and anxiety ( p < .001).",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,a9a49e577dc840afae068de8bfd612f6,academic stress,anxiety,"[chu_idx=361]
+Anxiety symptoms 0.48 ** 0.24 ** 0.01 0.28 ** 0.73 ** – 7.",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,1e41ecf99c1c42f8b2a975710846ab53,ECOG performance status 0,immune-related adverse event,"[chu_idx=158]
+Atotalof803patientswithlocallyadvancedormetastaticNSCLCtreatedwithICIswithnoncurative intentduringtheperiodofinterestwereincludedintheanalysis.AclinicallymeaningfulirAEwas confirmedin297patients.Themedianfollow-upwas51.9(95%CI,49.4-56.2)months.Patient baselinecharacteristicsaresummarizedin Table 1.Themedianageofpatientswhodevelopedan irAEwas69.7(IQR,63.1-75.2)yearscomparedwith67.5(IQR,60.4-73.3)yearsamongthosewhodid not.Sexdistributionwascomparable(139of295men[47.1%]and156of295women[52.9%]with irAEsvs254of505men[50.3%]and251of505women[49.7%]withoutirAEs).Patientswho developedanirAEhadamedian10(IQR,4-23)ICIcyclescomparedwith4(IQR,2-9)amongthose whodidnot.ThefollowingbaselinecharacteristicswereassociatedwithdevelopinganirAE:60 yearsorolder(245of296[82.8%]vs388of505[76.8%]; P = .05),EasternCooperativeOncology",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,30ddd4a3b73c4382b1af3dbdfd6b8a95,derived neutrophil lymphocyte ratio ≤3,immune-related adverse event,"[chu_idx=162]
+Group(ECOG)performancestatus0(56of294[19.0%]vs46of500[9.2%]; P < .001),high expressionofprogrammedcelldeathligand1(PD-L1)(160of240[66.7%]vs230of404[56.9%]; P = .05),nometastasestobone(215of296[72.6%]vs322of503[64.0%]; P = .01),derived neutrophillymphocyteratio(DNLR)3orless(181of260[69.6%]vs242of452[53.5%]; P < .001), andlevelswithinreferencerangeforhemoglobin(175of265[66.0%]vs264of457[57.8%]; P = .03),albumin(189of240[7 8.8%]vs263of412[63.8%]; P < .001),andlactatedehydrogenase (152of212[71.7%]vs217of358[60.6%]; P = .007).DevelopinganirAEwasnotassociatedwith patientsex,tumorhistology,orthepresenceofanunderlyingdrivermutation.",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,4b960706c0ca42e3950e67fe97a7bedb,immune-related adverse event,time to next treatment,"[chu_idx=403]
+Analysisincludespatientswhosurvivedtoatleast12weeks.A,Fullcohortofpatients whodidordidnotdevelopanimmune-relatedadverseevent(irAE)(mediantimetonext treatment,18.0[95%CI,15.6-22.9]vs7.3[95%CI,6.6-8.4]months; P < .001).B, PatientshospitalizedcomparedwiththosetreatedasoutpatientsforirAEs(mediantime tonexttreatment,15.3[95%CI,9.6-24.8]vs15.9[95%CI,13.6-18.0]months; P =.",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,fe48bfe3fd88467f96759ecda1ca94b2,efficacy,immune-related adverse event,"[chu_idx=693]
+KurokawaK,MitsuishiY,ShimadaN,etal.Associationbetweentheefficacyandimmune-relatedadverse eventsofpembrolizumabandchemotherapyinnon–smallcelllungcancerpatients:aretrospectivestudy.
+
+[chu_idx=750]
+ZhouY,ChenH,TangL,etal.Associationofimmune-relatedadverseeventsandefficacyinadvanced non–small-celllungcancer:asystematicreviewandmeta-analysis.
+
+[chu_idx=784]
+ZhangQ,WangW,YuanQ,etal.Correlationbetweenimmune-relatedadverseeventsandtheefficacyofPD-1/",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,f97107025af841c3942f79b6b1614094,absolute_eosinophil_count,serious_immune-related_adverse_event_risk,"[chu_idx=788]
+WuY,LiD,WuM,YangY,ShenM,ChenK.Peripheralabsoluteeosinophilcountidentifiestheriskofserious immune-related adverse events in non–small cell lung cancer.Front Oncol.",NA
+6,observational study,10.1093/postmj/qgae147,7,qgae147.pdf,0f733db08e13cb5d0a056484203f3c2aab50f5688bf7a8aded2010e4eaeb55b3,09633338efc24d63a0a1e31662bc3652,anxiety,T_bet_mRNA_expression,"[chu_idx=492]
+found that individuals with asthma who exhibit psychological symptoms, such as depression and anxiety , show a significant increase in the levels of IFN- γ, TNF- α, and IL-17A, as well as an elevation in",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,6fca93eb356d4ccab9f879024f51d471,MAFLD,lumbar_BMD,"[chu_idx=20]
+MAFLD was not associated with total body, femur neck, and lumbar BMD in the NHANES dataset.
+
+[chu_idx=235]
+439, 95% CI: [0.398, 0.484], P < 0.001), reduced femur neck BMD (OR: 0.621, 95% CI: [0.592, 0.652], P < 0.001), and reduced lumbar BMD (OR: 0.517, 95% CI: [0.488, 0.548], P < 0.001) in the unadjusted model.
+
+[chu_idx=237]
+BMD [OR: 1.017, 95% CI: (0.950, 1.089), P = 0.632]).",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,ba6e67446e4d467f96773fe25fe233ac,triglycerides,BMD,"[chu_idx=370]
+Moreover, the metabolic index, including diastolic blood pressure (DBP; β : 0.011 mmHg, 95% CI: [0.003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=379]
+003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=397]
+MAFLD, metabolic dysfunction-associated fatty liver disease; WC, waist circumference; T2D, type 2 diabetes; DBP, diastolic blood pressure; SBP, systolic blood pressure; TG, plasma triglycerides; LDL-C, plasma low– density lipoprotein cholesterol; CHO, plasma total cholesterol; HDL-C, plasma high–density lipoprotein cholesterol; IVW, inverse variance weighted 686 Osteoporosis International (2024) 35:679–689 associated with osteoporosis.",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,505949c562554fb59f46878fd7a04832,total_cholesterol,BMD,"[chu_idx=370]
+Moreover, the metabolic index, including diastolic blood pressure (DBP; β : 0.011 mmHg, 95% CI: [0.003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=372]
+SD, 95% CI: [−  0.039, −  0.013], P = 9.17e −  05) showed a causal relationship with BMD (Fig.
+
+[chu_idx=379]
+003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%
+
+[chu_idx=380]
+CI: [− 0.038, − 0.014], P = 1.41e − 05), CHO (β : − 0.026
+
+[chu_idx=397]
+MAFLD, metabolic dysfunction-associated fatty liver disease; WC, waist circumference; T2D, type 2 diabetes; DBP, diastolic blood pressure; SBP, systolic blood pressure; TG, plasma triglycerides; LDL-C, plasma low– density lipoprotein cholesterol; CHO, plasma total cholesterol; HDL-C, plasma high–density lipoprotein cholesterol; IVW, inverse variance weighted 686 Osteoporosis International (2024) 35:679–689 associated with osteoporosis.",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,b15a2abc5bc94b79a67bab09dc2420f6,waist_circumference,BMI,"[chu_idx=416]
+and WC.
+
+[chu_idx=456]
+Furthermore, BMI is positively associated with BMD, and the mechanisms of this association in vivo may include increased loading, adipokines such as leptin, and higher aromatase activity.",NA

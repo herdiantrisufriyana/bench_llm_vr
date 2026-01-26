@@ -1,0 +1,92 @@
+row,article_type_filter,doi,rank,filename,doc_sha256,edge_id,var1,var2,evidence,label
+1,observational study,10.1097/CM9.0000000000002753,1,hypertension_and_nafld_risk__insights_from_the.9.pdf,fa4c05e72b5636dfdace2061fdff8abe059895b9b0b8f13e70c41b44b699205e,abe3f251525544488bbc3f2e94a1f0e8,smoking status,outcomes,"[chu_idx=202]
+We selected these confounders based on their associations with the outcomes of interest or a change in effects estimate of more than 10 % .",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,755f549610904dcbb07011f6604da20b,Affymetrix UK Biobank Axiom Array,genotypes,"[chu_idx=199]
+Affymetrix UK Biobank Axiom Array generated genotypes at 825 925 markers for the remaining 450 000 individuals.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,289824a0e1af42e5855d86d4434e4a3d,physical activity,intraocular pressure,"[chu_idx=273]
+IPAQ PA data (average age, 56.5 /C6 8.0 years) and 27 777 participants (average age, 56.5 /C6 7.8 years) with accelerometryderived PA.
+
+[chu_idx=274]
+In a maximally adjusted multivariable model, self-reported overall habitual moderate and high PA levels were associated with a very modestly higher IOP compared with participants who reported the lowest level of overall PA (difference in
+
+[chu_idx=275]
+IOP: þ0.06 mmHg [95% con ﬁdence interval [CI], 0.00 e0.12 mmHg; P ¼ 0.037] for moderate and þ0.08 mmHg [95% CI, 0.02e0.14 mmHg; P ¼ 0.010] for high) with an overall signi ﬁcant trend for higher habitual overall PA associated with very modestly higher IOP ( P ¼ 0.017 for trend; Table 3 ).",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,036205857f06418da908505325e880b7,physical activity,diabetes,"[chu_idx=517]
+Macular ganglion cell einner plexiform layer thickness is altered in diabetes, and, given the strong protective effect of PA on diabetes, residual confounding by diabetes (or related traits such as glycated hemoglobin) was considered as a possible explanation for our ﬁndings.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,e81867a43c2c45f2b7bcce9a12391126,intraocular pressure,ethnicity,"[chu_idx=590]
+*b Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, and height.
+
+[chu_idx=591]
+yb Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, height, and season.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,cb9104ecb5574bcd992cc51074cef192,intraocular pressure,height,"[chu_idx=590]
+*b Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, and height.
+
+[chu_idx=591]
+yb Coefﬁcient represents intraocular pressure difference using multivariable-adjusted model adjusting for age, sex, ethnicity, Townsend deprivation in dex, body mass index, systolic blood pressure, smoking status, alcohol status, diabetes status, spherical equivalent, height, and season.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,0effe0d3423849209eb8fa9232ca0fd3,physical activity,neurotrophic factors,"[chu_idx=597]
+Madjedi et al /C15 Physical Activity and Glaucoma 1031 expression also has been proposed as a contributory mechanism to glaucoma, and PA is associated with the upregulation of neurotrophic factors relevant to neuronal integrity.
+
+[chu_idx=609]
+Madjedi et al /C15 Physical Activity and Glaucoma 1031 expression also has been proposed as a contributory mechanism to glaucoma, and PA is associated with the upregulation of neurotrophic factors relevant to neuronal integrity.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,85a4aaa767c64ad19e0be34e44a74ee4,physical exercise,optic nerve injury,"[chu_idx=937]
+Forced exercise protects the aged optic nerve against intraocular pressure injury.",NA
+2,observational study,10.1016/j.ophtha.2023.06.009,2,1-s2.0-S016164202300427X-main.pdf,8bc28b5366c81d872f075c88c2bb59efd0c1273da893b165ff95a14f4379d0e3,b1b9c5508cc14f199f91e31d399fc51e,physical exercise,age-related vulnerability of the retina,"[chu_idx=942]
+Exercise reverses age-related vulnerability of the retina to injury by preventing complement-mediated synapse elimination via a",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,2f049733233d4ecfaa1f1c9da5022155,academic stress,year of study,"[chu_idx=278]
+For the overall study sample, hierarchical regression models on ac ademic stress were estimated with year of study, clinical stress, problemfocused coping, emotion-focused coping, depression symptoms, anxiety symptoms, and resilience ( Table 3 ).
+
+[chu_idx=279]
+The regression model showed 40 % explained variance, with year of study, clinical stress, and anxiety symptoms as main academic stress predictors.
+
+[chu_idx=546]
+Additionally, year of study was one of the most important predictors of academic stress.
+
+[chu_idx=551]
+In contrast, a further study reports higher levels of academic stress in students in later years of study ( Jimenez et al., 2010 ) (and higher general stress ( Onieva et al., 2020 ).",NA
+3,observational study,10.1016/j.nedt.2024.106258,3,1-s2.0-S0260691724001680-main.pdf,95482cf8bb68fb0973c959300e88787615561f2824a6f434f0bfc9ce7f94372d,d620e9370cdb4236a788234338cdf841,academic stress,depressive symptoms,"[chu_idx=326]
+◦ ( n = 283) 4.
+
+[chu_idx=328]
+Academic stress  32.69 (4.70)  33.16 (4.14)  31.14 (5.95)  < .001  0.44
+
+[chu_idx=332]
+Depressive symptoms  9.43 (4.62)  9.72 (4.57)  8.51 (4.67)  .03  0.26",NA
+4,observational study,10.1001/jamanetworkopen.2023.52302,4,cook_2024_oi_231530_1704835806.04872.pdf,da50393b29d84a8f54f9f93c84184005452c2e01fc3fcf87ccba70aa44d2d07c,f2904a63462c4664a56978c615543b33,hemoglobin,irAE,"[chu_idx=158]
+Atotalof803patientswithlocallyadvancedormetastaticNSCLCtreatedwithICIswithnoncurative intentduringtheperiodofinterestwereincludedintheanalysis.AclinicallymeaningfulirAEwas confirmedin297patients.Themedianfollow-upwas51.9(95%CI,49.4-56.2)months.Patient baselinecharacteristicsaresummarizedin Table 1.Themedianageofpatientswhodevelopedan irAEwas69.7(IQR,63.1-75.2)yearscomparedwith67.5(IQR,60.4-73.3)yearsamongthosewhodid not.Sexdistributionwascomparable(139of295men[47.1%]and156of295women[52.9%]with irAEsvs254of505men[50.3%]and251of505women[49.7%]withoutirAEs).Patientswho developedanirAEhadamedian10(IQR,4-23)ICIcyclescomparedwith4(IQR,2-9)amongthose whodidnot.ThefollowingbaselinecharacteristicswereassociatedwithdevelopinganirAE:60 yearsorolder(245of296[82.8%]vs388of505[76.8%]; P = .05),EasternCooperativeOncology",NA
+5,observational study,10.1186/s13054-023-04763-5,5,s13054-023-04763-5.pdf,ca8f5fb97f667c7a2f1e48f535ef832f5d0727af91c033358eec07cb8c0c80fb,68842b6a51de444da19aca00383ab832,ankylosing spondylitis,severe infection,"[chu_idx=487]
+In an observational study on ankylosing spondylitis, no significant corre lation was found between ankylosing spondylitis and severe infections.",NA
+7,observational study,10.1001/jamanetworkopen.2023.52314,8,tingsgrd_2024_oi_231531_1705094530.5946.pdf,5d9910c19281766d0aef3f551c241c342f4152adebe169eff127001fbee234d0,09bf4b0487724a3c92d64fb22546be84,Recent hospitalization,GNB acquisition,"[chu_idx=274]
+GNB acquisition
+
+[chu_idx=277]
+Hospitalization and discharge within 14 d of current admission 80 (8.8) 52 (10.8) 28 (6.5)",NA
+7,observational study,10.1001/jamanetworkopen.2023.52314,8,tingsgrd_2024_oi_231531_1705094530.5946.pdf,5d9910c19281766d0aef3f551c241c342f4152adebe169eff127001fbee234d0,fc345680e2844793a4c8b7cc641b386b,Kidney disease,GI infection,"[chu_idx=282]
+Gatrointestinal infection 156 (17.1) 104 (21.6) 52 (12.0) 0.26
+
+[chu_idx=289]
+Kidney disease 61 (6.7) 36 (7.5) 25 (5.8) 0.07 NA",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,a1ef585ab18c4f63af8912aa90a77acb,heel BMD,total body BMD,"[chu_idx=150]
+GWAS summary data of heel BMD [23], total body BMD [24], and nine metabolically associated traits [25– 30] were downloaded from the largest published studies.",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,63bce14e2bf041d7abe25362572b5b88,BMI,BMD,"[chu_idx=188]
+First, we included age, sex, race, and BMI, traditional risk factors for reduced heel BMD, as covariates in model 1.
+
+[chu_idx=319]
+Model1: adjusted for age, sex, race, BMI; model2: adjusted for Model1 plus WC, T2D, HBA1c, HDL-C, TG, LDL-C, CHO, GGT, CRP; model3: adjusted for Model2 plus Smoking status, Alcohol drinking, Townsend deprivation index.
+
+[chu_idx=456]
+Furthermore, BMI is positively associated with BMD, and the mechanisms of this association in vivo may include increased loading, adipokines such as leptin, and higher aromatase activity.",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,b75b302e209d4b56beb19f6a5379760f,BMD,TG,"[chu_idx=319]
+Model1: adjusted for age, sex, race, BMI; model2: adjusted for Model1 plus WC, T2D, HBA1c, HDL-C, TG, LDL-C, CHO, GGT, CRP; model3: adjusted for Model2 plus Smoking status, Alcohol drinking, Townsend deprivation index.
+
+[chu_idx=370]
+Moreover, the metabolic index, including diastolic blood pressure (DBP; β : 0.011 mmHg, 95% CI: [0.003, 0.018], P  = 0.007), TG (β : − 0.029 SD, 95% CI: [− 0.048, − 0.011], P = 0.001), LDL-C (β: − 0.026 SD, 95%",NA
+9,observational study,10.1007/s00198-023-06996-0,10,s00198-023-06996-0.pdf,c938f032d766847f0e90fb35ba2cb1d04a422f7e47a50510c9b14d6f3f400835,14d2e1a4e45c45f7a4a7e84daa50d0ee,steatosis,liver fibrosis,"[chu_idx=574]
+Eddowes PJ, Sasso M, Allison M et al (2019) Accuracy of Fibro Scan controlled attenuation parameter and liver stiffness measurement in assessing steatosis and fibrosis in patients with nonalcoholic fatty liver disease.
+
+[chu_idx=591]
+Eddowes PJ, Sasso M, Allison M et al (2019) Accuracy of Fibro Scan controlled attenuation parameter and liver stiffness measurement in assessing steatosis and fibrosis in patients with nonalcoholic fatty liver disease.",NA
+10,observational study,10.1186/s12933-021-01393-5,12,s12933-021-01393-5.pdf,85de83072b4a810720ca6be37b6939c8ae4b010486d5882b2ba7962ae30388a1,d4b4efb609dd4e70adf318ab859c2525,AIP,coronary artery calcification,"[chu_idx=754]
+Association between atherogenic index of plasma and coronary artery calcification progression in Korean adults.
+
+[chu_idx=760]
+Atherogenic index of plasma and coronary artery calcification progression beyond traditional risk factors according to baseline coronary artery calcium score.",NA
