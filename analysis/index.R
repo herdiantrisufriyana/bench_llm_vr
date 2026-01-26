@@ -560,3 +560,8 @@ cost_performance_tradeoff <-
   )
 
 cost_performance_tradeoff
+
+show_figure_legend(
+  "cost_performance_tradeoff"
+  , "Cost-performance tradeoffs across models (article level). A. Evidence-grounded relationship correctness vs. estimated cost. B. Ungrounded extraction rate vs. estimated cost. Extraction density vs. estimated cost."
+  )
