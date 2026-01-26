@@ -2,7 +2,7 @@
 
 ## Vignette
 
-[Progress report](https://herdiantrisufriyana.github.io/bench_llm_vr/analysis/index.html)
+[Progress report](https://herdiantrisufriyana.github.io/bench_llm_vr/index.html)
 
 ## System requirements
 

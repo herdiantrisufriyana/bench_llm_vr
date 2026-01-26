@@ -1,8 +1,5 @@
-## ----Set random seed, include=FALSE---------------------------------------------------------------------------------------------------
 seed <- 2026-01-22
 
-
-## ----Load packages, include=FALSE-----------------------------------------------------------------------------------------------------
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -11,39 +8,25 @@ library(pbapply)
 library(readxl)
 library(ggforce)
 
-
-## ----Load functions, include=FALSE----------------------------------------------------------------------------------------------------
 lapply(list.files("R/", full.names = TRUE), source)
 
-
-## ----Set theme, include=FALSE---------------------------------------------------------------------------------------------------------
 my_theme_set()
 
-
-## ----Session information, echo=FALSE--------------------------------------------------------------------------------------------------
 sessionInfo()
 
-
-## ----List raw data, include=FALSE-----------------------------------------------------------------------------------------------------
 raw_data_files <-
   list.files("../data_registry/", full.names = TRUE, recursive = TRUE)
 
-
-## ----List of article type filter, include=FALSE---------------------------------------------------------------------------------------
 article_type_filter <-
   c(ma = "meta-analysis"
     , rct = "randomized controlled trial"
     , os = "observational study"
   )
 
-
-## ----Search log, include=FALSE--------------------------------------------------------------------------------------------------------
 search_log <-
   raw_data_files[str_detect(raw_data_files, "search_log\\.xlsx$")] |>
   read_xlsx()
 
-
-## ----List of LLMs, include=FALSE------------------------------------------------------------------------------------------------------
 llm <-
   c(gpt5 = "gpt-5"
     , claude45 = "claude-4.5-sonnet"
@@ -53,8 +36,6 @@ llm <-
     , deepseek3 = "deepseek-v3"
   )
 
-
-## ----Reconciled LLM names for resumables, include=FALSE-------------------------------------------------------------------------------
 reconciled_llm_names <-
   names(llm) |>
   sapply(
@@ -63,15 +44,11 @@ reconciled_llm_names <-
   reduce(c) |>
   unique()
 
-
-## ----List of LLM-as-judges, include=FALSE---------------------------------------------------------------------------------------------
 llm_as_judge <-
   c(gpt41mini = "gpt-4.1-mini"
     , claude45 = "claude-4.5-sonnet"
   )
 
-
-## ----LLM results, include=FALSE-------------------------------------------------------------------------------------------------------
 llm_results3 <-
   intersect(
     paste0("../data_registry//phase3_", reconciled_llm_names, "/export.csv")
@@ -110,8 +87,6 @@ llm_results2 <-
   ) |>
   lapply(read_csv, show_col_types = FALSE)
 
-
-## ----LLM-as-judge 1 results, include=FALSE--------------------------------------------------------------------------------------------
 judge1_llm_results <-
   intersect(
     paste0(
@@ -134,8 +109,6 @@ judge1_llm_results <-
   `names<-`(unique(names(judge1_llm_results))) |>
   lapply(\(x) reduce(judge1_llm_results[x], rbind))
 
-
-## ----LLM-as-judge 2 results, include=FALSE--------------------------------------------------------------------------------------------
 judge2_llm_results <-
   intersect(
       paste0(
@@ -159,8 +132,6 @@ judge2_llm_results <-
   `names<-`(unique(names(judge2_llm_results))) |>
   lapply(\(x) reduce(judge2_llm_results[x], rbind))
 
-
-## ----Eligible main PDFs, include=FALSE------------------------------------------------------------------------------------------------
 eligible_main_pdf <-
   search_log |>
   filter(eligible == "yes") |>
@@ -170,8 +141,6 @@ eligible_main_pdf <-
   filter(row <= 10) |>
   select(row, article_type_filter, doi, rank, filename)
 
-
-## ----Documents per LLM, include=FALSE-------------------------------------------------------------------------------------------------
 docs_per_llm <-
   llm_results3 |>
   lapply(
@@ -196,8 +165,6 @@ docs_per_llm <-
       )
   )
 
-
-## ----Edges per LLM, include=FALSE-----------------------------------------------------------------------------------------------------
 edges_per_llm <-
   llm_results3 |>
   lapply(
@@ -214,8 +181,6 @@ edges_per_llm <-
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
 
-
-## ----LLM-as-judge 1 results per LLM, include=FALSE------------------------------------------------------------------------------------
 judge1_results_per_llm <-
   judge1_llm_results |>
   lapply(
@@ -232,8 +197,6 @@ judge1_results_per_llm <-
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
 
-
-## ----LLM-as-judge 2 results per LLM, include=FALSE------------------------------------------------------------------------------------
 judge2_results_per_llm <-
   judge2_llm_results |>
   lapply(
@@ -250,12 +213,8 @@ judge2_results_per_llm <-
       inner_join(x, by = "filename", relationship = "many-to-many")
   )
 
-
-## ----Step label, include=FALSE--------------------------------------------------------------------------------------------------------
 step_label <- read_csv("inst/extdata/step_label.csv", show_col_types = FALSE)
 
-
-## ----Search log summary - create, include=FALSE---------------------------------------------------------------------------------------
 max_rank_to_eligible_10 <-
   search_log |>
   mutate_at("article_type_filter", \(x) factor(x, unique(x))) |>
@@ -303,12 +262,8 @@ search_log_sum <-
       str_to_sentence()
   )
 
-
-## ----Search log summary - show, echo=FALSE--------------------------------------------------------------------------------------------
 show_table(search_log_sum, "search_log_sum", "Search log summary")
 
-
-## ----Sample size per strata, include=FALSE--------------------------------------------------------------------------------------------
 strata_n <- length(article_type_filter) * length(llm)
 ssize_per_strata <- 20
 ssize <- strata_n * ssize_per_strata
@@ -320,8 +275,6 @@ strata <-
     , stringsAsFactors = FALSE
   )
 
-
-## ----Sample edges per strata, eval=FALSE, include=FALSE-------------------------------------------------------------------------------
 ## strata |>
 ##   filter(Var2 %in% names(edges_per_llm)) |>
 ##   pmap(
@@ -329,8 +282,6 @@ strata <-
 ## 	  edge_sampling(edges_per_llm, Var1, Var2, ssize_per_strata)
 ## 	)
 
-
-## ----Unify edge samples per strata, eval=FALSE, include=FALSE-------------------------------------------------------------------------
 ## human_calibration_label <-
 ##   strata |>
 ##   pmap(
@@ -359,16 +310,12 @@ strata <-
 ## human_calibration_label|>
 ##   write_csv("inst/extdata/human_calibration_sample_300_edges_unlabeled.csv")
 
-
-## ----Human calibration labels, include=FALSE------------------------------------------------------------------------------------------
 human_calibration_label <-
   read_csv(
     "inst/extdata/human_calibration_sample_300_edges_labeled.csv"
     , show_col_types = FALSE
   )
 
-
-## ----Incorporating human calibration labels to judge 1, include=FALSE-----------------------------------------------------------------
 judge1_human_per_llm <-
   judge1_results_per_llm |>
   lapply(rename, llm_as_judge = label) |>
@@ -382,8 +329,6 @@ judge1_human_per_llm <-
       )
   )
 
-
-## ----Incorporating human calibration labels to judge 2, include=FALSE-----------------------------------------------------------------
 judge2_human_per_llm <-
   judge2_results_per_llm |>
   lapply(rename, llm_as_judge = label) |>
@@ -397,8 +342,6 @@ judge2_human_per_llm <-
       )
   )
 
-
-## ----Calibration data, include=FALSE--------------------------------------------------------------------------------------------------
 calibration_data <-
   list(judge1 = judge1_human_per_llm, judge2 = judge2_human_per_llm) |>
   lapply(
@@ -423,8 +366,6 @@ calibration_data <-
   mutate_at("llm", factor, llm) |> 
   mutate_at("judge", factor, llm_as_judge)
 
-
-## ----Calibration summary - create, include=FALSE--------------------------------------------------------------------------------------
 calibration_sum <-
   calibration_data |> 
   group_by(llm, judge, label_human, label_llm) |>
@@ -440,17 +381,11 @@ calibration_sum <-
       str_replace_all("N", "n")
   )
 
-
-## ----Calibration summary - show, echo=FALSE-------------------------------------------------------------------------------------------
 show_table(calibration_sum, "calibration_sum", "Calibration summary.")
 
-
-## ----USD per token per LLM, include=FALSE---------------------------------------------------------------------------------------------
 usd_per_token_per_llm <-
   read_csv("inst/extdata/usd_per_token_per_llm.csv", show_col_types = FALSE)
 
-
-## ----Aggregate per-edge data to article-level metrics, include=FALSE------------------------------------------------------------------
 doc_edge_metrics <-
   calibration_data |>
   left_join(
@@ -490,8 +425,6 @@ doc_edge_metrics <-
     , cost_doc, cost_edge
   ) 
 
-
-## ----Summarize article-level metrics, include=FALSE-----------------------------------------------------------------------------------
 doc_edge_metrics_sum <-
   doc_edge_metrics|>
   gather(metric, value, -llm) |>
@@ -519,13 +452,9 @@ doc_edge_metrics_sum <-
   	)
   )
 
-
-## ----Metric labels, include=FALSE-----------------------------------------------------------------------------------------------------
 metric_label <-
   read_csv("inst/extdata/metric_label.csv", show_col_types = FALSE)
 
-
-## ----Report article-level metrics - create, include=FALSE-----------------------------------------------------------------------------
 doc_edge_metrics_report <-
   doc_edge_metrics_sum |>
   mutate(
@@ -559,13 +488,9 @@ doc_edge_metrics_report <-
       str_replace_all("metric", "Metric")
   )
 
-
-## ----Report article-level metrics - show, echo=FALSE----------------------------------------------------------------------------------
 doc_edge_metrics_report |>
   show_table("doc_edge_metrics_report", "Model benchmark.")
 
-
-## ----Cost-performance tradeoff - plot, include=FALSE----------------------------------------------------------------------------------
 cost_performance_tradeoff <-
   doc_edge_metrics_sum |>
   filter(metric %in% c("egrc", "uer", "red")) |>
@@ -634,7 +559,4 @@ cost_performance_tradeoff <-
     , legend.title = element_blank()
   )
 
-
-## ----Cost-performance tradeoff - show, echo=FALSE, fig.height=7, fig.width=3.54331----------------------------------------------------
 cost_performance_tradeoff
-
