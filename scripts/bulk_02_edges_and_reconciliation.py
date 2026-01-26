@@ -48,6 +48,66 @@ def _append_csv_row(path: Path, row: dict):
 
 
 # -------------------------
+# Extra helpers for log-based doc skipping and error logging (PHASE 2 resilience)
+# -------------------------
+
+def _read_done_docs_from_doc_log(path: Path, model_code: str) -> set:
+	"""Return a set of doc_sha256 that are already logged as processed for model_code."""
+	done = set()
+	if not path.exists():
+		return done
+	with path.open("r", encoding="utf-8", newline="") as f:
+		r = csv.DictReader(f)
+		for row in r:
+			if not row:
+				continue
+			if (row.get("model_code") or "").strip() != model_code:
+				continue
+			doc_sha = (row.get("doc_sha256") or "").strip()
+			if doc_sha:
+				done.add(doc_sha)
+	return done
+
+
+def _append_doc_error(path: Path, row: dict):
+	"""Append a stable-schema per-doc error row."""
+	fieldnames = [
+		"run_id",
+		"model_code",
+		"doc_sha256",
+		"attempt",
+		"error_type",
+		"error",
+		"timestamp_utc",
+	]
+	path.parent.mkdir(parents=True, exist_ok=True)
+	write_header = not path.exists()
+	with path.open("a", newline="", encoding="utf-8") as f:
+		w = csv.DictWriter(f, fieldnames=fieldnames)
+		if write_header:
+			w.writeheader()
+		w.writerow({k: row.get(k, "") for k in fieldnames})
+
+
+def _is_transient_error(e: Exception) -> bool:
+	msg = str(e).lower()
+	return any(s in msg for s in [
+		"server disconnected",
+		"timeout",
+		"timed out",
+		"connection reset",
+		"remote protocol error",
+		"service unavailable",
+		"rate limit",
+		"resource_exhausted",
+		"429",
+		"502",
+		"503",
+		"504",
+	])
+
+
+# -------------------------
 # Chroma bootstrap (idempotent)
 # -------------------------
 def _dir_is_empty(p: Path) -> bool:
@@ -195,8 +255,12 @@ def build_extraction_llm(model_code: str):
 
 		# langchain_google_genai uses env var GOOGLE_API_KEY by default too,
 		# but we keep it explicit for clarity.
+		# NOTE: Keep CLI code `gemini-3-pro` stable for benchmarking, but call a
+		# currently supported Gemini model id on the Gemini API.
+		# As of the current Gemini API model list, `gemini-2.5-pro` is the closest
+		# "Pro"-tier replacement for older/retired 1.x/3.x names.
 		return _SafeContentLLM(ChatGoogleGenerativeAI(
-			model="gemini-3-pro-preview",
+			model="gemini-2.5-pro",
 			temperature=0,
 			google_api_key=api_key,
 		))
@@ -215,7 +279,10 @@ def build_extraction_llm(model_code: str):
 			raise RuntimeError("MISTRAL_API_KEY missing in .env")
 
 		return _SafeContentLLM(ChatMistralAI(
-			model="mistral-large-2",
+			# Mistral API model ids use the "*-latest" / dated release naming scheme.
+			# Keep the CLI code `mistral-large-2` stable for benchmarking, but call the
+			# closest available hosted model.
+			model="mistral-large-latest",
 			temperature=0,
 			api_key=api_key,
 		))
@@ -238,13 +305,15 @@ def build_extraction_llm(model_code: str):
 		base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
 
 		return _SafeContentLLM(ChatOpenAI(
-			model="deepseek-v3",
+			# DeepSeek hosted API model id
+			# Keep CLI code `deepseek-v3` stable for benchmarking
+			model="deepseek-chat",
 			temperature=0,
 			api_key=api_key,
 			base_url=base_url,
 		))
 
-	# llama-4 (self-hosted / open-weight; typically via Ollama)
+	# llama-4 (Together AI; OpenAI-compatible endpoint)
 	if model_code in {"llama-4", "llama4", "llama"}:
 		try:
 			from langchain_openai import ChatOpenAI
@@ -276,8 +345,7 @@ def build_extraction_llm(model_code: str):
 		if not base_url.endswith("/v1"):
 			base_url = f"{base_url}/v1"
 
-		# Map CLI model_code -> actual Ollama model tag
-		# Your host confirms `ollama list` contains `llama4:latest`.
+		# Together AI model id (Scout)
 		provider_model = "meta-llama/Llama-4-Scout-17B-16E-Instruct" if model_code == "llama-4" else model_code
 
 		# Send Authorization only if a key exists
@@ -285,11 +353,11 @@ def build_extraction_llm(model_code: str):
 		if llama_api_key:
 			extra_headers["Authorization"] = f"Bearer {llama_api_key}"
 
-		# ChatOpenAI requires api_key to be non-empty, even for local servers.
+		# Together requires an API key; local endpoints may omit it (validated above).
 		return _SafeContentLLM(ChatOpenAI(
 			model=provider_model,
 			temperature=0,
-			api_key=llama_api_key or "DUMMY",
+			api_key=llama_api_key,
 			base_url=base_url,
 			default_headers=extra_headers,
 		))
@@ -492,6 +560,14 @@ def main():
 	# Optional per-doc log for later runtime/density calculations (article-level)
 	doc_log_path = PROJECT_ROOT / "data_registry" / f"phase2_doc_log__{model_code}.csv"
 
+	done_from_log = _read_done_docs_from_doc_log(
+		doc_log_path,
+		model_code=model_code,
+	)
+	doc_err_path = PROJECT_ROOT / "data_registry" / f"phase2_doc_error__{model_code}.csv"
+	docs_skipped_logged = 0
+	docs_failed = 0
+
 	try:
 		for doc_sha256 in doc_ids:
 			docs_seen += 1
@@ -507,31 +583,73 @@ def main():
 			if is_doc_already_done(doc_service, doc_sha256, model_code):
 				continue
 
+			# Also skip docs already completed in prior runs (works across snapshots)
+			if doc_sha256 in done_from_log:
+				docs_skipped_logged += 1
+				continue
+
 			t_doc0 = time.time()
 
 			# Tab 4 behavior: Results-only child sentences
 			results_chunks = get_results_child_chunks(doc_service, doc_sha256)
 
-			# Extract edges (writes to edges + trace inside model-specific Chroma)
-			res_extract = corr_extractor.extract_edges(
-				doc_service=doc_service,
-				doc_sha256=doc_sha256,
-				results_chunks=results_chunks,
-			)
-			if not res_extract.get("ok"):
-				raise RuntimeError(
-					f"extract_edges failed for {doc_sha256}: {res_extract.get('error')}"
-				)
+			max_attempts = 4
+			ok = False
+			last_err = None
+			res_extract = None
+			res_recon = None
 
-			# Tab 5 behavior: reconcile variables (writes to variables; updates edges)
-			res_recon = var_reconciler.reconcile_variables(
-				doc_service=doc_service,
-				doc_sha256=doc_sha256,
-			)
-			if not res_recon.get("ok"):
-				raise RuntimeError(
-					f"reconcile_variables failed for {doc_sha256}: {res_recon.get('error')}"
-				)
+			for attempt in range(1, max_attempts + 1):
+				try:
+					# Extract edges (writes to edges + trace inside model-specific Chroma)
+					res_extract = corr_extractor.extract_edges(
+						doc_service=doc_service,
+						doc_sha256=doc_sha256,
+						results_chunks=results_chunks,
+					)
+					if not (res_extract or {}).get("ok"):
+						raise RuntimeError(
+							f"extract_edges failed: {(res_extract or {}).get('error')}"
+						)
+
+					# Tab 5 behavior: reconcile variables (writes to variables; updates edges)
+					res_recon = var_reconciler.reconcile_variables(
+						doc_service=doc_service,
+						doc_sha256=doc_sha256,
+					)
+					if not (res_recon or {}).get("ok"):
+						raise RuntimeError(
+							f"reconcile_variables failed: {(res_recon or {}).get('error')}"
+						)
+
+					ok = True
+					break
+
+				except Exception as e:
+					last_err = e
+					_append_doc_error(
+						doc_err_path,
+						{
+							"run_id": run_id,
+							"model_code": model_code,
+							"doc_sha256": doc_sha256,
+							"attempt": attempt,
+							"error_type": type(e).__name__,
+							"error": str(e),
+							"timestamp_utc": _utc_now_iso(),
+						},
+					)
+
+					# Retry only transient issues, with a small backoff
+					if _is_transient_error(e) and attempt < max_attempts:
+						time.sleep(min(60, 2 ** attempt))
+						continue
+					break
+
+			if not ok:
+				docs_failed += 1
+				print(f"[WARN] skip doc_sha256={doc_sha256} error={last_err}")
+				continue
 
 			docs_processed += 1
 			edges_created_total += int(res_extract.get("edges_created") or 0)
@@ -556,6 +674,8 @@ def main():
 					"timestamp_utc": _utc_now_iso(),
 				},
 			)
+
+			done_from_log.add(doc_sha256)
 
 			print(f"[{docs_processed}] ok doc_sha256={doc_sha256} edges_created={int(res_extract.get('edges_created') or 0)} vars_created={int(res_recon.get('variables_created') or 0)}")
 
@@ -585,6 +705,8 @@ def main():
 			"status": status,
 			"error": error_msg,
 			"run_tag": RUN_ID,
+			"docs_skipped_logged": docs_skipped_logged,
+			"docs_failed": docs_failed,
 		},
 	)
 
