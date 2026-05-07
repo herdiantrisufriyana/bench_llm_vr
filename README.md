@@ -36,5 +36,9 @@ All analysis, figures, and tables should be run from the **analysis environment*
 - No LLM inference is performed during analysis.
 - Results are reported at the article level and aggregated across models.
 
+## Web application
+
+A web-based implementation of the extraction pipeline is available at [hypathesis.com](https://hypathesis.com).
+
 This README intentionally stays minimal.  
 The analysis README is the authoritative entry point.
