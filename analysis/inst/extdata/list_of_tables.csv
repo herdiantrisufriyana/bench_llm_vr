@@ -1,4 +1,5 @@
 variable
 search_log_sum
 calibration_sum
+cohens_kappa
 doc_edge_metrics_report

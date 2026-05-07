@@ -504,6 +504,30 @@ calibration_sum <-
 show_table(calibration_sum, "calibration_sum", "Calibration summary.")
 ```
 
+```{r Cohens Kappa - compute, include=FALSE}
+label_levels <- c("C&G", "INC", "UNG")
+
+kappa_results <-
+  calibration_data |>
+  group_by(judge) |>
+  group_map(~ {
+    k <- cohens_kappa(.x$label_human, .x$label_llm, label_levels)
+    tibble(
+      Judge = unique(.x$judge),
+      n = k$n,
+      `Observed agreement` = round(k$p_o, 3),
+      `Expected agreement` = round(k$p_e, 3),
+      Kappa = round(k$kappa, 3),
+      `95% CI` = paste0("(", round(k$ci_lo, 3), ", ", round(k$ci_hi, 3), ")")
+    )
+  }) |>
+  bind_rows()
+```
+
+```{r Cohens Kappa - show, echo=FALSE}
+show_table(kappa_results, "cohens_kappa", "Cohen's Kappa between human and LLM-as-judge labels.")
+```
+
 # Model evaluation
 
 ```{r USD per token per LLM, include=FALSE}
