@@ -788,6 +788,14 @@ cost_performance_tradeoff <-
 cost_performance_tradeoff
 ```
 
+```{r Cost-performance tradeoff - save, include=FALSE}
+ggsave(
+  "inst/extdata/figure3_cost_performance.png"
+  , cost_performance_tradeoff
+  , width = 3.54331, height = 7, dpi = 300
+)
+```
+
 ```{r Cost-performance tradeoff - caption, echo=FALSE}
 show_figure_legend(
   "cost_performance_tradeoff"
