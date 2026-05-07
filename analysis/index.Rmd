@@ -85,6 +85,17 @@ llm <-
   )
 ```
 
+```{r LLM display names, include=FALSE}
+llm_display <-
+  c("gpt-5" = "gpt-5"
+    , "claude-4.5-sonnet" = "claude-4.5-sonnet"
+    , "gemini-3-pro" = "gemini-2.5-pro"
+    , "mistral-large-2" = "mistral-large-3"
+    , "llama-4" = "llama-4-scout"
+    , "deepseek-v3" = "deepseek-v3"
+  )
+```
+
 ```{r Reconciled LLM names for resumables, include=FALSE}
 reconciled_llm_names <-
   names(llm) |>
@@ -479,7 +490,8 @@ calibration_data <-
   ) |>
   mutate(llm = code) |>
   select(-code) |>
-  mutate_at("llm", factor, llm) |> 
+  mutate(llm = llm_display[llm]) |>
+  mutate_at("llm", factor, llm_display) |>
   mutate_at("judge", factor, llm_as_judge)
 ```
 
@@ -535,7 +547,7 @@ edges_per_llm_total <-
   sapply(nrow) |>
   data.frame(N = _) |>
   rownames_to_column("llm_code") |>
-  mutate(LLM = llm[llm_code]) |>
+  mutate(LLM = llm_display[llm[llm_code]]) |>
   select(LLM, N)
 
 # Expected proportions from literature (using e=0.15 for pilot)
@@ -592,7 +604,7 @@ doc_edge_metrics <-
   calibration_data |>
   left_join(
     docs_per_llm |>
-      imap(~ mutate(.x, llm = llm[names(llm) == .y])) |>
+      imap(~ mutate(.x, llm = llm_display[llm[names(llm) == .y]])) |>
       reduce(rbind) |>
       left_join(usd_per_token_per_llm, by = join_by(llm))
     , by =
