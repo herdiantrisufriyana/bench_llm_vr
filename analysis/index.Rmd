@@ -528,6 +528,58 @@ kappa_results <-
 show_table(kappa_results, "cohens_kappa", "Cohen's Kappa between human and LLM-as-judge labels.")
 ```
 
+```{r Sample size estimation - compute, include=FALSE}
+# Population: total eligible edges per LLM (within 30 articles)
+edges_per_llm_total <-
+  edges_per_llm |>
+  sapply(nrow) |>
+  data.frame(N = _) |>
+  rownames_to_column("llm_code") |>
+  mutate(LLM = llm[llm_code]) |>
+  select(LLM, N)
+
+# Expected proportions from literature (using e=0.15 for pilot)
+# Evidence-grounded correctness: p=0.70 (EvidenceBench [4] accuracy 65-75%)
+# Ungrounded extraction rate: p=0.20 (DocRED [1] evidence F1 < 0.40)
+scenarios <- tibble(
+  Metric = c(
+    "Evidence-grounded correctness"
+    , "Ungrounded extraction rate"
+  )
+  , p = c(0.70, 0.20)
+  , e = c(0.15, 0.15)
+)
+
+sample_size_report <-
+  expand_grid(scenarios, edges_per_llm_total) |>
+  rowwise() |>
+  mutate(
+    result = list(sample_size_prevalence(p, e, N))
+    , `Required n` = result$n_adj
+    , `Actual n` = 60L
+    , Sufficient = ifelse(`Actual n` >= `Required n`, "Yes", "No")
+  ) |>
+  ungroup() |>
+  select(
+    Metric, `Expected p` = p, `Margin of error` = e
+    , LLM, `N (population)` = N
+    , `Required n`, `Actual n`, Sufficient
+  )
+```
+
+```{r Sample size estimation - show, echo=FALSE}
+show_table(
+  sample_size_report, "sample_size_report"
+  , "Post-hoc sample size estimation for human adjudication (95% CI)."
+  , note = c(
+    "Expected proportions based on EvidenceBench [4] (evidence accuracy 65-75%)"
+    , " and DocRED [1] (evidence F1 < 0.40). Margin of error = 0.15."
+    , " Population N = total eligible edges per LLM within 30 articles."
+    , " Finite population correction applied."
+  )
+)
+```
+
 # Model evaluation
 
 ```{r USD per token per LLM, include=FALSE}

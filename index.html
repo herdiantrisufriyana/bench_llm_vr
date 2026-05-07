@@ -2832,12 +2832,390 @@ Kappa
 </tr>
 </tbody>
 </table>
+<table style="NAborder-bottom: 0; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;" class=" lightable-classic">
+<caption>
+Table 4. Post-hoc sample size estimation for human adjudication (95%
+CI).
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metric
+</th>
+<th style="text-align:right;">
+Expected p
+</th>
+<th style="text-align:right;">
+Margin of error
+</th>
+<th style="text-align:left;">
+LLM
+</th>
+<th style="text-align:right;">
+N (population)
+</th>
+<th style="text-align:right;">
+Required n
+</th>
+<th style="text-align:right;">
+Actual n
+</th>
+<th style="text-align:left;">
+Sufficient
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+gpt-5
+</td>
+<td style="text-align:right;vertical-align:top;">
+1212
+</td>
+<td style="text-align:right;vertical-align:top;">
+35
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+claude-4.5-sonnet
+</td>
+<td style="text-align:right;vertical-align:top;">
+1223
+</td>
+<td style="text-align:right;vertical-align:top;">
+35
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+gemini-3-pro
+</td>
+<td style="text-align:right;vertical-align:top;">
+1248
+</td>
+<td style="text-align:right;vertical-align:top;">
+35
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+mistral-large-2
+</td>
+<td style="text-align:right;vertical-align:top;">
+516
+</td>
+<td style="text-align:right;vertical-align:top;">
+34
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+llama-4
+</td>
+<td style="text-align:right;vertical-align:top;">
+2665
+</td>
+<td style="text-align:right;vertical-align:top;">
+36
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Evidence-grounded correctness
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.7
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+deepseek-v3
+</td>
+<td style="text-align:right;vertical-align:top;">
+1430
+</td>
+<td style="text-align:right;vertical-align:top;">
+36
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+gpt-5
+</td>
+<td style="text-align:right;vertical-align:top;">
+1212
+</td>
+<td style="text-align:right;vertical-align:top;">
+27
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+claude-4.5-sonnet
+</td>
+<td style="text-align:right;vertical-align:top;">
+1223
+</td>
+<td style="text-align:right;vertical-align:top;">
+27
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+gemini-3-pro
+</td>
+<td style="text-align:right;vertical-align:top;">
+1248
+</td>
+<td style="text-align:right;vertical-align:top;">
+27
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+mistral-large-2
+</td>
+<td style="text-align:right;vertical-align:top;">
+516
+</td>
+<td style="text-align:right;vertical-align:top;">
+26
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+llama-4
+</td>
+<td style="text-align:right;vertical-align:top;">
+2665
+</td>
+<td style="text-align:right;vertical-align:top;">
+28
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align:top;">
+Ungrounded extraction rate
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.2
+</td>
+<td style="text-align:right;vertical-align:top;">
+0.15
+</td>
+<td style="text-align:left;vertical-align:top;">
+deepseek-v3
+</td>
+<td style="text-align:right;vertical-align:top;">
+1430
+</td>
+<td style="text-align:right;vertical-align:top;">
+27
+</td>
+<td style="text-align:right;vertical-align:top;">
+60
+</td>
+<td style="text-align:left;vertical-align:top;">
+Yes
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Expected proportions based on EvidenceBench [4] (evidence
+accuracy 65-75%)
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> and DocRED [1] (evidence F1 &lt; 0.40). Margin of error =
+0.15.
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Population N = total eligible edges per LLM within 30
+articles.
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Finite population correction applied.
+</td>
+</tr>
+</tfoot>
+</table>
 </div>
 <div id="model-evaluation" class="section level1">
 <h1>Model evaluation</h1>
 <table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
 <caption>
-Table 4. Model benchmark.
+Table 5. Model benchmark.
 </caption>
 <thead>
 <tr>
