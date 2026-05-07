@@ -781,10 +781,11 @@ cost_performance_tradeoff <-
   theme(
     legend.position = "bottom"
     , legend.title = element_blank()
+    , legend.text = element_text(size = 8)
   )
 ```
 
-```{r Cost-performance tradeoff - show, echo=FALSE, fig.height=7, fig.width=3.54331}
+```{r Cost-performance tradeoff - show, echo=FALSE, fig.height=7.5, fig.width=3.54331}
 cost_performance_tradeoff
 ```
 
@@ -792,7 +793,7 @@ cost_performance_tradeoff
 ggsave(
   "inst/extdata/figure3_cost_performance.png"
   , cost_performance_tradeoff
-  , width = 3.54331, height = 7, dpi = 300
+  , width = 3.54331, height = 7.5, dpi = 300
 )
 ```
 
